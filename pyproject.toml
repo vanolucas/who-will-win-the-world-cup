@@ -1,0 +1,8 @@
+[project]
+name = "who-will-win-the-world-cup"
+version = "1.0.0"
+description = "Data fetcher for World Cup odds dashboard"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.0",
+]

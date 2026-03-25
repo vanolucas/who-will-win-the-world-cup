@@ -1,0 +1,589 @@
+/* === Design Tokens === */
+:root {
+  --midnight-violet: #0d0221;
+  --deep-twilight: #0f084b;
+  --french-blue: #26408b;
+  --sky-surge: #06bee1;
+  --amber-gold: #ffbe0b;
+
+  --bg-primary: var(--midnight-violet);
+  --bg-secondary: var(--deep-twilight);
+  --bg-elevated: #150c3a;
+  --color-primary: var(--french-blue);
+  --color-accent: var(--sky-surge);
+  --color-highlight: var(--amber-gold);
+  --text-primary: #eef0f4;
+  --text-secondary: #9a9cb8;
+  --text-muted: #6b6d85;
+  --border-color: rgba(38, 64, 139, 0.35);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --elevation-2: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  --header-height: 56px;
+  --footer-height: 48px;
+  --sidebar-width: 280px;
+  --transition: 200ms ease;
+}
+
+/* === Reset & Base === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* === Header === */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: var(--header-height);
+  padding: 0 16px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  z-index: 20;
+}
+
+.header-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-primary);
+}
+
+/* Segmented button nav */
+.view-switcher {
+  display: flex;
+  background: rgba(38, 64, 139, 0.2);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.view-btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.view-btn:hover {
+  color: var(--text-primary);
+  background: rgba(38, 64, 139, 0.3);
+}
+
+.view-btn.active {
+  background: var(--color-primary);
+  color: var(--text-primary);
+}
+
+/* Filter toggle (mobile + always visible) */
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+
+.filter-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.filter-toggle.active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(6, 190, 225, 0.1);
+}
+
+/* === Main Layout === */
+.app-main {
+  display: flex;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  position: relative;
+}
+
+/* === Filter Panel === */
+.filter-panel {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform var(--transition);
+}
+
+.filter-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.filter-header h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-action-btn {
+  padding: 4px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filter-action-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.filter-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.filter-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background var(--transition);
+  user-select: none;
+}
+
+.filter-row:hover {
+  background: rgba(38, 64, 139, 0.15);
+}
+
+/* Custom checkbox */
+.filter-row input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--text-muted);
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition);
+}
+
+.filter-row input[type="checkbox"]:checked {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.filter-row input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--bg-primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.filter-team-name {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter-prob-badge {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+/* Filter overlay (mobile) */
+.filter-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 29;
+}
+
+/* === Content Area === */
+.content-area {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.view-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.view-container.hidden {
+  display: none;
+}
+
+/* === Chart View === */
+#chart-container {
+  flex: 1;
+  min-height: 0;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  overflow-x: auto;
+  flex-shrink: 0;
+  min-height: 28px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* === Table View === */
+#table-view {
+  overflow-y: auto;
+  padding: 0;
+}
+
+.odds-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.odds-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.odds-table th {
+  background: var(--color-primary);
+  color: var(--text-primary);
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.odds-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.odds-table tr:hover td {
+  background: rgba(38, 64, 139, 0.1);
+}
+
+.odds-table .rank-cell {
+  color: var(--text-muted);
+  width: 48px;
+  font-variant-numeric: tabular-nums;
+}
+
+.odds-table .prob-cell {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-accent);
+}
+
+.odds-table .change-cell {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+
+.odds-table .change-cell.positive {
+  color: #4ade80;
+}
+
+.odds-table .change-cell.negative {
+  color: #f87171;
+}
+
+.odds-table .change-cell.neutral {
+  color: var(--text-muted);
+}
+
+.odds-table tr:first-child .rank-cell {
+  color: var(--color-highlight);
+}
+
+.odds-table tr:first-child .prob-cell {
+  color: var(--color-highlight);
+}
+
+/* Right-align numeric columns */
+.odds-table th:nth-child(3),
+.odds-table td:nth-child(3),
+.odds-table th:nth-child(4),
+.odds-table td:nth-child(4) {
+  text-align: right;
+}
+
+/* === About View === */
+#about-view {
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.about-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.about-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.about-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-meta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(38, 64, 139, 0.12);
+  border-radius: var(--radius-sm);
+}
+
+.about-meta-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.about-meta-value {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* === Empty / Error State === */
+.empty-state,
+.error-state {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state.hidden,
+.error-state.hidden {
+  display: none;
+}
+
+.empty-state-content {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.empty-state-content p {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.error-state p {
+  color: #f87171;
+  font-size: 0.9rem;
+}
+
+/* === Footer === */
+.app-footer {
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.app-footer p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* === Responsive === */
+
+/* Desktop: sidebar always visible, toggle hidden */
+@media (min-width: 1024px) {
+  .filter-toggle {
+    display: none;
+  }
+
+  .filter-panel {
+    display: flex;
+  }
+}
+
+/* Tablet + Mobile: sidebar as overlay */
+@media (max-width: 1023px) {
+  .filter-panel {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    bottom: var(--footer-height);
+    z-index: 30;
+    transform: translateX(-100%);
+    box-shadow: var(--elevation-2);
+  }
+
+  .filter-panel.open {
+    transform: translateX(0);
+  }
+
+  .filter-overlay.open {
+    display: block;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 0.95rem;
+  }
+
+  .view-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .filter-toggle-label {
+    display: none;
+  }
+
+  .filter-toggle {
+    padding: 6px 8px;
+  }
+
+  .odds-table th,
+  .odds-table td {
+    padding: 8px 10px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+}
