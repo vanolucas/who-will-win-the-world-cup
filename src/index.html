@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Who Will Win the World Cup?</title>
+  <meta name="description" content="Winning probabilities for each team in the FIFA World Cup 2026, updated daily." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9917;</text></svg>" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left">
+      <h1 class="app-title">Who Will Win the World Cup?</h1>
+    </div>
+    <nav class="view-switcher">
+      <button class="view-btn active" data-view="chart">Chart</button>
+      <button class="view-btn" data-view="table">Table</button>
+      <button class="view-btn" data-view="about">About</button>
+    </nav>
+    <button class="filter-toggle" id="filter-toggle" aria-label="Toggle team filter">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+      </svg>
+      <span class="filter-toggle-label">Filter</span>
+    </button>
+  </header>
+
+  <main class="app-main">
+    <aside class="filter-panel" id="filter-panel">
+      <div class="filter-header">
+        <h2>Teams</h2>
+        <div class="filter-actions">
+          <button class="filter-action-btn" id="select-all-btn">Select All</button>
+          <button class="filter-action-btn" id="clear-all-btn">Clear All</button>
+        </div>
+      </div>
+      <div class="filter-list" id="filter-list"></div>
+    </aside>
+
+    <div class="filter-overlay" id="filter-overlay"></div>
+
+    <section class="content-area">
+      <div class="view-container" id="chart-view">
+        <div class="chart-legend" id="chart-legend"></div>
+        <div id="chart-container"></div>
+      </div>
+      <div class="view-container hidden" id="table-view"></div>
+      <div class="view-container hidden" id="about-view">
+        <div class="about-card">
+          <h2>About This Dashboard</h2>
+          <p>This dashboard tracks winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data.</p>
+          <div class="about-meta">
+            <div class="about-meta-item">
+              <span class="about-meta-label">Last Updated</span>
+              <span class="about-meta-value" id="last-update">--</span>
+            </div>
+            <div class="about-meta-item">
+              <span class="about-meta-label">Teams Tracked</span>
+              <span class="about-meta-value" id="total-teams">--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty-state hidden" id="empty-state">
+        <div class="empty-state-content">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+          </svg>
+          <p>Select at least one team to view data.</p>
+        </div>
+      </div>
+      <div class="error-state hidden" id="error-state">
+        <p>Failed to load data. Please try refreshing the page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Probabilities are derived from prediction market data and do not guarantee any outcomes. This site is not affiliated with FIFA, the World Cup, or any official organization.</p>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
