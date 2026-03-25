@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "lastUpdate": "2026-03-25T22:32:31Z",
+        "lastUpdate": "2026-03-25T22:47:04Z",
         "totalTeams": 43
     },
     "teams": [
@@ -22,7 +22,7 @@
         {
             "id": "argentina",
             "name": "Argentina",
-            "currentProbability": 0.0985
+            "currentProbability": 0.098
         },
         {
             "id": "brazil",
@@ -52,7 +52,7 @@
         {
             "id": "italy",
             "name": "Italy",
-            "currentProbability": 0.0245
+            "currentProbability": 0.023
         },
         {
             "id": "belgium",
@@ -4402,7 +4402,7 @@
             },
             {
                 "date": "2026-03-25",
-                "probability": 0.0985
+                "probability": 0.098
             }
         ],
         "brazil": [
@@ -10738,7 +10738,7 @@
             },
             {
                 "date": "2026-03-25",
-                "probability": 0.0245
+                "probability": 0.023
             }
         ],
         "belgium": [
