@@ -2,7 +2,7 @@
 
 A static dashboard displaying winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data.
 
-**Live site**: https://vanolucas.github.io/who-will-win-the-world-cup/
+**Live site**: https://whowillwin.vanolucas.com/
 
 ## Features
 
