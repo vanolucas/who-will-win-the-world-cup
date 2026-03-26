@@ -71,7 +71,7 @@ The site is automatically deployed to GitHub Pages via GitHub Actions.
 
 The workflow (`.github/workflows/update-and-deploy.yml`) runs:
 
-- **Daily at 02:00 UTC** (scheduled)
+- **Daily at 01:12 UTC** (scheduled)
 - **On manual trigger** (Actions tab > "Update Data and Deploy" > Run workflow)
 
 It performs two jobs:
