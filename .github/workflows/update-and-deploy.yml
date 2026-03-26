@@ -2,7 +2,7 @@ name: Update Data and Deploy
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "12 1 * * *"
   workflow_dispatch: {}
 
 permissions:
