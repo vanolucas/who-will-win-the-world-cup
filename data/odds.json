@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "lastUpdate": "2026-03-27T14:00:16Z",
+        "lastUpdate": "2026-03-27T14:59:42Z",
         "totalTeams": 43
     },
     "teams": [
@@ -17,7 +17,7 @@
         {
             "id": "france",
             "name": "France",
-            "currentProbability": 0.1085
+            "currentProbability": 0.1095
         },
         {
             "id": "argentina",
@@ -3396,7 +3396,7 @@
             },
             {
                 "date": "2026-03-27",
-                "probability": 0.1085
+                "probability": 0.1095
             }
         ],
         "argentina": [
@@ -10818,7 +10818,7 @@
             },
             {
                 "date": "2026-03-27",
-                "probability": 0.027
+                "probability": 0.0265
             }
         ],
         "belgium": [
