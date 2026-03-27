@@ -4,11 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Who Will Win the World Cup?</title>
-  <meta name="description" content="Winning probabilities for each team in the FIFA World Cup 2026, updated daily." />
+  <meta name="description" content="Winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data." />
+  <meta property="og:title" content="Who Will Win the World Cup?" />
+  <meta property="og:description" content="Winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9917;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+  <a class="skip-to-content" href="#main-content">Skip to content</a>
   <header class="app-header">
     <div class="header-left">
       <h1 class="app-title">Who Will Win the World Cup?</h1>
@@ -40,7 +48,7 @@
 
     <div class="filter-overlay" id="filter-overlay"></div>
 
-    <section class="content-area">
+    <section class="content-area" id="main-content">
       <div class="view-container" id="chart-view">
         <div class="chart-legend" id="chart-legend"></div>
         <div id="chart-container"></div>
@@ -77,7 +85,7 @@
   </main>
 
   <footer class="app-footer">
-    <p>Probabilities are derived from prediction market data and do not guarantee any outcomes. This site is not affiliated with FIFA, the World Cup, or any official organization.</p>
+    <p>Probabilities are derived from prediction market data and do not guarantee any outcomes. Not affiliated with FIFA. <a href="#" data-view="about">About</a></p>
   </footer>
 
   <script type="module" src="./js/main.js"></script>
