@@ -78,8 +78,11 @@ function onFilterChange(selectedIds) {
 }
 
 function setupViewSwitcher() {
-  document.querySelectorAll(".view-btn").forEach((btn) => {
-    btn.addEventListener("click", () => showView(btn.dataset.view));
+  document.querySelectorAll("[data-view]").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      showView(el.dataset.view);
+    });
   });
 }
 

@@ -1,10 +1,10 @@
 import { createChart, LineSeries, CrosshairMode } from "lightweight-charts";
 
 const COLORS = [
-  "#06bee1", "#ffbe0b", "#4ade80", "#f87171", "#a78bfa",
-  "#fb923c", "#f472b6", "#38bdf8", "#facc15", "#34d399",
-  "#e879f7", "#60a5fa", "#fbbf24", "#c084fc", "#22d3ee",
-  "#fb7185", "#a3e635", "#818cf8", "#f97316", "#2dd4bf",
+  "#c8a04e", "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
+  "#bf7a8a", "#c8905a", "#9a82b5", "#5ba2a8", "#c47a78",
+  "#c4b86a", "#74b898", "#c8956e", "#8a88c2", "#8aaa68",
+  "#b580a6", "#c49a5e", "#9a7eaa", "#5ca0a0", "#c4826e",
 ];
 
 let chart = null;
@@ -16,20 +16,20 @@ export function initChart(container, legendContainer) {
 
   chart = createChart(container, {
     layout: {
-      background: { color: "#0d0221" },
-      textColor: "#9a9cb8",
-      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      background: { color: "#101012" },
+      textColor: "#9b9893",
+      fontFamily: "'Outfit', system-ui, sans-serif",
     },
     grid: {
-      vertLines: { color: "rgba(38, 64, 139, 0.2)" },
-      horzLines: { color: "rgba(38, 64, 139, 0.2)" },
+      vertLines: { color: "rgba(255, 255, 255, 0.04)" },
+      horzLines: { color: "rgba(255, 255, 255, 0.04)" },
     },
     timeScale: {
-      borderColor: "rgba(38, 64, 139, 0.4)",
+      borderColor: "rgba(255, 255, 255, 0.08)",
       timeVisible: false,
     },
     rightPriceScale: {
-      borderColor: "rgba(38, 64, 139, 0.4)",
+      borderColor: "rgba(255, 255, 255, 0.08)",
     },
     crosshair: {
       mode: CrosshairMode.Normal,
