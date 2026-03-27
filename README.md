@@ -81,6 +81,18 @@ It performs two jobs:
 
 If the data fetch fails, the site is still deployed with the last successfully fetched data.
 
+## Google Analytics
+
+The site supports Google Analytics via a simple configuration file. Set your tracking ID in `site.config.json`:
+
+```json
+{
+  "googleAnalyticsId": "G-XXXXXXXXXX"
+}
+```
+
+During the Vite build, the gtag snippet is automatically injected into `<head>`. To disable tracking, remove or empty the `googleAnalyticsId` value.
+
 ## Project Structure
 
 ```
@@ -101,6 +113,7 @@ who-will-win-the-world-cup/
 │   └── odds.json              # Latest odds data (committed)
 ├── docs/
 │   └── ARCHITECTURE.md
+├── site.config.json               # Site settings (Google Analytics, etc.)
 ├── vite.config.js
 ├── package.json
 └── pyproject.toml
