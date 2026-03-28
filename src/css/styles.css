@@ -223,7 +223,13 @@ body::after {
 
 .filter-actions {
   display: flex;
+  align-items: center;
   gap: 8px;
+}
+
+.filter-actions-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
 .filter-action-btn {
