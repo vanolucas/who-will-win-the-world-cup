@@ -1514,10 +1514,6 @@
         ],
         "australia": [
             {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
-            {
                 "date": "2025-09-19",
                 "probability": 0.04
             },
@@ -8388,10 +8384,6 @@
         ],
         "ecuador": [
             {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
-            {
                 "date": "2025-09-19",
                 "probability": 0.046
             },
@@ -13738,10 +13730,6 @@
         ],
         "iran": [
             {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
-            {
                 "date": "2025-09-19",
                 "probability": 0.03
             },
@@ -17054,10 +17042,6 @@
         ],
         "jordan": [
             {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
-            {
                 "date": "2025-09-19",
                 "probability": 0.03
             },
@@ -18862,10 +18846,6 @@
         ],
         "morocco": [
             {
-                "date": "2025-11-08",
-                "probability": 0.48
-            },
-            {
                 "date": "2025-11-09",
                 "probability": 0.039
             },
@@ -20505,10 +20485,6 @@
             }
         ],
         "new-zealand": [
-            {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
             {
                 "date": "2025-09-19",
                 "probability": 0.025
@@ -22281,10 +22257,6 @@
             }
         ],
         "paraguay": [
-            {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
             {
                 "date": "2025-09-19",
                 "probability": 0.0305
@@ -26990,10 +26962,6 @@
         ],
         "south-korea": [
             {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
-            {
                 "date": "2025-09-19",
                 "probability": 0.0355
             },
@@ -29303,10 +29271,6 @@
             }
         ],
         "tunisia": [
-            {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
             {
                 "date": "2025-09-19",
                 "probability": 0.03
@@ -32225,10 +32189,6 @@
             }
         ],
         "uzbekistan": [
-            {
-                "date": "2025-09-18",
-                "probability": 0.5
-            },
             {
                 "date": "2025-09-19",
                 "probability": 0.069
