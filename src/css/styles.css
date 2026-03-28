@@ -597,12 +597,6 @@ body::after {
 }
 
 /* === Race View === */
-#race-view {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 .race-header {
   display: flex;
   align-items: center;
