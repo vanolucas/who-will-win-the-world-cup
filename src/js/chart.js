@@ -106,7 +106,7 @@ function updateLegend(param) {
 
   const items = [];
   for (const [teamId, { series, team, color }] of seriesMap) {
-    let valueStr = "";
+    let valueStr = (team.currentProbability * 100).toFixed(1) + "%";
     if (param && param.time) {
       const data = param.seriesData.get(series);
       if (data) {
@@ -127,7 +127,7 @@ function updateLegend(param) {
         `<span class="legend-item">` +
         `<span class="legend-dot" style="background:${item.color}"></span>` +
         `<span>${item.name}</span>` +
-        (item.value ? `<span class="legend-value">${item.value}</span>` : "") +
+        `<span class="legend-value">${item.value}</span>` +
         `</span>`
     )
     .join("");
