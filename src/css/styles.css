@@ -405,6 +405,8 @@ body::after {
   font-variant-numeric: tabular-nums;
   font-weight: 500;
   color: var(--text-primary);
+  min-width: 3.5ch;
+  text-align: right;
 }
 
 /* === Table View === */
