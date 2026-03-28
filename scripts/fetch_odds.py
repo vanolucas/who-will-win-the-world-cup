@@ -116,7 +116,11 @@ def fetch_price_history(token_id: str) -> list[dict[str, Any]]:
         by_date[dt.strftime("%Y-%m-%d")] = round(point["p"], 6)
 
     return sorted(
-        [{"date": d, "probability": p} for d, p in by_date.items()],
+        [
+            {"date": d, "probability": p}
+            for d, p in by_date.items()
+            if not (d.startswith("2025-") and p > 0.40)
+        ],
         key=lambda x: x["date"],
     )
 
