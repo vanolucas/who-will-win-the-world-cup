@@ -1,6 +1,7 @@
 import { initChart, updateChart, resizeChart } from "./chart.js";
 import { updateTable } from "./table.js";
 import { initFilter, getSelectedTeamIds } from "./filter.js";
+import { initRace, updateRace, pauseRace } from "./race.js";
 
 const state = {
   data: null,
@@ -41,6 +42,11 @@ function showView(viewName) {
     requestAnimationFrame(resizeChart);
   }
 
+  // Pause race when switching away from race view
+  if (viewName !== "race") {
+    pauseRace();
+  }
+
   // Update empty state visibility
   updateEmptyState();
 }
@@ -50,11 +56,13 @@ function updateEmptyState() {
   const emptyState = document.getElementById("empty-state");
   const chartView = document.getElementById("chart-view");
   const tableView = document.getElementById("table-view");
+  const raceView = document.getElementById("race-view");
 
   if (selected.length === 0 && state.currentView !== "about") {
     emptyState.classList.remove("hidden");
     chartView.classList.add("hidden");
     tableView.classList.add("hidden");
+    raceView.classList.add("hidden");
   } else {
     emptyState.classList.add("hidden");
   }
@@ -75,6 +83,7 @@ function onFilterChange(selectedIds) {
 
   updateChart(state.data, selectedIds);
   updateTable(document.getElementById("table-view"), state.data, selectedIds);
+  updateRace(state.data, selectedIds);
 }
 
 function setupViewSwitcher() {
@@ -142,6 +151,10 @@ async function init() {
   updateChart(data, top10Ids);
 
   updateTable(document.getElementById("table-view"), data, top10Ids);
+
+  initRace(document.getElementById("race-view"));
+  updateRace(data, top10Ids);
+
   populateAbout(data.metadata);
 }
 
