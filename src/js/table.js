@@ -1,3 +1,5 @@
+import { getFlag } from "./flags.js";
+
 function compute7dChange(history) {
   if (!history || history.length < 2) return null;
   const latest = history[history.length - 1].probability;
@@ -38,7 +40,8 @@ export function updateTable(container, data, selectedTeamIds) {
     tr.appendChild(rankTd);
 
     const nameTd = document.createElement("td");
-    nameTd.textContent = team.name;
+    const flag = getFlag(team.id);
+    nameTd.textContent = flag ? `${flag} ${team.name}` : team.name;
     tr.appendChild(nameTd);
 
     const probTd = document.createElement("td");

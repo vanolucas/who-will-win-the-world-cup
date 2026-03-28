@@ -1,3 +1,5 @@
+import { getFlag } from "./flags.js";
+
 let onChangeCallback = null;
 let top8Ids = [];
 
@@ -17,9 +19,11 @@ export function initFilter(teams, defaultSelectedIds, onChange) {
     checkbox.checked = selectedSet.has(team.id);
     checkbox.addEventListener("change", emitChange);
 
+    const flag = getFlag(team.id);
+
     const nameSpan = document.createElement("span");
     nameSpan.className = "filter-team-name";
-    nameSpan.textContent = team.name;
+    nameSpan.textContent = flag ? `${flag} ${team.name}` : team.name;
 
     const probBadge = document.createElement("span");
     probBadge.className = "filter-prob-badge";

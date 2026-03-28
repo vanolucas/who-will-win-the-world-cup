@@ -1,4 +1,5 @@
 import { createChart, LineSeries, CrosshairMode } from "lightweight-charts";
+import { getFlag } from "./flags.js";
 
 const COLORS = [
   "#c8a04e", "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
@@ -10,9 +11,16 @@ const COLORS = [
 let chart = null;
 let seriesMap = new Map();
 let legendEl = null;
+let flagOverlay = null;
 
 export function initChart(container, legendContainer) {
   legendEl = legendContainer;
+
+  // Create flag overlay for line-end flags
+  container.style.position = "relative";
+  flagOverlay = document.createElement("div");
+  flagOverlay.className = "chart-flag-overlay";
+  container.appendChild(flagOverlay);
 
   chart = createChart(container, {
     layout: {
@@ -40,6 +48,7 @@ export function initChart(container, legendContainer) {
   });
 
   chart.subscribeCrosshairMove(handleCrosshairMove);
+  chart.timeScale().subscribeVisibleLogicalRangeChange(updateFlagPositions);
 
   const ro = new ResizeObserver(() => {
     if (chart && container.clientWidth > 0 && container.clientHeight > 0) {
@@ -95,6 +104,7 @@ export function updateChart(data, selectedTeamIds) {
 
   chart.timeScale().fitContent();
   updateLegend(null);
+  requestAnimationFrame(updateFlagPositions);
 }
 
 function handleCrosshairMove(param) {
@@ -113,7 +123,9 @@ function updateLegend(param) {
         valueStr = (data.value * 100).toFixed(1) + "%";
       }
     }
-    items.push({ name: team.name, color, value: valueStr });
+    const flag = getFlag(teamId);
+    const displayName = flag ? `${flag} ${team.name}` : team.name;
+    items.push({ name: displayName, color, value: valueStr });
   }
 
   if (items.length === 0) {
@@ -131,6 +143,26 @@ function updateLegend(param) {
         `</span>`
     )
     .join("");
+}
+
+function updateFlagPositions() {
+  if (!flagOverlay || !chart) return;
+  flagOverlay.innerHTML = "";
+
+  for (const [teamId, { series, team }] of seriesMap) {
+    const lastValue = team.currentProbability;
+    const y = series.priceToCoordinate(lastValue);
+    if (y === null || y === undefined) continue;
+
+    const flag = getFlag(teamId);
+    if (!flag) continue;
+
+    const label = document.createElement("span");
+    label.className = "chart-flag-label";
+    label.textContent = flag;
+    label.style.top = y + "px";
+    flagOverlay.appendChild(label);
+  }
 }
 
 export function resizeChart() {

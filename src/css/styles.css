@@ -380,6 +380,24 @@ body::after {
   min-height: 0;
 }
 
+.chart-flag-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.chart-flag-label {
+  position: absolute;
+  right: 50px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1;
+}
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
