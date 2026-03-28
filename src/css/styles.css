@@ -654,8 +654,21 @@ body::after {
 
 /* Small mobile */
 @media (max-width: 480px) {
+  .app-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 16px;
+  }
+
+  .header-left {
+    flex: 1 0 100%;
+  }
+
   .app-title {
     font-size: 0.95rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 
   .view-btn {
