@@ -126,6 +126,11 @@ async function init() {
   }
 
   const data = state.data;
+
+  // Sort teams by probability (descending) for display purposes.
+  // The JSON file stores teams in alphabetical order for deterministic diffs.
+  data.teams.sort((a, b) => b.currentProbability - a.currentProbability);
+
   const top10Ids = data.teams.slice(0, 10).map((t) => t.id);
 
   // Init components
