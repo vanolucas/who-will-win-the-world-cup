@@ -9,6 +9,7 @@ const BAR_HEIGHT = 36;
 const BAR_GAP = 4;
 const BASE_SPEED = 3;
 const LERP_BASE = 0.12;
+const MIN_PROB = 0.01;
 
 let container = null;
 let barsInner = null;
@@ -214,7 +215,7 @@ function render(instant) {
   });
   ranked.sort((a, b) => b.prob - a.prob);
 
-  const maxProb = Math.max(ranked[0]?.prob ?? 0.01, 0.01);
+  const maxProb = Math.max(ranked[0]?.prob ?? MIN_PROB, MIN_PROB);
   const factor = instant ? 1 : LERP_BASE;
 
   for (let i = 0; i < ranked.length; i++) {
