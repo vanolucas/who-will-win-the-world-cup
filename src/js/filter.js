@@ -1,9 +1,11 @@
 let onChangeCallback = null;
+let top8Ids = [];
 
 export function initFilter(teams, defaultSelectedIds, onChange) {
   onChangeCallback = onChange;
   const list = document.getElementById("filter-list");
   const selectedSet = new Set(defaultSelectedIds);
+  top8Ids = teams.slice(0, 8).map((t) => t.id);
 
   for (const team of teams) {
     const row = document.createElement("label");
@@ -30,6 +32,14 @@ export function initFilter(teams, defaultSelectedIds, onChange) {
   document.getElementById("select-all-btn").addEventListener("click", () => {
     list.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
       cb.checked = true;
+    });
+    emitChange();
+  });
+
+  document.getElementById("top-8-btn").addEventListener("click", () => {
+    const top8Set = new Set(top8Ids);
+    list.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+      cb.checked = top8Set.has(cb.value);
     });
     emitChange();
   });
