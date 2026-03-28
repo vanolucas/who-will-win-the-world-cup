@@ -392,7 +392,7 @@ body::after {
 
 .chart-flag-label {
   position: absolute;
-  right: 50px;
+  right: 70px;
   transform: translateY(-50%);
   font-size: 14px;
   line-height: 1;
