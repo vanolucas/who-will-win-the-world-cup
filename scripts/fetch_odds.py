@@ -94,7 +94,7 @@ def fetch_markets() -> list[dict[str, Any]]:
             "current_price": price,
         })
 
-    teams.sort(key=lambda t: t["current_price"], reverse=True)
+    teams.sort(key=lambda t: t["id"])
     logger.info("Parsed %d active teams", len(teams))
     return teams
 
@@ -115,7 +115,10 @@ def fetch_price_history(token_id: str) -> list[dict[str, Any]]:
         dt = datetime.fromtimestamp(point["t"], tz=timezone.utc)
         by_date[dt.strftime("%Y-%m-%d")] = round(point["p"], 6)
 
-    return [{"date": d, "probability": p} for d, p in by_date.items()]
+    return sorted(
+        [{"date": d, "probability": p} for d, p in by_date.items()],
+        key=lambda x: x["date"],
+    )
 
 
 def build_output(
@@ -136,7 +139,7 @@ def build_output(
             }
             for t in teams
         ],
-        "history": histories,
+        "history": dict(sorted(histories.items())),
     }
 
 
@@ -148,7 +151,7 @@ def write_atomic(path: Path, data: dict[str, Any]) -> None:
     )
     try:
         with open(tmp_fd, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4)
+            json.dump(data, f, indent=4, sort_keys=True)
         Path(tmp_path).replace(path)
     except Exception:
         Path(tmp_path).unlink(missing_ok=True)
