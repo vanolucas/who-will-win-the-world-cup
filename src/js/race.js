@@ -1,3 +1,5 @@
+import { getFlag } from "./flags.js";
+
 const COLORS = [
   "#c8a04e", "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
   "#bf7a8a", "#c8905a", "#9a82b5", "#5ba2a8", "#c47a78",
@@ -318,6 +320,12 @@ function buildBars() {
     const fill = document.createElement("div");
     fill.className = "race-bar__fill";
     fill.style.background = `linear-gradient(90deg, ${tm.color}, ${lighten(tm.color, 30)})`;
+
+    const flag = document.createElement("span");
+    flag.className = "race-bar__flag";
+    flag.textContent = getFlag(tm.id);
+    fill.appendChild(flag);
+
     track.appendChild(fill);
 
     const val = document.createElement("span");
