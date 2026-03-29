@@ -970,15 +970,27 @@ body::after {
   }
 
   .race-controls {
+    flex-wrap: wrap;
     gap: 8px;
     padding: 10px 12px;
   }
 
+  .race-scrubber {
+    order: -1;
+    width: 100%;
+    flex: none;
+  }
+
   .race-ctrl-restart {
-    display: none;
+    order: 0;
+  }
+
+  .race-ctrl-play {
+    order: 1;
   }
 
   .race-speed-group {
-    display: none;
+    order: 2;
+    margin-left: auto;
   }
 }
