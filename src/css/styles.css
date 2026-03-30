@@ -43,6 +43,8 @@ body {
   color: var(--text-primary);
   line-height: 1.5;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -88,7 +90,8 @@ body::after {
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
   position: relative;
-  z-index: 20;
+  z-index: 31;
+  flex-shrink: 0;
 }
 
 .header-left {
@@ -190,7 +193,8 @@ body::after {
 /* === Main Layout === */
 .app-main {
   display: flex;
-  height: calc(100dvh - var(--header-height) - var(--footer-height));
+  flex: 1;
+  min-height: 0;
   position: relative;
 }
 
@@ -877,6 +881,7 @@ body::after {
   padding: 0 20px;
   border-top: 1px solid var(--border-color);
   background: var(--bg-secondary);
+  flex-shrink: 0;
 }
 
 .app-footer p {
@@ -909,16 +914,40 @@ body::after {
   }
 }
 
-/* Tablet + Mobile: sidebar as overlay */
+/* Tablet + Mobile: two-row header, filter slides from right */
 @media (max-width: 1023px) {
+  .app-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 12px 20px 10px;
+    gap: 6px 12px;
+  }
+
+  .header-left {
+    flex: 1 1 100%;
+  }
+
+  .app-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .filter-toggle {
+    margin-left: auto;
+  }
+
   .filter-panel {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    bottom: var(--footer-height);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
     z-index: 30;
-    transform: translateX(-100%);
-    box-shadow: var(--elevation-2);
+    transform: translateX(100%);
+    box-shadow: -4px 0 20px rgba(10, 8, 4, 0.6);
+    border-right: none;
+    border-left: 1px solid var(--border-color);
   }
 
   .filter-panel.open {
