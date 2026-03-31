@@ -360,6 +360,10 @@ export function pauseRace() {
   doPause();
 }
 
+export function playRace() {
+  doPlay();
+}
+
 export function destroyRace() {
   doPause();
   if (keyHandler) {

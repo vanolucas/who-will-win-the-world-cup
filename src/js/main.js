@@ -1,7 +1,7 @@
 import { initChart, updateChart, resizeChart } from "./chart.js";
 import { updateTable } from "./table.js";
 import { initFilter, getSelectedTeamIds } from "./filter.js";
-import { initRace, updateRace, pauseRace } from "./race.js";
+import { initRace, updateRace, pauseRace, playRace } from "./race.js";
 
 const state = {
   data: null,
@@ -42,8 +42,10 @@ function showView(viewName) {
     requestAnimationFrame(resizeChart);
   }
 
-  // Pause race when switching away from race view
-  if (viewName !== "race") {
+  // Auto-play race when switching to race view, pause when leaving
+  if (viewName === "race") {
+    playRace();
+  } else {
     pauseRace();
   }
 
