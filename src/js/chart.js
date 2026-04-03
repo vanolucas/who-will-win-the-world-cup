@@ -65,6 +65,12 @@ function getColor(index) {
   return COLORS[index % COLORS.length];
 }
 
+function getNextDay(dateStr) {
+  const d = new Date(dateStr + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().split("T")[0];
+}
+
 export function updateChart(data, selectedTeamIds) {
   if (!chart) return;
 
@@ -76,6 +82,9 @@ export function updateChart(data, selectedTeamIds) {
 
   const selectedSet = new Set(selectedTeamIds);
   const teamsToShow = data.teams.filter((t) => selectedSet.has(t.id));
+
+  // Find the global latest date for extending eliminated team lines
+  const globalLatestDate = data.metadata.lastUpdate.split("T")[0];
 
   teamsToShow.forEach((team, i) => {
     const history = data.history[team.id];
@@ -97,6 +106,16 @@ export function updateChart(data, selectedTeamIds) {
       time: h.date,
       value: h.probability,
     }));
+
+    // For eliminated teams, add 0% data points to show the drop
+    if (team.currentProbability === 0 && history.length > 0) {
+      const lastDate = history[history.length - 1].date;
+      const nextDay = getNextDay(lastDate);
+      seriesData.push({ time: nextDay, value: 0 });
+      if (nextDay < globalLatestDate) {
+        seriesData.push({ time: globalLatestDate, value: 0 });
+      }
+    }
 
     series.setData(seriesData);
     seriesMap.set(team.id, { series, team, color });

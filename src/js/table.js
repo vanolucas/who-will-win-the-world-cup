@@ -1,8 +1,8 @@
 import { getFlag } from "./flags.js";
 
-function compute7dChange(history) {
+function compute7dChange(history, currentProbability) {
   if (!history || history.length < 2) return null;
-  const latest = history[history.length - 1].probability;
+  const latest = currentProbability;
   // Find the entry closest to 7 days ago
   const targetIdx = Math.max(0, history.length - 8);
   const older = history[targetIdx].probability;
@@ -51,7 +51,7 @@ export function updateTable(container, data, selectedTeamIds) {
 
     const changeTd = document.createElement("td");
     changeTd.className = "change-cell";
-    const change = compute7dChange(data.history[team.id]);
+    const change = compute7dChange(data.history[team.id], team.currentProbability);
     if (change === null) {
       changeTd.textContent = "--";
       changeTd.classList.add("neutral");
