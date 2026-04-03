@@ -274,12 +274,19 @@ export function updateRace(data, selectedTeamIds) {
     const lookup = new Map();
     let hi = 0;
     let last = 0;
+    const isEliminated = t.currentProbability === 0 && hist.length > 0;
+    const lastHistDate = hist.length > 0 ? hist[hist.length - 1].date : null;
     for (const date of allDates) {
       while (hi < hist.length && hist[hi].date <= date) {
         last = hist[hi].probability;
         hi++;
       }
-      lookup.set(date, last);
+      // For eliminated teams, set 0 for dates after their last history entry
+      if (isEliminated && date > lastHistDate) {
+        lookup.set(date, 0);
+      } else {
+        lookup.set(date, last);
+      }
     }
     return { id: t.id, name: t.name, color, lookup };
   });
