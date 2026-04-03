@@ -282,7 +282,7 @@ export function updateRace(data, selectedTeamIds) {
         hi++;
       }
       // For eliminated teams, set 0 for dates after their last history entry
-      if (isEliminated && hi >= hist.length && date > lastHistDate) {
+      if (isEliminated && date > lastHistDate) {
         lookup.set(date, 0);
       } else {
         lookup.set(date, last);
