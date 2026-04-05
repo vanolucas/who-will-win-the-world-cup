@@ -180,6 +180,9 @@ function updateFlagPositions() {
         }
       }
     }
+    if (lastVisibleValue === null && data.length > 0) {
+      lastVisibleValue = data[data.length - 1].value;
+    }
     if (lastVisibleValue === null) continue;
 
     const y = series.priceToCoordinate(lastVisibleValue);
