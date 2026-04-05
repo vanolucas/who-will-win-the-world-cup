@@ -118,7 +118,7 @@ export function updateChart(data, selectedTeamIds) {
     }
 
     series.setData(seriesData);
-    seriesMap.set(team.id, { series, team, color });
+    seriesMap.set(team.id, { series, team, color, data: seriesData });
   });
 
   chart.timeScale().fitContent();
@@ -168,9 +168,24 @@ function updateFlagPositions() {
   if (!flagOverlay || !chart) return;
   flagOverlay.innerHTML = "";
 
-  for (const [teamId, { series, team }] of seriesMap) {
-    const lastValue = team.currentProbability;
-    const y = series.priceToCoordinate(lastValue);
+  const visibleRange = chart.timeScale().getVisibleRange();
+
+  for (const [teamId, { series, data }] of seriesMap) {
+    let lastVisibleValue = null;
+    if (visibleRange) {
+      for (let i = data.length - 1; i >= 0; i--) {
+        if (data[i].time <= visibleRange.to) {
+          lastVisibleValue = data[i].value;
+          break;
+        }
+      }
+    }
+    if (lastVisibleValue === null && data.length > 0) {
+      lastVisibleValue = data[data.length - 1].value;
+    }
+    if (lastVisibleValue === null) continue;
+
+    const y = series.priceToCoordinate(lastVisibleValue);
     if (y === null || y === undefined) continue;
 
     const flag = getFlag(teamId);
