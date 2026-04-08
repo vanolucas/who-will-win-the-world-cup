@@ -8,6 +8,7 @@ A static dashboard displaying winning probabilities for each team in the FIFA Wo
 
 - **Interactive chart** showing the evolution of winning probabilities over time
 - **Table view** with current rankings and 7-day trends
+- **Animated bar-chart race** visualizing how rankings shift day-by-day, with playback controls and keyboard shortcuts
 - **Team filter** to focus on specific teams (multi-select, persists across views)
 - **Daily automated updates** via GitHub Actions
 - **Mobile-friendly** responsive design
@@ -108,9 +109,11 @@ who-will-win-the-world-cup/
 │       ├── main.js            # App entry, data loading, routing
 │       ├── chart.js           # TradingView Lightweight Charts
 │       ├── table.js           # Table view
-│       └── filter.js          # Team filter component
+│       ├── race.js            # Animated bar-chart race
+│       ├── filter.js          # Team filter component
+│       └── flags.js           # Country flag emoji mapping
 ├── data/
-│   └── odds.json              # Latest odds data (committed)
+│   └── odds.json              # Latest odds data (committed, forward-fill compressed)
 ├── docs/
 │   └── ARCHITECTURE.md
 ├── site.config.json               # Site settings (Google Analytics, etc.)

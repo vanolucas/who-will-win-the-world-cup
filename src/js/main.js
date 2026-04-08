@@ -14,6 +14,41 @@ async function loadData() {
   return resp.json();
 }
 
+/**
+ * Forward-fill sparse history so every team has one entry per day.
+ *
+ * The JSON file stores only the first day of each constant-value run
+ * to reduce file size. This function restores full daily resolution
+ * up to the metadata lastUpdate date.
+ */
+function forwardFillHistory(data) {
+  const lastDate = data.metadata.lastUpdate.split("T")[0];
+
+  for (const teamId of Object.keys(data.history)) {
+    const sparse = data.history[teamId];
+    if (!sparse || sparse.length === 0) continue;
+
+    const filled = [];
+    let idx = 0;
+    let curDate = sparse[0].date;
+    let prob = sparse[0].probability;
+
+    while (curDate <= lastDate) {
+      if (idx < sparse.length && sparse[idx].date === curDate) {
+        prob = sparse[idx].probability;
+        idx++;
+      }
+      filled.push({ date: curDate, probability: prob });
+      // Advance to the next day
+      const d = new Date(curDate + "T00:00:00Z");
+      d.setUTCDate(d.getUTCDate() + 1);
+      curDate = d.toISOString().split("T")[0];
+    }
+
+    data.history[teamId] = filled;
+  }
+}
+
 function showView(viewName) {
   state.currentView = viewName;
 
@@ -137,6 +172,9 @@ async function init() {
   }
 
   const data = state.data;
+
+  // Expand sparse history back to full daily resolution
+  forwardFillHistory(data);
 
   // Sort teams by probability (descending) for display purposes.
   // The JSON file stores teams in alphabetical order for deterministic diffs.
