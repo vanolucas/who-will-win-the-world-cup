@@ -125,6 +125,22 @@ def fetch_price_history(token_id: str) -> list[dict[str, Any]]:
     )
 
 
+def compress_history(history: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Remove consecutive entries with the same probability.
+
+    Only the first entry of each constant-value run is kept.
+    The frontend forward-fills gaps on load, so full daily
+    resolution is preserved at display time.
+    """
+    if len(history) <= 1:
+        return history
+    compressed: list[dict[str, Any]] = [history[0]]
+    for entry in history[1:]:
+        if entry["probability"] != compressed[-1]["probability"]:
+            compressed.append(entry)
+    return compressed
+
+
 def build_output(
     teams: list[dict[str, Any]],
     histories: dict[str, list[dict[str, Any]]],
@@ -143,7 +159,9 @@ def build_output(
             }
             for t in teams
         ],
-        "history": dict(sorted(histories.items())),
+        "history": dict(sorted(
+            (tid, compress_history(h)) for tid, h in histories.items()
+        )),
     }
 
 

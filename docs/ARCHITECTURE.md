@@ -36,7 +36,7 @@ The deploy job runs even if the data fetch job fails (`if: always()`), ensuring 
 
 ## Data Format
 
-`data/odds.json`:
+`data/odds.json` uses **forward-fill compression**: when a team's probability stays the same across consecutive days, only the first day of each run is stored. The frontend expands gaps back to full daily resolution on load via `forwardFillHistory()` in `main.js`.
 
 ```json
 {
@@ -51,6 +51,7 @@ The deploy job runs even if the data fetch job fails (`if: always()`), ensuring 
   "history": {
     "spain": [
       { "date": "2025-07-01", "probability": 0.08 },
+      { "date": "2025-07-04", "probability": 0.09 },
       ...
     ],
     ...
@@ -58,8 +59,8 @@ The deploy job runs even if the data fetch job fails (`if: always()`), ensuring 
 }
 ```
 
-- **teams**: sorted by `currentProbability` descending
-- **history**: keyed by team ID, each entry is a daily data point with `YYYY-MM-DD` date format (compatible with Lightweight Charts)
+- **teams**: sorted alphabetically by `id` for deterministic diffs
+- **history**: keyed by team ID; consecutive entries with the same probability are omitted (forward-fill compressed). The frontend restores full daily resolution up to `metadata.lastUpdate`
 
 ## Frontend Architecture
 
@@ -67,10 +68,12 @@ Single-page vanilla JavaScript app, bundled by Vite. No framework.
 
 | Module | Responsibility |
 |--------|---------------|
-| `main.js` | Data loading, app state, view switching, component orchestration |
+| `main.js` | Data loading (with forward-fill expansion), app state, view switching, component orchestration |
 | `chart.js` | TradingView Lightweight Charts v5 integration |
 | `table.js` | Table rendering with DOM APIs |
+| `race.js` | Animated bar-chart race with playback controls |
 | `filter.js` | Multi-select team filter with checkbox state management |
+| `flags.js` | Country flag emoji mapping (ISO 3166-1 alpha-2 codes) |
 
 ### State Management
 
