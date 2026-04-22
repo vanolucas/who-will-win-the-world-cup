@@ -548,7 +548,7 @@
                 "probability": 0.0875
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0895
             }
         ],
@@ -1450,8 +1450,8 @@
                 "probability": 0.0185
             },
             {
-                "date": "2026-04-21",
-                "probability": 0.0205
+                "date": "2026-04-22",
+                "probability": 0.0215
             }
         ],
         "bosnia-herzegovina": [
@@ -1464,7 +1464,7 @@
                 "probability": 0.0035
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0025
             }
         ],
@@ -1794,7 +1794,7 @@
                 "probability": 0.0855
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.085
             }
         ],
@@ -2264,12 +2264,6 @@
             {
                 "date": "2026-04-18",
                 "probability": 0.0015
-            }
-        ],
-        "cezchia": [
-            {
-                "date": "2026-04-02",
-                "probability": 0.0035
             }
         ],
         "colombia": [
@@ -2910,6 +2904,10 @@
             {
                 "date": "2026-04-18",
                 "probability": 0.0025
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.0015
             }
         ],
         "croatia": [
@@ -3206,6 +3204,16 @@
             {
                 "date": "2026-04-18",
                 "probability": 0.0015
+            }
+        ],
+        "czechia": [
+            {
+                "date": "2026-04-02",
+                "probability": 0.0035
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.0025
             }
         ],
         "ecuador": [
@@ -3590,6 +3598,10 @@
             {
                 "date": "2026-04-05",
                 "probability": 0.0045
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.0035
             }
         ],
         "england": [
@@ -3890,7 +3902,7 @@
                 "probability": 0.1095
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.1105
             }
         ],
@@ -4202,6 +4214,10 @@
             {
                 "date": "2026-04-12",
                 "probability": 0.152
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.1605
             }
         ],
         "germany": [
@@ -4672,6 +4688,10 @@
             {
                 "date": "2026-04-12",
                 "probability": 0.053
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.054
             }
         ],
         "ghana": [
@@ -4752,6 +4772,10 @@
             {
                 "date": "2026-04-05",
                 "probability": 0.0025
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.0015
             }
         ],
         "iran": [
@@ -8154,6 +8178,10 @@
             {
                 "date": "2026-04-18",
                 "probability": 0.0325
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.0335
             }
         ],
         "new-zealand": [
@@ -9102,6 +9130,10 @@
             {
                 "date": "2026-04-18",
                 "probability": 0.0225
+            },
+            {
+                "date": "2026-04-22",
+                "probability": 0.0235
             }
         ],
         "panama": [
@@ -9110,7 +9142,7 @@
                 "probability": 0.0025
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0015
             }
         ],
@@ -10064,8 +10096,8 @@
                 "probability": 0.067
             },
             {
-                "date": "2026-04-21",
-                "probability": 0.0755
+                "date": "2026-04-22",
+                "probability": 0.0795
             }
         ],
         "qatar": [
@@ -10148,7 +10180,7 @@
                 "probability": 0.0035
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0025
             }
         ],
@@ -10262,7 +10294,7 @@
                 "probability": 0.0045
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0035
             }
         ],
@@ -10380,7 +10412,7 @@
                 "probability": 0.0075
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0065
             }
         ],
@@ -10736,7 +10768,7 @@
                 "probability": 0.0045
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0035
             }
         ],
@@ -11178,8 +11210,8 @@
                 "probability": 0.1725
             },
             {
-                "date": "2026-04-21",
-                "probability": 0.1605
+                "date": "2026-04-22",
+                "probability": 0.1625
             }
         ],
         "sweden": [
@@ -11366,7 +11398,7 @@
                 "probability": 0.0105
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0095
             }
         ],
@@ -11526,7 +11558,7 @@
                 "probability": 0.0075
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0065
             }
         ],
@@ -12730,7 +12762,7 @@
                 "probability": 0.0115
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0125
             }
         ],
@@ -12928,13 +12960,13 @@
                 "probability": 0.0025
             },
             {
-                "date": "2026-04-21",
+                "date": "2026-04-22",
                 "probability": 0.0015
             }
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-04-21T04:19:07Z",
+        "lastUpdate": "2026-04-22T04:15:08Z",
         "totalTeams": 50
     },
     "teams": [
@@ -12944,7 +12976,7 @@
             "name": "Algeria"
         },
         {
-            "currentProbability": 0.0895,
+            "currentProbability": 0.089,
             "id": "argentina",
             "name": "Argentina"
         },
@@ -12959,7 +12991,7 @@
             "name": "Austria"
         },
         {
-            "currentProbability": 0.0205,
+            "currentProbability": 0.0215,
             "id": "belgium",
             "name": "Belgium"
         },
@@ -12984,17 +13016,12 @@
             "name": "Cape Verde"
         },
         {
-            "currentProbability": 0.0035,
-            "id": "cezchia",
-            "name": "Cezchia"
-        },
-        {
             "currentProbability": 0.0165,
             "id": "colombia",
             "name": "Colombia"
         },
         {
-            "currentProbability": 0.0025,
+            "currentProbability": 0.0015,
             "id": "congo-dr",
             "name": "Congo DR"
         },
@@ -13007,6 +13034,11 @@
             "currentProbability": 0.0015,
             "id": "curaao",
             "name": "Cura\u00e7ao"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "czechia",
+            "name": "Czechia"
         },
         {
             "currentProbability": 0.0065,
@@ -13024,12 +13056,12 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.16,
+            "currentProbability": 0.1605,
             "id": "france",
             "name": "France"
         },
         {
-            "currentProbability": 0.0535,
+            "currentProbability": 0.054,
             "id": "germany",
             "name": "Germany"
         },
@@ -13094,7 +13126,7 @@
             "name": "New Zealand"
         },
         {
-            "currentProbability": 0.0245,
+            "currentProbability": 0.0235,
             "id": "norway",
             "name": "Norway"
         },
@@ -13114,7 +13146,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.076,
+            "currentProbability": 0.0795,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -13149,7 +13181,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1605,
+            "currentProbability": 0.1625,
             "id": "spain",
             "name": "Spain"
         },
