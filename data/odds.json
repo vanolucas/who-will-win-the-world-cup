@@ -561,6 +561,10 @@
             },
             {
                 "date": "2026-04-25",
+                "probability": 0.089
+            },
+            {
+                "date": "2026-04-26",
                 "probability": 0.0885
             }
         ],
@@ -1816,10 +1820,6 @@
             {
                 "date": "2026-04-24",
                 "probability": 0.0855
-            },
-            {
-                "date": "2026-04-25",
-                "probability": 0.0845
             }
         ],
         "canada": [
@@ -3947,7 +3947,11 @@
             },
             {
                 "date": "2026-04-25",
-                "probability": 0.1105
+                "probability": 0.111
+            },
+            {
+                "date": "2026-04-26",
+                "probability": 0.1115
             }
         ],
         "france": [
@@ -4274,6 +4278,10 @@
             {
                 "date": "2026-04-25",
                 "probability": 0.1685
+            },
+            {
+                "date": "2026-04-26",
+                "probability": 0.1665
             }
         ],
         "germany": [
@@ -7480,6 +7488,10 @@
             {
                 "date": "2026-04-25",
                 "probability": 0.0175
+            },
+            {
+                "date": "2026-04-26",
+                "probability": 0.0165
             }
         ],
         "netherlands": [
@@ -9214,6 +9226,10 @@
             {
                 "date": "2026-04-22",
                 "probability": 0.0235
+            },
+            {
+                "date": "2026-04-26",
+                "probability": 0.0225
             }
         ],
         "panama": [
@@ -10186,6 +10202,10 @@
             {
                 "date": "2026-04-24",
                 "probability": 0.0785
+            },
+            {
+                "date": "2026-04-26",
+                "probability": 0.0775
             }
         ],
         "qatar": [
@@ -11311,7 +11331,11 @@
             },
             {
                 "date": "2026-04-25",
-                "probability": 0.1565
+                "probability": 0.157
+            },
+            {
+                "date": "2026-04-26",
+                "probability": 0.1555
             }
         ],
         "sweden": [
@@ -13070,7 +13094,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-04-25T04:06:48Z",
+        "lastUpdate": "2026-04-26T04:30:43Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13105,7 +13129,7 @@
             "name": "Bosnia-Herzegovina"
         },
         {
-            "currentProbability": 0.0845,
+            "currentProbability": 0.0855,
             "id": "brazil",
             "name": "Brazil"
         },
@@ -13160,12 +13184,12 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1685,
+            "currentProbability": 0.1665,
             "id": "france",
             "name": "France"
         },
         {
-            "currentProbability": 0.053,
+            "currentProbability": 0.0525,
             "id": "germany",
             "name": "Germany"
         },
@@ -13215,7 +13239,7 @@
             "name": "Mexico"
         },
         {
-            "currentProbability": 0.0175,
+            "currentProbability": 0.0165,
             "id": "morocco",
             "name": "Morocco"
         },
@@ -13230,7 +13254,7 @@
             "name": "New Zealand"
         },
         {
-            "currentProbability": 0.0235,
+            "currentProbability": 0.0225,
             "id": "norway",
             "name": "Norway"
         },
@@ -13250,7 +13274,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.0785,
+            "currentProbability": 0.0775,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -13285,7 +13309,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1565,
+            "currentProbability": 0.1555,
             "id": "spain",
             "name": "Spain"
         },
