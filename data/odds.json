@@ -566,6 +566,10 @@
             {
                 "date": "2026-04-26",
                 "probability": 0.0885
+            },
+            {
+                "date": "2026-04-27",
+                "probability": 0.0895
             }
         ],
         "australia": [
@@ -3951,7 +3955,7 @@
             },
             {
                 "date": "2026-04-26",
-                "probability": 0.1115
+                "probability": 0.1105
             }
         ],
         "france": [
@@ -7492,6 +7496,10 @@
             {
                 "date": "2026-04-26",
                 "probability": 0.0165
+            },
+            {
+                "date": "2026-04-27",
+                "probability": 0.0155
             }
         ],
         "netherlands": [
@@ -10205,6 +10213,10 @@
             },
             {
                 "date": "2026-04-26",
+                "probability": 0.078
+            },
+            {
+                "date": "2026-04-27",
                 "probability": 0.0775
             }
         ],
@@ -13094,7 +13106,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-04-26T04:30:43Z",
+        "lastUpdate": "2026-04-27T04:38:13Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13104,7 +13116,7 @@
             "name": "Algeria"
         },
         {
-            "currentProbability": 0.0885,
+            "currentProbability": 0.0895,
             "id": "argentina",
             "name": "Argentina"
         },
@@ -13239,7 +13251,7 @@
             "name": "Mexico"
         },
         {
-            "currentProbability": 0.0165,
+            "currentProbability": 0.0155,
             "id": "morocco",
             "name": "Morocco"
         },
