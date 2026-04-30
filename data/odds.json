@@ -4361,6 +4361,10 @@
             },
             {
                 "date": "2026-04-29",
+                "probability": 0.1595
+            },
+            {
+                "date": "2026-04-30",
                 "probability": 0.1605
             }
         ],
@@ -5118,6 +5122,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0025
+            },
+            {
+                "date": "2026-04-30",
+                "probability": 0.0015
             }
         ],
         "iraq": [
@@ -11504,6 +11512,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.1535
+            },
+            {
+                "date": "2026-04-30",
+                "probability": 0.1525
             }
         ],
         "sweden": [
@@ -13290,7 +13302,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-04-29T04:38:18Z",
+        "lastUpdate": "2026-04-30T04:41:24Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13400,7 +13412,7 @@
             "name": "Haiti"
         },
         {
-            "currentProbability": 0.0025,
+            "currentProbability": 0.0015,
             "id": "iran",
             "name": "Iran"
         },
@@ -13505,7 +13517,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1535,
+            "currentProbability": 0.1525,
             "id": "spain",
             "name": "Spain"
         },
