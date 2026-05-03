@@ -4366,10 +4366,6 @@
             {
                 "date": "2026-05-01",
                 "probability": 0.1645
-            },
-            {
-                "date": "2026-05-02",
-                "probability": 0.1635
             }
         ],
         "germany": [
@@ -9374,6 +9370,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0235
+            },
+            {
+                "date": "2026-05-03",
+                "probability": 0.0225
             }
         ],
         "panama": [
@@ -13310,7 +13310,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-02T04:26:32Z",
+        "lastUpdate": "2026-05-03T04:49:40Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13400,7 +13400,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1635,
+            "currentProbability": 0.1645,
             "id": "france",
             "name": "France"
         },
@@ -13470,7 +13470,7 @@
             "name": "New Zealand"
         },
         {
-            "currentProbability": 0.0235,
+            "currentProbability": 0.0225,
             "id": "norway",
             "name": "Norway"
         },
