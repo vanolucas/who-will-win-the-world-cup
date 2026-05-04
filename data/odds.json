@@ -4366,6 +4366,10 @@
             {
                 "date": "2026-05-01",
                 "probability": 0.1645
+            },
+            {
+                "date": "2026-05-04",
+                "probability": 0.1675
             }
         ],
         "germany": [
@@ -13310,7 +13314,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-03T04:49:40Z",
+        "lastUpdate": "2026-05-04T04:49:44Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13400,7 +13404,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1645,
+            "currentProbability": 0.1675,
             "id": "france",
             "name": "France"
         },
