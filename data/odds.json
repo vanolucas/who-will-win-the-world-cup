@@ -4370,6 +4370,10 @@
             {
                 "date": "2026-05-04",
                 "probability": 0.1675
+            },
+            {
+                "date": "2026-05-05",
+                "probability": 0.1655
             }
         ],
         "germany": [
@@ -9638,6 +9642,10 @@
             {
                 "date": "2026-03-23",
                 "probability": 0.0045
+            },
+            {
+                "date": "2026-05-05",
+                "probability": 0.0035
             }
         ],
         "peru": [
@@ -10370,6 +10378,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0735
+            },
+            {
+                "date": "2026-05-05",
+                "probability": 0.0745
             }
         ],
         "qatar": [
@@ -11528,6 +11540,10 @@
             {
                 "date": "2026-04-30",
                 "probability": 0.1525
+            },
+            {
+                "date": "2026-05-05",
+                "probability": 0.1535
             }
         ],
         "sweden": [
@@ -13314,7 +13330,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-04T04:49:44Z",
+        "lastUpdate": "2026-05-05T04:25:32Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13404,7 +13420,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1675,
+            "currentProbability": 0.1655,
             "id": "france",
             "name": "France"
         },
@@ -13484,7 +13500,7 @@
             "name": "Panama"
         },
         {
-            "currentProbability": 0.0045,
+            "currentProbability": 0.0035,
             "id": "paraguay",
             "name": "Paraguay"
         },
@@ -13494,7 +13510,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.0735,
+            "currentProbability": 0.0745,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -13529,7 +13545,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1525,
+            "currentProbability": 0.1535,
             "id": "spain",
             "name": "Spain"
         },
