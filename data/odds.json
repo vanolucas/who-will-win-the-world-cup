@@ -4374,6 +4374,10 @@
             {
                 "date": "2026-05-05",
                 "probability": 0.1655
+            },
+            {
+                "date": "2026-05-06",
+                "probability": 0.1675
             }
         ],
         "germany": [
@@ -7624,6 +7628,10 @@
             {
                 "date": "2026-05-01",
                 "probability": 0.0185
+            },
+            {
+                "date": "2026-05-06",
+                "probability": 0.0165
             }
         ],
         "netherlands": [
@@ -13330,7 +13338,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-05T04:25:32Z",
+        "lastUpdate": "2026-05-06T04:40:50Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13420,7 +13428,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1655,
+            "currentProbability": 0.1675,
             "id": "france",
             "name": "France"
         },
@@ -13475,7 +13483,7 @@
             "name": "Mexico"
         },
         {
-            "currentProbability": 0.0185,
+            "currentProbability": 0.0165,
             "id": "morocco",
             "name": "Morocco"
         },
