@@ -2290,6 +2290,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0065
+            },
+            {
+                "date": "2026-05-08",
+                "probability": 0.0055
             }
         ],
         "cape-verde": [
@@ -4378,6 +4382,10 @@
             {
                 "date": "2026-05-06",
                 "probability": 0.1675
+            },
+            {
+                "date": "2026-05-08",
+                "probability": 0.1685
             }
         ],
         "germany": [
@@ -11756,6 +11764,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0095
+            },
+            {
+                "date": "2026-05-08",
+                "probability": 0.0115
             }
         ],
         "tunisia": [
@@ -13342,7 +13354,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-07T04:42:56Z",
+        "lastUpdate": "2026-05-08T04:23:39Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13382,7 +13394,7 @@
             "name": "Brazil"
         },
         {
-            "currentProbability": 0.0065,
+            "currentProbability": 0.0055,
             "id": "canada",
             "name": "Canada"
         },
@@ -13432,7 +13444,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1675,
+            "currentProbability": 0.1685,
             "id": "france",
             "name": "France"
         },
@@ -13567,7 +13579,7 @@
             "name": "Sweden"
         },
         {
-            "currentProbability": 0.0095,
+            "currentProbability": 0.0115,
             "id": "switzerland",
             "name": "Switzerland"
         },
