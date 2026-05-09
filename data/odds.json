@@ -8434,6 +8434,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0335
+            },
+            {
+                "date": "2026-05-09",
+                "probability": 0.0345
             }
         ],
         "new-zealand": [
@@ -11767,6 +11771,10 @@
             },
             {
                 "date": "2026-05-08",
+                "probability": 0.0105
+            },
+            {
+                "date": "2026-05-09",
                 "probability": 0.0115
             }
         ],
@@ -13354,7 +13362,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-08T04:23:39Z",
+        "lastUpdate": "2026-05-09T04:33:32Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13504,7 +13512,7 @@
             "name": "Morocco"
         },
         {
-            "currentProbability": 0.0335,
+            "currentProbability": 0.0345,
             "id": "netherlands",
             "name": "Netherlands"
         },
