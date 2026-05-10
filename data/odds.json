@@ -926,6 +926,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0065
+            },
+            {
+                "date": "2026-05-10",
+                "probability": 0.0055
             }
         ],
         "belgium": [
@@ -1848,6 +1852,10 @@
             {
                 "date": "2026-04-24",
                 "probability": 0.0855
+            },
+            {
+                "date": "2026-05-10",
+                "probability": 0.0875
             }
         ],
         "canada": [
@@ -4024,6 +4032,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.1105
+            },
+            {
+                "date": "2026-05-10",
+                "probability": 0.1125
             }
         ],
         "france": [
@@ -4386,6 +4398,10 @@
             {
                 "date": "2026-05-08",
                 "probability": 0.1685
+            },
+            {
+                "date": "2026-05-10",
+                "probability": 0.1715
             }
         ],
         "germany": [
@@ -11568,6 +11584,10 @@
             {
                 "date": "2026-05-05",
                 "probability": 0.1535
+            },
+            {
+                "date": "2026-05-10",
+                "probability": 0.1575
             }
         ],
         "sweden": [
@@ -11774,8 +11794,8 @@
                 "probability": 0.0105
             },
             {
-                "date": "2026-05-09",
-                "probability": 0.0115
+                "date": "2026-05-10",
+                "probability": 0.0125
             }
         ],
         "tunisia": [
@@ -13362,7 +13382,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-09T04:33:32Z",
+        "lastUpdate": "2026-05-10T04:53:19Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13382,7 +13402,7 @@
             "name": "Australia"
         },
         {
-            "currentProbability": 0.0065,
+            "currentProbability": 0.0055,
             "id": "austria",
             "name": "Austria"
         },
@@ -13397,7 +13417,7 @@
             "name": "Bosnia-Herzegovina"
         },
         {
-            "currentProbability": 0.0855,
+            "currentProbability": 0.0875,
             "id": "brazil",
             "name": "Brazil"
         },
@@ -13447,12 +13467,12 @@
             "name": "Egypt"
         },
         {
-            "currentProbability": 0.1105,
+            "currentProbability": 0.1125,
             "id": "england",
             "name": "England"
         },
         {
-            "currentProbability": 0.1685,
+            "currentProbability": 0.1715,
             "id": "france",
             "name": "France"
         },
@@ -13577,7 +13597,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1535,
+            "currentProbability": 0.1575,
             "id": "spain",
             "name": "Spain"
         },
@@ -13587,7 +13607,7 @@
             "name": "Sweden"
         },
         {
-            "currentProbability": 0.0115,
+            "currentProbability": 0.0125,
             "id": "switzerland",
             "name": "Switzerland"
         },
