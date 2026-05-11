@@ -4035,7 +4035,11 @@
             },
             {
                 "date": "2026-05-10",
-                "probability": 0.1125
+                "probability": 0.1115
+            },
+            {
+                "date": "2026-05-11",
+                "probability": 0.1135
             }
         ],
         "france": [
@@ -4402,6 +4406,10 @@
             {
                 "date": "2026-05-10",
                 "probability": 0.1715
+            },
+            {
+                "date": "2026-05-11",
+                "probability": 0.1785
             }
         ],
         "germany": [
@@ -11588,6 +11596,10 @@
             {
                 "date": "2026-05-10",
                 "probability": 0.1575
+            },
+            {
+                "date": "2026-05-11",
+                "probability": 0.1615
             }
         ],
         "sweden": [
@@ -13382,7 +13394,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-10T04:53:19Z",
+        "lastUpdate": "2026-05-11T05:06:17Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13467,12 +13479,12 @@
             "name": "Egypt"
         },
         {
-            "currentProbability": 0.1125,
+            "currentProbability": 0.1135,
             "id": "england",
             "name": "England"
         },
         {
-            "currentProbability": 0.1715,
+            "currentProbability": 0.1785,
             "id": "france",
             "name": "France"
         },
@@ -13597,7 +13609,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1575,
+            "currentProbability": 0.1615,
             "id": "spain",
             "name": "Spain"
         },
