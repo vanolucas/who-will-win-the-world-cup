@@ -4068,6 +4068,10 @@
             {
                 "date": "2026-05-12",
                 "probability": 0.1115
+            },
+            {
+                "date": "2026-05-13",
+                "probability": 0.1145
             }
         ],
         "france": [
@@ -4442,6 +4446,10 @@
             {
                 "date": "2026-05-12",
                 "probability": 0.1775
+            },
+            {
+                "date": "2026-05-13",
+                "probability": 0.1785
             }
         ],
         "germany": [
@@ -10490,6 +10498,10 @@
             {
                 "date": "2026-05-12",
                 "probability": 0.0755
+            },
+            {
+                "date": "2026-05-13",
+                "probability": 0.0775
             }
         ],
         "qatar": [
@@ -11694,6 +11706,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0065
+            },
+            {
+                "date": "2026-05-13",
+                "probability": 0.0055
             }
         ],
         "switzerland": [
@@ -13486,7 +13502,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-12T04:48:14Z",
+        "lastUpdate": "2026-05-13T04:57:54Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13571,7 +13587,7 @@
             "name": "Egypt"
         },
         {
-            "currentProbability": 0.1125,
+            "currentProbability": 0.1145,
             "id": "england",
             "name": "England"
         },
@@ -13666,7 +13682,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.0755,
+            "currentProbability": 0.0775,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -13706,7 +13722,7 @@
             "name": "Spain"
         },
         {
-            "currentProbability": 0.0065,
+            "currentProbability": 0.0055,
             "id": "sweden",
             "name": "Sweden"
         },
