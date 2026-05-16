@@ -586,6 +586,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0865
+            },
+            {
+                "date": "2026-05-16",
+                "probability": 0.0855
             }
         ],
         "australia": [
@@ -4096,6 +4100,10 @@
             {
                 "date": "2026-05-14",
                 "probability": 0.1145
+            },
+            {
+                "date": "2026-05-16",
+                "probability": 0.1135
             }
         ],
         "france": [
@@ -4481,6 +4489,10 @@
             },
             {
                 "date": "2026-05-15",
+                "probability": 0.1765
+            },
+            {
+                "date": "2026-05-16",
                 "probability": 0.1735
             }
         ],
@@ -8550,6 +8562,10 @@
             {
                 "date": "2026-05-09",
                 "probability": 0.0345
+            },
+            {
+                "date": "2026-05-16",
+                "probability": 0.0335
             }
         ],
         "new-zealand": [
@@ -10540,7 +10556,7 @@
                 "probability": 0.0805
             },
             {
-                "date": "2026-05-15",
+                "date": "2026-05-16",
                 "probability": 0.0815
             }
         ],
@@ -13550,7 +13566,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-15T05:00:49Z",
+        "lastUpdate": "2026-05-16T04:36:58Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13560,7 +13576,7 @@
             "name": "Algeria"
         },
         {
-            "currentProbability": 0.0865,
+            "currentProbability": 0.0855,
             "id": "argentina",
             "name": "Argentina"
         },
@@ -13635,7 +13651,7 @@
             "name": "Egypt"
         },
         {
-            "currentProbability": 0.1145,
+            "currentProbability": 0.1135,
             "id": "england",
             "name": "England"
         },
@@ -13700,7 +13716,7 @@
             "name": "Morocco"
         },
         {
-            "currentProbability": 0.0345,
+            "currentProbability": 0.0335,
             "id": "netherlands",
             "name": "Netherlands"
         },
