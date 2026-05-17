@@ -1880,6 +1880,10 @@
             {
                 "date": "2026-05-14",
                 "probability": 0.0915
+            },
+            {
+                "date": "2026-05-17",
+                "probability": 0.0905
             }
         ],
         "canada": [
@@ -3222,6 +3226,10 @@
             {
                 "date": "2026-04-29",
                 "probability": 0.0105
+            },
+            {
+                "date": "2026-05-17",
+                "probability": 0.0095
             }
         ],
         "curaao": [
@@ -4494,6 +4502,10 @@
             {
                 "date": "2026-05-16",
                 "probability": 0.1735
+            },
+            {
+                "date": "2026-05-17",
+                "probability": 0.1765
             }
         ],
         "germany": [
@@ -10558,6 +10570,10 @@
             {
                 "date": "2026-05-16",
                 "probability": 0.0815
+            },
+            {
+                "date": "2026-05-17",
+                "probability": 0.0805
             }
         ],
         "qatar": [
@@ -12130,6 +12146,10 @@
             {
                 "date": "2026-05-12",
                 "probability": 0.0025
+            },
+            {
+                "date": "2026-05-17",
+                "probability": 0.0015
             }
         ],
         "turkiye": [
@@ -13566,7 +13586,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-16T04:36:58Z",
+        "lastUpdate": "2026-05-17T05:00:31Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13601,7 +13621,7 @@
             "name": "Bosnia-Herzegovina"
         },
         {
-            "currentProbability": 0.0915,
+            "currentProbability": 0.0905,
             "id": "brazil",
             "name": "Brazil"
         },
@@ -13626,7 +13646,7 @@
             "name": "Congo DR"
         },
         {
-            "currentProbability": 0.0105,
+            "currentProbability": 0.0095,
             "id": "croatia",
             "name": "Croatia"
         },
@@ -13656,7 +13676,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1735,
+            "currentProbability": 0.1765,
             "id": "france",
             "name": "France"
         },
@@ -13746,7 +13766,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.0815,
+            "currentProbability": 0.0805,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -13796,7 +13816,7 @@
             "name": "Switzerland"
         },
         {
-            "currentProbability": 0.0025,
+            "currentProbability": 0.0015,
             "id": "tunisia",
             "name": "Tunisia"
         },
