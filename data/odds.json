@@ -1886,7 +1886,7 @@
                 "probability": 0.0915
             },
             {
-                "date": "2026-05-18",
+                "date": "2026-05-19",
                 "probability": 0.0905
             }
         ],
@@ -3234,6 +3234,10 @@
             {
                 "date": "2026-05-17",
                 "probability": 0.0095
+            },
+            {
+                "date": "2026-05-19",
+                "probability": 0.0085
             }
         ],
         "curaao": [
@@ -4510,6 +4514,10 @@
             {
                 "date": "2026-05-18",
                 "probability": 0.1825
+            },
+            {
+                "date": "2026-05-19",
+                "probability": 0.1815
             }
         ],
         "germany": [
@@ -6678,6 +6686,10 @@
             {
                 "date": "2026-05-07",
                 "probability": 0.0205
+            },
+            {
+                "date": "2026-05-19",
+                "probability": 0.0195
             }
         ],
         "jordan": [
@@ -10582,6 +10594,10 @@
             {
                 "date": "2026-05-18",
                 "probability": 0.0825
+            },
+            {
+                "date": "2026-05-19",
+                "probability": 0.0815
             }
         ],
         "qatar": [
@@ -13602,7 +13618,7 @@
         ]
     },
     "metadata": {
-        "lastUpdate": "2026-05-18T05:17:03Z",
+        "lastUpdate": "2026-05-19T05:12:37Z",
         "totalTeams": 50
     },
     "teams": [
@@ -13662,7 +13678,7 @@
             "name": "Congo DR"
         },
         {
-            "currentProbability": 0.0095,
+            "currentProbability": 0.0085,
             "id": "croatia",
             "name": "Croatia"
         },
@@ -13692,7 +13708,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.1825,
+            "currentProbability": 0.1815,
             "id": "france",
             "name": "France"
         },
@@ -13732,7 +13748,7 @@
             "name": "Ivory Coast"
         },
         {
-            "currentProbability": 0.0205,
+            "currentProbability": 0.0195,
             "id": "japan",
             "name": "Japan"
         },
@@ -13782,7 +13798,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.0825,
+            "currentProbability": 0.0815,
             "id": "portugal",
             "name": "Portugal"
         },
