@@ -215,7 +215,7 @@ function updateLegendValues(param) {
     const item = legendItemNodes.get(entrantId);
     if (item) fragment.appendChild(item);
   }
-  legendEl.appendChild(fragment);
+  legendEl.replaceChildren(fragment);
 }
 
 /** Build (and cache) the line-end icon nodes once per data update. */
