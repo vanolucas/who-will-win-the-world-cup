@@ -17,6 +17,7 @@ let renderIcon = () => null;
 // every crosshair move or visible-range change.
 let legendValueNodes = new Map();
 let legendItemNodes = new Map();
+let legendOrder = [];
 let overlayIconNodes = new Map();
 
 export function initChart(container, legendContainer, iconRenderer) {
@@ -144,6 +145,7 @@ function buildLegend() {
   legendEl.replaceChildren();
   legendValueNodes = new Map();
   legendItemNodes = new Map();
+  legendOrder = [];
 
   for (const [entrantId, { entrant, color }] of seriesMap) {
     const item = document.createElement("span");
@@ -171,6 +173,7 @@ function buildLegend() {
 
     legendValueNodes.set(entrantId, value);
     legendItemNodes.set(entrantId, item);
+    legendOrder.push(entrantId);
     legendEl.appendChild(item);
   }
 }
@@ -199,10 +202,20 @@ function updateLegendValues(param) {
   }
 
   ordered.sort((a, b) => b.value - a.value);
-  for (const { entrantId } of ordered) {
+
+  // Only touch the DOM when the order actually changes, to avoid layout thrash.
+  const changed =
+    ordered.length !== legendOrder.length ||
+    ordered.some(({ entrantId }, i) => entrantId !== legendOrder[i]);
+  if (!changed) return;
+
+  legendOrder = ordered.map(({ entrantId }) => entrantId);
+  const fragment = document.createDocumentFragment();
+  for (const entrantId of legendOrder) {
     const item = legendItemNodes.get(entrantId);
-    if (item) legendEl.appendChild(item);
+    if (item) fragment.appendChild(item);
   }
+  legendEl.appendChild(fragment);
 }
 
 /** Build (and cache) the line-end icon nodes once per data update. */
