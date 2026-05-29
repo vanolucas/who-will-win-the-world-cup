@@ -223,12 +223,58 @@ function updateLegendValues(param) {
   if (!changed) return;
 
   legendOrder = ordered.map(({ entrantId }) => entrantId);
+  reorderLegend();
+}
+
+/**
+ * Reorder the legend rows to match `legendOrder`, animating each item from its
+ * previous position to its new one using the FLIP technique (measure First and
+ * Last positions, Invert with a transform, then Play by transitioning back to
+ * zero). This keeps the items readable as they move instead of flickering.
+ */
+function reorderLegend() {
+  const reduceMotion =
+    typeof window !== "undefined" &&
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // First: record current on-screen positions before the DOM is reordered.
+  const firstRects = new Map();
+  if (!reduceMotion) {
+    for (const [entrantId, item] of legendItemNodes) {
+      firstRects.set(entrantId, item.getBoundingClientRect());
+    }
+  }
+
   const fragment = document.createDocumentFragment();
   for (const entrantId of legendOrder) {
     const item = legendItemNodes.get(entrantId);
     if (item) fragment.appendChild(item);
   }
   legendEl.replaceChildren(fragment);
+
+  if (reduceMotion) return;
+
+  // Last + Invert: move each item back to where it was, with no transition.
+  for (const [entrantId, item] of legendItemNodes) {
+    const first = firstRects.get(entrantId);
+    if (!first) continue;
+    const last = item.getBoundingClientRect();
+    const dx = first.left - last.left;
+    const dy = first.top - last.top;
+    if (dx === 0 && dy === 0) continue;
+    item.style.transition = "none";
+    item.style.transform = `translate(${dx}px, ${dy}px)`;
+  }
+
+  // Play: on the next frame, clear the transform so CSS animates to the new spot.
+  requestAnimationFrame(() => {
+    for (const item of legendItemNodes.values()) {
+      if (!item.style.transform) continue;
+      item.style.transition = "";
+      item.style.transform = "";
+    }
+  });
 }
 
 /** Build (and cache) the line-end icon nodes once per data update. */

@@ -559,6 +559,13 @@ body::after {
   gap: 5px;
   white-space: nowrap;
   color: var(--text-secondary);
+  transition: transform var(--transition);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .legend-item {
+    transition: none;
+  }
 }
 
 .legend-dot {
