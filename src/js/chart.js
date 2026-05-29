@@ -16,6 +16,7 @@ let renderIcon = () => null;
 // Cached per-entrant nodes so we don't recreate (and reload <img>) icons on
 // every crosshair move or visible-range change.
 let legendValueNodes = new Map();
+let legendItemNodes = new Map();
 let overlayIconNodes = new Map();
 
 export function initChart(container, legendContainer, iconRenderer) {
@@ -142,6 +143,7 @@ function buildLegend() {
   if (!legendEl) return;
   legendEl.replaceChildren();
   legendValueNodes = new Map();
+  legendItemNodes = new Map();
 
   for (const [entrantId, { entrant, color }] of seriesMap) {
     const item = document.createElement("span");
@@ -168,23 +170,38 @@ function buildLegend() {
     item.appendChild(value);
 
     legendValueNodes.set(entrantId, value);
+    legendItemNodes.set(entrantId, item);
     legendEl.appendChild(item);
   }
 }
 
-/** Update only the legend value text on crosshair move (cheap, no node churn). */
+/**
+ * Update legend value text on crosshair move (cheap, no node churn) and reorder
+ * the rows by the currently selected date's odds (descending). When no point is
+ * selected, falls back to each entrant's current probability.
+ */
 function updateLegendValues(param) {
+  if (!legendEl) return;
+
+  const ordered = [];
   for (const [entrantId, { series, entrant }] of seriesMap) {
     const valueEl = legendValueNodes.get(entrantId);
     if (!valueEl) continue;
-    let valueStr = (entrant.currentProbability * 100).toFixed(1) + "%";
+    let value = entrant.currentProbability;
     if (param && param.time) {
       const point = param.seriesData.get(series);
       if (point) {
-        valueStr = (point.value * 100).toFixed(1) + "%";
+        value = point.value;
       }
     }
-    valueEl.textContent = valueStr;
+    valueEl.textContent = (value * 100).toFixed(1) + "%";
+    ordered.push({ entrantId, value });
+  }
+
+  ordered.sort((a, b) => b.value - a.value);
+  for (const { entrantId } of ordered) {
+    const item = legendItemNodes.get(entrantId);
+    if (item) legendEl.appendChild(item);
   }
 }
 
