@@ -9,6 +9,7 @@ const SITE_URL = (siteConfig.siteUrl || "").replace(/\/$/, "");
 const GA_ID = siteConfig.googleAnalyticsId || "";
 const EVENTS = eventsConfig.events || [];
 const DEFAULT_EVENT = eventsConfig.defaultEvent || (EVENTS[0] && EVENTS[0].id);
+const DEFAULT_ACCENT_COLOR = "#c8a04e";
 
 function gaSnippet(trackingId) {
   if (!trackingId) return "";
@@ -33,6 +34,7 @@ function publicEvents() {
     entrantNoun: e.entrantNoun,
     entrantNounPlural: e.entrantNounPlural,
     iconType: e.iconType,
+    accentColor: e.accentColor || DEFAULT_ACCENT_COLOR,
     zeroProbabilityLabel: e.zeroProbabilityLabel,
     showZeroProbabilitySection: e.showZeroProbabilitySection !== false,
   }));
@@ -71,7 +73,15 @@ function renderTemplate(html, event) {
   }
 
   const head = appConfigScript(event) + gaSnippet(GA_ID);
-  return out.replace("<head>", `<head>${head}`);
+  out = out.replace("<head>", `<head>${head}`);
+  // Place the accent override after the stylesheet link so it wins in the cascade.
+  return out.replace("</head>", `${accentStyle(event)}</head>`);
+}
+
+/** Inline style overriding the accent CSS variables for this event. */
+function accentStyle(event) {
+  const accent = event.accentColor || DEFAULT_ACCENT_COLOR;
+  return `<style>:root{--color-accent:${accent};--color-highlight:${accent};}</style>`;
 }
 
 /** Vite plugin: emit one static page per event + redirects for `/` and 404. */

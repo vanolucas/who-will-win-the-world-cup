@@ -197,7 +197,7 @@ body::after {
 
 .event-dropdown__item.is-current {
   color: var(--color-accent, #c8a04e);
-  background: rgba(200, 160, 78, 0.12);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
 }
 
 /* Segmented button nav */
@@ -273,7 +273,7 @@ body::after {
 .filter-toggle.active {
   border-color: var(--color-accent);
   color: var(--color-accent);
-  background: rgba(200, 160, 78, 0.1);
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
 }
 
 .filter-toggle:focus-visible {
