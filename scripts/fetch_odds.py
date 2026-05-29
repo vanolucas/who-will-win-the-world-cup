@@ -17,7 +17,7 @@ import requests
 
 GAMMA_API = "https://gamma-api.polymarket.com"
 CLOB_API = "https://clob.polymarket.com"
-EVENT_SLUG = "2026-fifa-world-cup-winner-595"
+EVENT_SLUG = "world-cup-winner"
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "odds.json"
 REQUEST_DELAY = 0.15
 
