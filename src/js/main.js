@@ -27,12 +27,20 @@ async function loadData() {
 }
 
 /**
+ * True when `url` is already absolute (protocol-relative, http(s), or
+ * root-relative) and therefore must not be prefixed with the event path.
+ */
+function isAbsoluteUrl(url) {
+  return /^(https?:)?\/\//.test(url) || url.startsWith("/");
+}
+
+/**
  * Resolve each entrant's relative image path to an absolute URL so it loads
  * regardless of whether the page URL has a trailing slash.
  */
 function normalizeImages(data) {
   for (const entrant of data.entrants) {
-    if (entrant.image && !/^(https?:)?\/\//.test(entrant.image) && !entrant.image.startsWith("/")) {
+    if (entrant.image && !isAbsoluteUrl(entrant.image)) {
       entrant.image = `${BASE_URL}${eventConfig.id}/${entrant.image}`;
     }
   }

@@ -201,6 +201,7 @@ def download_image(url: str, dest_dir: Path, entrant: str) -> str | None:
     if ext not in {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}:
         content_type = resp.headers.get("Content-Type", "").split(";")[0].strip()
         ext = mimetypes.guess_extension(content_type) or ".png"
+        # mimetypes maps image/jpeg to the uncommon ".jpe"; normalize to ".jpg".
         if ext == ".jpe":
             ext = ".jpg"
 
