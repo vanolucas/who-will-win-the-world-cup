@@ -12,6 +12,8 @@ let chart = null;
 let seriesMap = new Map();
 let legendEl = null;
 let iconOverlay = null;
+let crosshairOverlay = null;
+let chartContainer = null;
 let renderIcon = () => null;
 
 // Cached per-entrant nodes so we don't recreate (and reload <img>) icons on
@@ -20,16 +22,24 @@ let legendValueNodes = new Map();
 let legendItemNodes = new Map();
 let legendOrder = [];
 let overlayIconNodes = new Map();
+let crosshairLabelNodes = new Map();
+let activeIconEntrantId = null;
 
 export function initChart(container, legendContainer, iconRenderer) {
   legendEl = legendContainer;
   renderIcon = iconRenderer || (() => null);
+  chartContainer = container;
 
   // Create icon overlay for line-end icons
   container.style.position = "relative";
   iconOverlay = document.createElement("div");
   iconOverlay.className = "chart-icon-overlay";
   container.appendChild(iconOverlay);
+
+  // Create overlay for crosshair name labels (shown on hover/touch)
+  crosshairOverlay = document.createElement("div");
+  crosshairOverlay.className = "chart-crosshair-overlay";
+  container.appendChild(crosshairOverlay);
 
   chart = createChart(container, {
     layout: {
@@ -133,11 +143,13 @@ export function updateChart(data, selectedEntrantIds) {
   chart.timeScale().fitContent();
   buildLegend();
   buildOverlayIcons();
+  buildCrosshairLabels();
   requestAnimationFrame(updateIconPositions);
 }
 
 function handleCrosshairMove(param) {
   updateLegendValues(param);
+  updateCrosshairLabels(param);
 }
 
 /** Build the (static) legend rows once per data update, using safe DOM nodes. */
@@ -224,6 +236,7 @@ function buildOverlayIcons() {
   if (!iconOverlay) return;
   iconOverlay.replaceChildren();
   overlayIconNodes = new Map();
+  activeIconEntrantId = null;
 
   for (const [entrantId, { entrant }] of seriesMap) {
     const icon = renderIcon(entrant);
@@ -235,6 +248,84 @@ function buildOverlayIcons() {
     iconOverlay.appendChild(label);
     overlayIconNodes.set(entrantId, label);
   }
+}
+
+/** Build (and cache) the crosshair name-label nodes once per data update. */
+function buildCrosshairLabels() {
+  if (!crosshairOverlay) return;
+  crosshairOverlay.replaceChildren();
+  crosshairLabelNodes = new Map();
+
+  for (const [entrantId, { entrant }] of seriesMap) {
+    const label = document.createElement("span");
+    label.className = "chart-crosshair-label";
+    label.textContent = entrant.name;
+    label.style.display = "none";
+    crosshairOverlay.appendChild(label);
+    crosshairLabelNodes.set(entrantId, label);
+  }
+}
+
+/**
+ * On crosshair move, show each line's entrant name to the left of the point
+ * where the crosshair date intersects the line, and enlarge the right-axis
+ * icon of the nearest (currently selected) line.
+ */
+function updateCrosshairLabels(param) {
+  const active = param && param.time && param.point;
+
+  if (!active) {
+    for (const label of crosshairLabelNodes.values()) {
+      label.style.display = "none";
+    }
+    setActiveIcon(null);
+    return;
+  }
+
+  const x = chart.timeScale().timeToCoordinate(param.time);
+  let nearestId = null;
+  let nearestDist = Infinity;
+
+  for (const [entrantId, { series }] of seriesMap) {
+    const label = crosshairLabelNodes.get(entrantId);
+    if (!label) continue;
+
+    const point = param.seriesData.get(series);
+    const y = point ? series.priceToCoordinate(point.value) : null;
+    if (x === null || y === null || y === undefined) {
+      label.style.display = "none";
+      continue;
+    }
+
+    label.style.left = x + "px";
+    label.style.top = y + "px";
+    label.style.display = "";
+
+    const dist = Math.abs(y - param.point.y);
+    if (dist < nearestDist) {
+      nearestDist = dist;
+      nearestId = entrantId;
+    }
+  }
+
+  setActiveIcon(nearestId);
+}
+
+/** Enlarge the right-axis icon of the given entrant, resetting any previous. */
+function setActiveIcon(entrantId) {
+  if (activeIconEntrantId === entrantId) return;
+
+  if (activeIconEntrantId !== null) {
+    const prev = overlayIconNodes.get(activeIconEntrantId);
+    if (prev) prev.classList.remove("chart-icon-label--active");
+  }
+
+  if (entrantId !== null) {
+    const next = overlayIconNodes.get(entrantId);
+    if (next) next.classList.add("chart-icon-label--active");
+  }
+
+  activeIconEntrantId = entrantId;
 }
 
 function updateIconPositions() {
