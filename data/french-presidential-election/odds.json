@@ -79,7 +79,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0725,
+            "currentProbability": 0.0755,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -5280,6 +5280,10 @@
             {
                 "date": "2026-05-28",
                 "probability": 0.0725
+            },
+            {
+                "date": "2026-05-29",
+                "probability": 0.0755
             }
         ],
         "grald-darmanin": [
@@ -11997,7 +12001,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-29T20:05:47Z",
+        "lastUpdate": "2026-05-29T20:59:02Z",
         "totalEntrants": 36
     }
 }
