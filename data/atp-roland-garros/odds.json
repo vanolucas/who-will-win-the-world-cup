@@ -25,7 +25,7 @@
             "name": "Alexander Zverev"
         },
         {
-            "currentProbability": 0.0415,
+            "currentProbability": 0.045,
             "id": "andrey-rublev",
             "image": "images/andrey-rublev.png",
             "name": "Andrey Rublev"
@@ -43,7 +43,7 @@
             "name": "Carlos Alcaraz"
         },
         {
-            "currentProbability": 0.0925,
+            "currentProbability": 0.1505,
             "id": "casper-ruud",
             "image": "images/casper-ruud.png",
             "name": "Casper Ruud"
@@ -55,13 +55,13 @@
             "name": "Daniil Medvedev"
         },
         {
-            "currentProbability": 0.0615,
+            "currentProbability": 0.061,
             "id": "felix-auger-aliassime",
             "image": "images/felix-auger-aliassime.png",
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.0495,
+            "currentProbability": 0.049,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
@@ -103,7 +103,7 @@
             "name": "Martin Landaluce"
         },
         {
-            "currentProbability": 0.0205,
+            "currentProbability": 0.0195,
             "id": "moise-kouame",
             "image": "images/moise-kouame.png",
             "name": "Moise Kouame"
@@ -115,13 +115,13 @@
             "name": "Novak Djokovic"
         },
         {
-            "currentProbability": 0.12,
+            "currentProbability": 0.125,
             "id": "rafael-jodar",
             "image": "images/rafael-jodar.png",
             "name": "Rafael Jodar"
         },
         {
-            "currentProbability": 0.0305,
+            "currentProbability": 0.0325,
             "id": "raphael-collignon",
             "image": "images/raphael-collignon.png",
             "name": "Raphael Collignon"
@@ -133,7 +133,7 @@
             "name": "Taylor Fritz"
         },
         {
-            "currentProbability": 0.03,
+            "currentProbability": 0.0005,
             "id": "tommy-paul",
             "image": "images/tommy-paul.png",
             "name": "Tommy Paul"
@@ -545,7 +545,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.395
+                "probability": 0.4
             }
         ],
         "andrey-rublev": [
@@ -615,7 +615,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.041
+                "probability": 0.0415
             }
         ],
         "ben-shelton": [
@@ -945,7 +945,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.097
+                "probability": 0.14
             }
         ],
         "daniil-medvedev": [
@@ -1201,7 +1201,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.061
+                "probability": 0.0595
             }
         ],
         "flavio-cobolli": [
@@ -1263,7 +1263,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.049
+                "probability": 0.056
             }
         ],
         "francisco-cerundolo": [
@@ -1839,13 +1839,13 @@
         "martin-landaluce": [
             {
                 "date": "2026-05-29",
-                "probability": 0.022
+                "probability": 0.0235
             }
         ],
         "moise-kouame": [
             {
                 "date": "2026-05-29",
-                "probability": 0.0195
+                "probability": 0.0175
             }
         ],
         "novak-djokovic": [
@@ -2001,13 +2001,13 @@
         "rafael-jodar": [
             {
                 "date": "2026-05-29",
-                "probability": 0.12
+                "probability": 0.125
             }
         ],
         "raphael-collignon": [
             {
                 "date": "2026-05-29",
-                "probability": 0.0305
+                "probability": 0.0325
             }
         ],
         "taylor-fritz": [
@@ -2207,13 +2207,13 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.03
+                "probability": 0.0005
             }
         ]
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-29T20:59:22Z",
+        "lastUpdate": "2026-05-29T21:25:56Z",
         "totalEntrants": 23
     }
 }

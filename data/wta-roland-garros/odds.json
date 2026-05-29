@@ -1,13 +1,13 @@
 {
     "entrants": [
         {
-            "currentProbability": 0.0365,
+            "currentProbability": 0.038,
             "id": "amanda-anisimova",
             "image": "images/amanda-anisimova.png",
             "name": "Amanda Anisimova"
         },
         {
-            "currentProbability": 0.28,
+            "currentProbability": 0.275,
             "id": "aryna-sabalenka",
             "image": "images/aryna-sabalenka.png",
             "name": "Aryna Sabalenka"
@@ -31,7 +31,7 @@
             "name": "Coco Gauff"
         },
         {
-            "currentProbability": 0.13,
+            "currentProbability": 0.145,
             "id": "diana-shnaider",
             "image": "images/diana-shnaider.png",
             "name": "Diana Shnaider"
@@ -49,7 +49,7 @@
             "name": "Elena Rybakina"
         },
         {
-            "currentProbability": 0.09,
+            "currentProbability": 0.085,
             "id": "elina-svitolina",
             "image": "images/elina-svitolina.png",
             "name": "Elina Svitolina"
@@ -61,13 +61,13 @@
             "name": "Elise Mertens"
         },
         {
-            "currentProbability": 0.265,
+            "currentProbability": 0.25,
             "id": "iga-swiatek",
             "image": "images/iga-swiatek.png",
             "name": "Iga Swiatek"
         },
         {
-            "currentProbability": 0.0225,
+            "currentProbability": 0.0215,
             "id": "iva-jovic",
             "image": "images/iva-jovic.png",
             "name": "Iva Jovic"
@@ -103,7 +103,7 @@
             "name": "Madison Keys"
         },
         {
-            "currentProbability": 0.095,
+            "currentProbability": 0.1,
             "id": "mirra-andreeva",
             "image": "images/mirra-andreeva.png",
             "name": "Mirra Andreeva"
@@ -115,7 +115,7 @@
             "name": "Naomi Osaka"
         },
         {
-            "currentProbability": 0.029,
+            "currentProbability": 0.03,
             "id": "victoria-mboko",
             "image": "images/victoria-mboko.png",
             "name": "Victoria Mboko"
@@ -197,7 +197,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0365
+                "probability": 0.0385
             }
         ],
         "aryna-sabalenka": [
@@ -323,7 +323,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.28
+                "probability": 0.275
             }
         ],
         "belinda-bencic": [
@@ -605,7 +605,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.13
+                "probability": 0.135
             }
         ],
         "diana-shnaider": [
@@ -712,10 +712,6 @@
             {
                 "date": "2026-05-26",
                 "probability": 0.135
-            },
-            {
-                "date": "2026-05-29",
-                "probability": 0.125
             }
         ],
         "ekaterina-alexandrova": [
@@ -1411,7 +1407,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0225
+                "probability": 0.022
             }
         ],
         "jasmine-paolini": [
@@ -1993,7 +1989,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.016
+                "probability": 0.0165
             }
         ],
         "mirra-andreeva": [
@@ -2379,13 +2375,13 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.029
+                "probability": 0.0295
             }
         ]
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-29T20:59:39Z",
+        "lastUpdate": "2026-05-29T21:26:04Z",
         "totalEntrants": 20
     }
 }

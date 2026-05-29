@@ -5283,7 +5283,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0755
+                "probability": 0.08
             }
         ],
         "grald-darmanin": [
@@ -12001,7 +12001,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-29T20:59:02Z",
+        "lastUpdate": "2026-05-29T21:25:47Z",
         "totalEntrants": 36
     }
 }
