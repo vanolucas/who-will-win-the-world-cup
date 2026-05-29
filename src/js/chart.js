@@ -16,6 +16,8 @@ let renderIcon = () => null;
 // Cached per-entrant nodes so we don't recreate (and reload <img>) icons on
 // every crosshair move or visible-range change.
 let legendValueNodes = new Map();
+let legendItemNodes = new Map();
+let legendOrder = [];
 let overlayIconNodes = new Map();
 
 export function initChart(container, legendContainer, iconRenderer) {
@@ -142,6 +144,8 @@ function buildLegend() {
   if (!legendEl) return;
   legendEl.replaceChildren();
   legendValueNodes = new Map();
+  legendItemNodes = new Map();
+  legendOrder = [];
 
   for (const [entrantId, { entrant, color }] of seriesMap) {
     const item = document.createElement("span");
@@ -168,24 +172,50 @@ function buildLegend() {
     item.appendChild(value);
 
     legendValueNodes.set(entrantId, value);
+    legendItemNodes.set(entrantId, item);
+    legendOrder.push(entrantId);
     legendEl.appendChild(item);
   }
 }
 
-/** Update only the legend value text on crosshair move (cheap, no node churn). */
+/**
+ * Update legend value text on crosshair move (cheap, no node churn) and reorder
+ * the rows by the currently selected date's odds (descending). When no point is
+ * selected, falls back to each entrant's current probability.
+ */
 function updateLegendValues(param) {
+  if (!legendEl) return;
+
+  const ordered = [];
   for (const [entrantId, { series, entrant }] of seriesMap) {
     const valueEl = legendValueNodes.get(entrantId);
     if (!valueEl) continue;
-    let valueStr = (entrant.currentProbability * 100).toFixed(1) + "%";
+    let value = entrant.currentProbability;
     if (param && param.time) {
       const point = param.seriesData.get(series);
       if (point) {
-        valueStr = (point.value * 100).toFixed(1) + "%";
+        value = point.value;
       }
     }
-    valueEl.textContent = valueStr;
+    valueEl.textContent = (value * 100).toFixed(1) + "%";
+    ordered.push({ entrantId, value });
   }
+
+  ordered.sort((a, b) => b.value - a.value);
+
+  // Only touch the DOM when the order actually changes, to avoid layout thrash.
+  const changed =
+    ordered.length !== legendOrder.length ||
+    ordered.some(({ entrantId }, i) => entrantId !== legendOrder[i]);
+  if (!changed) return;
+
+  legendOrder = ordered.map(({ entrantId }) => entrantId);
+  const fragment = document.createDocumentFragment();
+  for (const entrantId of legendOrder) {
+    const item = legendItemNodes.get(entrantId);
+    if (item) fragment.appendChild(item);
+  }
+  legendEl.replaceChildren(fragment);
 }
 
 /** Build (and cache) the line-end icon nodes once per data update. */
