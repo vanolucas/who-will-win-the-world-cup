@@ -1,6 +1,4 @@
-const ACCENT_COLOR =
-  (window.__APP_CONFIG__ && window.__APP_CONFIG__.event && window.__APP_CONFIG__.event.accentColor) ||
-  "#c8a04e";
+import { ACCENT_COLOR } from "./config.js";
 
 const COLORS = [
   ACCENT_COLOR, "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
