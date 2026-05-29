@@ -100,6 +100,7 @@ All events are declared in a single shared registry, `events.config.json`, at th
     {
       "id": "fifa-world-cup",             // URL slug and data folder name
       "polymarketSlug": "world-cup-winner",
+      "accentColor": "#c8a04e",            // UI accent color (hex) for this event
       "titlePrefix": "Who Will Win the",
       "dropdownLabel": "World Cup",        // shown in the header dropdown
       "pageTitle": "Who Will Win the World Cup?",
@@ -127,8 +128,9 @@ Set `defaultEvent` to the event id that `/` should redirect to. It defaults to `
 
 1. Add an entry to `events.config.json` with a unique `id` and the Polymarket `polymarketSlug`.
 2. Choose an `iconType`: `flag` (emoji flags via `src/js/flags.js`) or `image` (candidate photos cached during fetch).
-3. Run `uv run python scripts/fetch_odds.py` to generate `data/<id>/odds.json`.
-4. Run `npm run build` — a static page is automatically emitted at `/<id>/` and the event appears in the header dropdown. No component code changes are needed.
+3. Optionally set an `accentColor` (hex) to theme the UI for the event; it defaults to the World Cup gold (`#c8a04e`) when omitted. All accent UI elements (buttons, active states, the leading entrant's chart/race color) adapt to it.
+4. Run `uv run python scripts/fetch_odds.py` to generate `data/<id>/odds.json`.
+5. Run `npm run build` — a static page is automatically emitted at `/<id>/` and the event appears in the header dropdown. No component code changes are needed.
 
 ## Google Analytics
 

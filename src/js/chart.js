@@ -1,7 +1,8 @@
 import { createChart, LineSeries, CrosshairMode } from "lightweight-charts";
+import { ACCENT_COLOR } from "./config.js";
 
 const COLORS = [
-  "#c8a04e", "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
+  ACCENT_COLOR, "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
   "#bf7a8a", "#c8905a", "#9a82b5", "#5ba2a8", "#c47a78",
   "#c4b86a", "#74b898", "#c8956e", "#8a88c2", "#8aaa68",
   "#b580a6", "#c49a5e", "#9a7eaa", "#5ca0a0", "#c4826e",

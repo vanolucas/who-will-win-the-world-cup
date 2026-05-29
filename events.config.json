@@ -4,6 +4,7 @@
     {
       "id": "fifa-world-cup",
       "polymarketSlug": "world-cup-winner",
+      "accentColor": "#c8a04e",
       "titlePrefix": "Who Will Win the",
       "dropdownLabel": "World Cup",
       "pageTitle": "Who Will Win the World Cup?",
@@ -21,6 +22,7 @@
     {
       "id": "french-presidential-election",
       "polymarketSlug": "next-french-presidential-election",
+      "accentColor": "#5b86c4",
       "titlePrefix": "Who Will Win the",
       "dropdownLabel": "French Presidential Election",
       "pageTitle": "Who Will Win the French Presidential Election?",
