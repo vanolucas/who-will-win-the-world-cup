@@ -15,7 +15,7 @@ The daily update workflow (`update-and-deploy.yml`) executes two jobs:
 
 ### 1. Fetch Data (`scripts/fetch_odds.py`)
 
-1. **Fetch markets** from the Gamma API (`GET /events?slug=2026-fifa-world-cup-winner-595`)
+1. **Fetch markets** from the Gamma API (`GET /events?slug=world-cup-winner`)
    - Extracts team names, CLOB token IDs, and current prices from each market
    - Filters out inactive markets
 2. **Fetch price history** for each team from the CLOB API (`GET /prices-history?market={token_id}&interval=max&fidelity=1440`)
