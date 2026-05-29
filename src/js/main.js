@@ -1,21 +1,53 @@
 import { initChart, updateChart, resizeChart } from "./chart.js";
 import { updateTable } from "./table.js";
-import { initFilter, getSelectedTeamIds } from "./filter.js";
+import { initFilter, getSelectedEntrantIds } from "./filter.js";
 import { initRace, updateRace, pauseRace, playRace } from "./race.js";
+import { createIconRenderer } from "./icons.js";
+import { initEventDropdown } from "./dropdown.js";
+
+const BASE_URL = import.meta.env.BASE_URL || "/";
+
+// Per-page configuration injected at build/dev time (see vite.config.js).
+const APP_CONFIG = window.__APP_CONFIG__ || {};
+const eventConfig = APP_CONFIG.event || {};
+const allEvents = APP_CONFIG.events || [];
 
 const state = {
   data: null,
   currentView: "chart",
+  renderIcon: () => null,
 };
 
 async function loadData() {
-  const resp = await fetch("./odds.json");
+  // Page lives at <base>/<event-id>/, so its own data is one folder down.
+  const url = `${BASE_URL}${eventConfig.id}/odds.json`;
+  const resp = await fetch(url);
   if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
   return resp.json();
 }
 
 /**
- * Forward-fill sparse history so every team has one entry per day.
+ * True when `url` is already absolute (protocol-relative, http(s), or
+ * root-relative) and therefore must not be prefixed with the event path.
+ */
+function isAbsoluteUrl(url) {
+  return /^(https?:)?\/\//.test(url) || url.startsWith("/");
+}
+
+/**
+ * Resolve each entrant's relative image path to an absolute URL so it loads
+ * regardless of whether the page URL has a trailing slash.
+ */
+function normalizeImages(data) {
+  for (const entrant of data.entrants) {
+    if (entrant.image && !isAbsoluteUrl(entrant.image)) {
+      entrant.image = `${BASE_URL}${eventConfig.id}/${entrant.image}`;
+    }
+  }
+}
+
+/**
+ * Forward-fill sparse history so every entrant has one entry per day.
  *
  * The JSON file stores only the first day of each constant-value run
  * to reduce file size. This function restores full daily resolution
@@ -24,8 +56,8 @@ async function loadData() {
 function forwardFillHistory(data) {
   const lastDate = data.metadata.lastUpdate.split("T")[0];
 
-  for (const teamId of Object.keys(data.history)) {
-    const sparse = data.history[teamId];
+  for (const entrantId of Object.keys(data.history)) {
+    const sparse = data.history[entrantId];
     if (!sparse || sparse.length === 0) continue;
 
     const filled = [];
@@ -45,7 +77,7 @@ function forwardFillHistory(data) {
       curDate = d.toISOString().split("T")[0];
     }
 
-    data.history[teamId] = filled;
+    data.history[entrantId] = filled;
   }
 }
 
@@ -89,7 +121,7 @@ function showView(viewName) {
 }
 
 function updateEmptyState() {
-  const selected = getSelectedTeamIds();
+  const selected = getSelectedEntrantIds();
   const emptyState = document.getElementById("empty-state");
   const chartView = document.getElementById("chart-view");
   const tableView = document.getElementById("table-view");
@@ -119,7 +151,10 @@ function onFilterChange(selectedIds) {
   document.getElementById("empty-state").classList.add("hidden");
 
   updateChart(state.data, selectedIds);
-  updateTable(document.getElementById("table-view"), state.data, selectedIds);
+  updateTable(document.getElementById("table-view"), state.data, selectedIds, {
+    renderIcon: state.renderIcon,
+    entrantNoun: eventConfig.entrantNoun,
+  });
   updateRace(state.data, selectedIds);
 }
 
@@ -156,10 +191,11 @@ function populateAbout(metadata) {
     undefined,
     { year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "UTC", timeZoneName: "short" }
   );
-  document.getElementById("total-teams").textContent = metadata.totalTeams;
+  document.getElementById("total-entrants").textContent = metadata.totalEntrants;
 }
 
 async function init() {
+  initEventDropdown(allEvents, eventConfig.id);
   setupViewSwitcher();
   setupFilterToggle();
 
@@ -173,26 +209,39 @@ async function init() {
 
   const data = state.data;
 
+  // Choose the icon renderer for this event (emoji flags vs candidate photos).
+  const iconType = data.metadata.iconType || eventConfig.iconType || "flag";
+  state.renderIcon = createIconRenderer(iconType);
+
+  normalizeImages(data);
+
   // Expand sparse history back to full daily resolution
   forwardFillHistory(data);
 
-  // Sort teams by probability (descending) for display purposes.
-  // The JSON file stores teams in alphabetical order for deterministic diffs.
-  data.teams.sort((a, b) => b.currentProbability - a.currentProbability);
+  // Sort entrants by probability (descending) for display purposes.
+  // The JSON file stores entrants in alphabetical order for deterministic diffs.
+  data.entrants.sort((a, b) => b.currentProbability - a.currentProbability);
 
-  const top10Ids = data.teams.slice(0, 10).map((t) => t.id);
+  const top10Ids = data.entrants.slice(0, 10).map((t) => t.id);
 
   // Init components
-  initFilter(data.teams, top10Ids, onFilterChange);
+  initFilter(data.entrants, top10Ids, onFilterChange, {
+    renderIcon: state.renderIcon,
+    zeroProbabilityLabel: eventConfig.zeroProbabilityLabel,
+    showZeroProbabilitySection: eventConfig.showZeroProbabilitySection,
+  });
 
   const chartContainer = document.getElementById("chart-container");
   const legendContainer = document.getElementById("chart-legend");
-  initChart(chartContainer, legendContainer);
+  initChart(chartContainer, legendContainer, state.renderIcon);
   updateChart(data, top10Ids);
 
-  updateTable(document.getElementById("table-view"), data, top10Ids);
+  updateTable(document.getElementById("table-view"), data, top10Ids, {
+    renderIcon: state.renderIcon,
+    entrantNoun: eventConfig.entrantNoun,
+  });
 
-  initRace(document.getElementById("race-view"));
+  initRace(document.getElementById("race-view"), state.renderIcon);
   updateRace(data, top10Ids);
 
   populateAbout(data.metadata);
