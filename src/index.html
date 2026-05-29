@@ -3,23 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Who Will Win the World Cup?</title>
-  <meta name="description" content="Winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data." />
-  <meta property="og:title" content="Who Will Win the World Cup?" />
-  <meta property="og:description" content="Winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data." />
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+  <meta property="og:title" content="{{PAGE_TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{CANONICAL_URL}}" />
   <meta name="twitter:card" content="summary" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9917;</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>{{FAVICON_EMOJI}}</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
   <a class="skip-to-content" href="#main-content">Skip to content</a>
   <header class="app-header">
     <div class="header-left">
-      <h1 class="app-title">Who Will Win the World Cup?</h1>
+      <h1 class="app-title">
+        <span class="app-title-prefix">{{TITLE_PREFIX}}</span>
+        <span class="event-dropdown" id="event-dropdown">
+          <button class="event-dropdown__toggle" id="event-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Select event">
+            <span class="event-dropdown__label" id="event-dropdown-label">{{DROPDOWN_LABEL}}</span>
+            <svg class="event-dropdown__caret" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <ul class="event-dropdown__menu" id="event-dropdown-menu" role="menu"></ul>
+        </span>
+      </h1>
     </div>
     <nav class="view-switcher">
       <button class="view-btn active" data-view="chart">Chart</button>
@@ -27,7 +40,7 @@
       <button class="view-btn" data-view="race">Race</button>
       <button class="view-btn" data-view="about">About</button>
     </nav>
-    <button class="filter-toggle" id="filter-toggle" aria-label="Toggle team filter">
+    <button class="filter-toggle" id="filter-toggle" aria-label="Toggle {{ENTRANT_NOUN_LOWER}} filter">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
       </svg>
@@ -38,7 +51,7 @@
   <main class="app-main">
     <aside class="filter-panel" id="filter-panel">
       <div class="filter-header">
-        <h2>Teams</h2>
+        <h2>{{ENTRANTS_PLURAL}}</h2>
         <div class="filter-actions">
           <span class="filter-actions-label">Select:</span>
           <button class="filter-action-btn" id="select-all-btn">All</button>
@@ -61,15 +74,15 @@
       <div class="view-container hidden" id="about-view">
         <div class="about-card">
           <h2>About This Dashboard</h2>
-          <p>This dashboard tracks winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data.</p>
+          <p>{{ABOUT_TEXT}}</p>
           <div class="about-meta">
             <div class="about-meta-item">
               <span class="about-meta-label">Last Updated</span>
               <span class="about-meta-value" id="last-update">--</span>
             </div>
             <div class="about-meta-item">
-              <span class="about-meta-label">Teams Tracked</span>
-              <span class="about-meta-value" id="total-teams">--</span>
+              <span class="about-meta-label">{{ENTRANTS_PLURAL}} Tracked</span>
+              <span class="about-meta-value" id="total-entrants">--</span>
             </div>
           </div>
         </div>
@@ -79,7 +92,7 @@
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5">
             <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
           </svg>
-          <p>Select at least one team to view data.</p>
+          <p>Select at least one {{ENTRANT_NOUN_LOWER}} to view data.</p>
         </div>
       </div>
       <div class="error-state hidden" id="error-state">
@@ -89,9 +102,9 @@
   </main>
 
   <footer class="app-footer">
-    <p>Probabilities are derived from prediction market data and do not guarantee any outcomes. Not affiliated with FIFA. <a href="#" data-view="about">About</a></p>
+    <p>Probabilities are derived from prediction market data and do not guarantee any outcomes. {{FOOTER_DISCLAIMER}} <a href="#" data-view="about">About</a></p>
   </footer>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,256 @@
 {
+    "entrants": [
+        {
+            "currentProbability": 0.0015,
+            "id": "algeria",
+            "name": "Algeria"
+        },
+        {
+            "currentProbability": 0.0855,
+            "id": "argentina",
+            "name": "Argentina"
+        },
+        {
+            "currentProbability": 0.0015,
+            "id": "australia",
+            "name": "Australia"
+        },
+        {
+            "currentProbability": 0.0055,
+            "id": "austria",
+            "name": "Austria"
+        },
+        {
+            "currentProbability": 0.0175,
+            "id": "belgium",
+            "name": "Belgium"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "bosnia-herzegovina",
+            "name": "Bosnia-Herzegovina"
+        },
+        {
+            "currentProbability": 0.0935,
+            "id": "brazil",
+            "name": "Brazil"
+        },
+        {
+            "currentProbability": 0.0035,
+            "id": "canada",
+            "name": "Canada"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "cape-verde",
+            "name": "Cape Verde"
+        },
+        {
+            "currentProbability": 0.0175,
+            "id": "colombia",
+            "name": "Colombia"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "congo-dr",
+            "name": "Congo DR"
+        },
+        {
+            "currentProbability": 0.0085,
+            "id": "croatia",
+            "name": "Croatia"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "curaao",
+            "name": "Cura\u00e7ao"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "czechia",
+            "name": "Czechia"
+        },
+        {
+            "currentProbability": 0.0085,
+            "id": "ecuador",
+            "name": "Ecuador"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "egypt",
+            "name": "Egypt"
+        },
+        {
+            "currentProbability": 0.1115,
+            "id": "england",
+            "name": "England"
+        },
+        {
+            "currentProbability": 0.1665,
+            "id": "france",
+            "name": "France"
+        },
+        {
+            "currentProbability": 0.0515,
+            "id": "germany",
+            "name": "Germany"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "ghana",
+            "name": "Ghana"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "haiti",
+            "name": "Haiti"
+        },
+        {
+            "currentProbability": 0.0015,
+            "id": "iran",
+            "name": "Iran"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "iraq",
+            "name": "Iraq"
+        },
+        {
+            "currentProbability": 0.0,
+            "id": "italy",
+            "name": "Italy"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "ivory-coast",
+            "name": "Ivory Coast"
+        },
+        {
+            "currentProbability": 0.0185,
+            "id": "japan",
+            "name": "Japan"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "jordan",
+            "name": "Jordan"
+        },
+        {
+            "currentProbability": 0.0105,
+            "id": "mexico",
+            "name": "Mexico"
+        },
+        {
+            "currentProbability": 0.0145,
+            "id": "morocco",
+            "name": "Morocco"
+        },
+        {
+            "currentProbability": 0.0375,
+            "id": "netherlands",
+            "name": "Netherlands"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "new-zealand",
+            "name": "New Zealand"
+        },
+        {
+            "currentProbability": 0.0285,
+            "id": "norway",
+            "name": "Norway"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "panama",
+            "name": "Panama"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "paraguay",
+            "name": "Paraguay"
+        },
+        {
+            "currentProbability": 0.0,
+            "id": "peru",
+            "name": "Peru"
+        },
+        {
+            "currentProbability": 0.1025,
+            "id": "portugal",
+            "name": "Portugal"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "qatar",
+            "name": "Qatar"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "saudi-arabia",
+            "name": "Saudi Arabia"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "scotland",
+            "name": "Scotland"
+        },
+        {
+            "currentProbability": 0.0065,
+            "id": "senegal",
+            "name": "Senegal"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "south-africa",
+            "name": "South Africa"
+        },
+        {
+            "currentProbability": 0.0025,
+            "id": "south-korea",
+            "name": "South Korea"
+        },
+        {
+            "currentProbability": 0.1695,
+            "id": "spain",
+            "name": "Spain"
+        },
+        {
+            "currentProbability": 0.0055,
+            "id": "sweden",
+            "name": "Sweden"
+        },
+        {
+            "currentProbability": 0.0125,
+            "id": "switzerland",
+            "name": "Switzerland"
+        },
+        {
+            "currentProbability": 0.0015,
+            "id": "tunisia",
+            "name": "Tunisia"
+        },
+        {
+            "currentProbability": 0.0075,
+            "id": "turkiye",
+            "name": "Turkiye"
+        },
+        {
+            "currentProbability": 0.0105,
+            "id": "uruguay",
+            "name": "Uruguay"
+        },
+        {
+            "currentProbability": 0.0115,
+            "id": "usa",
+            "name": "USA"
+        },
+        {
+            "currentProbability": 0.0005,
+            "id": "uzbekistan",
+            "name": "Uzbekistan"
+        }
+    ],
     "history": {
         "algeria": [
             {
@@ -13978,259 +14230,8 @@
         ]
     },
     "metadata": {
+        "iconType": "flag",
         "lastUpdate": "2026-05-29T13:00:33Z",
-        "totalTeams": 50
-    },
-    "teams": [
-        {
-            "currentProbability": 0.0015,
-            "id": "algeria",
-            "name": "Algeria"
-        },
-        {
-            "currentProbability": 0.0855,
-            "id": "argentina",
-            "name": "Argentina"
-        },
-        {
-            "currentProbability": 0.0015,
-            "id": "australia",
-            "name": "Australia"
-        },
-        {
-            "currentProbability": 0.0055,
-            "id": "austria",
-            "name": "Austria"
-        },
-        {
-            "currentProbability": 0.0175,
-            "id": "belgium",
-            "name": "Belgium"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "bosnia-herzegovina",
-            "name": "Bosnia-Herzegovina"
-        },
-        {
-            "currentProbability": 0.0935,
-            "id": "brazil",
-            "name": "Brazil"
-        },
-        {
-            "currentProbability": 0.0035,
-            "id": "canada",
-            "name": "Canada"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "cape-verde",
-            "name": "Cape Verde"
-        },
-        {
-            "currentProbability": 0.0175,
-            "id": "colombia",
-            "name": "Colombia"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "congo-dr",
-            "name": "Congo DR"
-        },
-        {
-            "currentProbability": 0.0085,
-            "id": "croatia",
-            "name": "Croatia"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "curaao",
-            "name": "Cura\u00e7ao"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "czechia",
-            "name": "Czechia"
-        },
-        {
-            "currentProbability": 0.0085,
-            "id": "ecuador",
-            "name": "Ecuador"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "egypt",
-            "name": "Egypt"
-        },
-        {
-            "currentProbability": 0.1115,
-            "id": "england",
-            "name": "England"
-        },
-        {
-            "currentProbability": 0.1665,
-            "id": "france",
-            "name": "France"
-        },
-        {
-            "currentProbability": 0.0515,
-            "id": "germany",
-            "name": "Germany"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "ghana",
-            "name": "Ghana"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "haiti",
-            "name": "Haiti"
-        },
-        {
-            "currentProbability": 0.0015,
-            "id": "iran",
-            "name": "Iran"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "iraq",
-            "name": "Iraq"
-        },
-        {
-            "currentProbability": 0.0,
-            "id": "italy",
-            "name": "Italy"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "ivory-coast",
-            "name": "Ivory Coast"
-        },
-        {
-            "currentProbability": 0.0185,
-            "id": "japan",
-            "name": "Japan"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "jordan",
-            "name": "Jordan"
-        },
-        {
-            "currentProbability": 0.0105,
-            "id": "mexico",
-            "name": "Mexico"
-        },
-        {
-            "currentProbability": 0.0145,
-            "id": "morocco",
-            "name": "Morocco"
-        },
-        {
-            "currentProbability": 0.0375,
-            "id": "netherlands",
-            "name": "Netherlands"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "new-zealand",
-            "name": "New Zealand"
-        },
-        {
-            "currentProbability": 0.0285,
-            "id": "norway",
-            "name": "Norway"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "panama",
-            "name": "Panama"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "paraguay",
-            "name": "Paraguay"
-        },
-        {
-            "currentProbability": 0.0,
-            "id": "peru",
-            "name": "Peru"
-        },
-        {
-            "currentProbability": 0.1025,
-            "id": "portugal",
-            "name": "Portugal"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "qatar",
-            "name": "Qatar"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "saudi-arabia",
-            "name": "Saudi Arabia"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "scotland",
-            "name": "Scotland"
-        },
-        {
-            "currentProbability": 0.0065,
-            "id": "senegal",
-            "name": "Senegal"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "south-africa",
-            "name": "South Africa"
-        },
-        {
-            "currentProbability": 0.0025,
-            "id": "south-korea",
-            "name": "South Korea"
-        },
-        {
-            "currentProbability": 0.1695,
-            "id": "spain",
-            "name": "Spain"
-        },
-        {
-            "currentProbability": 0.0055,
-            "id": "sweden",
-            "name": "Sweden"
-        },
-        {
-            "currentProbability": 0.0125,
-            "id": "switzerland",
-            "name": "Switzerland"
-        },
-        {
-            "currentProbability": 0.0015,
-            "id": "tunisia",
-            "name": "Tunisia"
-        },
-        {
-            "currentProbability": 0.0075,
-            "id": "turkiye",
-            "name": "Turkiye"
-        },
-        {
-            "currentProbability": 0.0105,
-            "id": "uruguay",
-            "name": "Uruguay"
-        },
-        {
-            "currentProbability": 0.0115,
-            "id": "usa",
-            "name": "USA"
-        },
-        {
-            "currentProbability": 0.0005,
-            "id": "uzbekistan",
-            "name": "Uzbekistan"
-        }
-    ]
+        "totalEntrants": 50
+    }
 }

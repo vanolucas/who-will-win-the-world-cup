@@ -1,0 +1,38 @@
+{
+  "defaultEvent": "fifa-world-cup",
+  "events": [
+    {
+      "id": "fifa-world-cup",
+      "polymarketSlug": "world-cup-winner",
+      "titlePrefix": "Who Will Win the",
+      "dropdownLabel": "World Cup",
+      "pageTitle": "Who Will Win the World Cup?",
+      "metaDescription": "Winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data.",
+      "entrantNoun": "Team",
+      "entrantNounPlural": "Teams",
+      "iconType": "flag",
+      "faviconEmoji": "⚽",
+      "footerDisclaimer": "Not affiliated with FIFA.",
+      "aboutText": "This dashboard tracks winning probabilities for each team in the FIFA World Cup 2026, updated daily from prediction market data.",
+      "zeroProbabilityLabel": "Eliminated",
+      "showZeroProbabilitySection": true,
+      "historyFilter": { "type": "worldcup2025" }
+    },
+    {
+      "id": "french-presidential-election",
+      "polymarketSlug": "next-french-presidential-election",
+      "titlePrefix": "Who Will Win the",
+      "dropdownLabel": "French Presidential Election",
+      "pageTitle": "Who Will Win the French Presidential Election?",
+      "metaDescription": "Winning probabilities for each candidate in the 2027 French presidential election, updated daily from prediction market data.",
+      "entrantNoun": "Candidate",
+      "entrantNounPlural": "Candidates",
+      "iconType": "image",
+      "faviconEmoji": "🇫🇷",
+      "footerDisclaimer": "Not affiliated with any candidate or party.",
+      "aboutText": "This dashboard tracks winning probabilities for each candidate in the 2027 French presidential election, updated daily from prediction market data.",
+      "zeroProbabilityLabel": "Inactive",
+      "showZeroProbabilitySection": false
+    }
+  ]
+}

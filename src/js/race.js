@@ -1,5 +1,3 @@
-import { getFlag } from "./flags.js";
-
 const COLORS = [
   "#c8a04e", "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
   "#bf7a8a", "#c8905a", "#9a82b5", "#5ba2a8", "#c47a78",
@@ -19,6 +17,7 @@ let dateEl = null;
 let progressEl = null;
 let scrubberEl = null;
 let playBtnEl = null;
+let renderIcon = () => null;
 
 let animId = null;
 let playing = false;
@@ -28,11 +27,12 @@ let prevTs = null;
 let keyHandler = null;
 
 let allDates = [];
-let teams = [];
+let entrants = [];
 let bars = new Map();
 
-export function initRace(containerEl) {
+export function initRace(containerEl, iconRenderer) {
   container = containerEl;
+  renderIcon = iconRenderer || (() => null);
   container.innerHTML = `
     <div class="race-header">
       <div class="race-date"></div>
@@ -197,7 +197,7 @@ function tick(timestamp) {
 /* ---------- Rendering ---------- */
 
 function render(instant) {
-  if (allDates.length === 0 || teams.length === 0) return;
+  if (allDates.length === 0 || entrants.length === 0) return;
 
   const max = allDates.length - 1;
   const t = Math.max(0, Math.min(max, currentTime));
@@ -210,7 +210,7 @@ function render(instant) {
 
   if (dateEl) dateEl.textContent = fmtDate(loDate);
 
-  const ranked = teams.map((tm) => {
+  const ranked = entrants.map((tm) => {
     const p0 = tm.lookup.get(loDate) ?? 0;
     const p1 = tm.lookup.get(hiDate) ?? p0;
     return { id: tm.id, prob: p0 + (p1 - p0) * frac };
@@ -254,11 +254,11 @@ function fmtDate(d) {
 
 /* ---------- Data ---------- */
 
-export function updateRace(data, selectedTeamIds) {
+export function updateRace(data, selectedEntrantIds) {
   if (!container) return;
 
-  const sel = new Set(selectedTeamIds);
-  const picked = data.teams.filter((t) => sel.has(t.id));
+  const sel = new Set(selectedEntrantIds);
+  const picked = data.entrants.filter((t) => sel.has(t.id));
 
   const dset = new Set();
   for (const t of picked) {
@@ -267,8 +267,8 @@ export function updateRace(data, selectedTeamIds) {
   allDates = [...dset].sort();
   if (allDates.length === 0) return;
 
-  teams = picked.map((t) => {
-    const gi = data.teams.indexOf(t);
+  entrants = picked.map((t) => {
+    const gi = data.entrants.indexOf(t);
     const color = COLORS[gi % COLORS.length];
     const hist = data.history[t.id] || [];
     const lookup = new Map();
@@ -281,14 +281,14 @@ export function updateRace(data, selectedTeamIds) {
         last = hist[hi].probability;
         hi++;
       }
-      // For eliminated teams, set 0 for dates after their last history entry
+      // For eliminated entrants, set 0 for dates after their last history entry
       if (isEliminated && date > lastHistDate) {
         lookup.set(date, 0);
       } else {
         lookup.set(date, last);
       }
     }
-    return { id: t.id, name: t.name, color, lookup };
+    return { id: t.id, name: t.name, image: t.image, color, lookup };
   });
 
   buildBars();
@@ -306,10 +306,10 @@ function buildBars() {
   barsInner.innerHTML = "";
   bars.clear();
 
-  const totalH = teams.length * (BAR_HEIGHT + BAR_GAP);
+  const totalH = entrants.length * (BAR_HEIGHT + BAR_GAP);
   barsInner.style.height = totalH + "px";
 
-  for (const tm of teams) {
+  for (const tm of entrants) {
     const el = document.createElement("div");
     el.className = "race-bar";
     el.style.height = BAR_HEIGHT + "px";
@@ -328,10 +328,11 @@ function buildBars() {
     fill.className = "race-bar__fill";
     fill.style.background = `linear-gradient(90deg, ${tm.color}, ${lighten(tm.color, 30)})`;
 
-    const flag = document.createElement("span");
-    flag.className = "race-bar__flag";
-    flag.textContent = getFlag(tm.id);
-    fill.appendChild(flag);
+    const icon = renderIcon(tm);
+    if (icon) {
+      icon.classList.add("race-bar__icon");
+      fill.appendChild(icon);
+    }
 
     track.appendChild(fill);
 
@@ -378,7 +379,7 @@ export function destroyRace() {
     keyHandler = null;
   }
   bars.clear();
-  teams = [];
+  entrants = [];
   allDates = [];
   currentTime = 0;
   if (container) container.innerHTML = "";

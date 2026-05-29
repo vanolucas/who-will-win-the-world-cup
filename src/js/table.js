@@ -1,5 +1,3 @@
-import { getFlag } from "./flags.js";
-
 function compute7dChange(history, currentProbability) {
   if (!history || history.length < 2) return null;
   const latest = currentProbability;
@@ -9,19 +7,20 @@ function compute7dChange(history, currentProbability) {
   return (latest - older) * 100;
 }
 
-export function updateTable(container, data, selectedTeamIds) {
-  const selectedSet = new Set(selectedTeamIds);
+export function updateTable(container, data, selectedEntrantIds, options = {}) {
+  const { renderIcon = () => null, entrantNoun = "Team" } = options;
+  const selectedSet = new Set(selectedEntrantIds);
 
-  const teams = data.teams
-    .map((team, index) => ({ ...team, rank: index + 1 }))
-    .filter((team) => selectedSet.has(team.id));
+  const entrants = data.entrants
+    .map((entrant, index) => ({ ...entrant, rank: index + 1 }))
+    .filter((entrant) => selectedSet.has(entrant.id));
 
   const table = document.createElement("table");
   table.className = "odds-table";
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
-  ["#", "Team", "Probability", "7d Change"].forEach((text) => {
+  ["#", entrantNoun, "Probability", "7d Change"].forEach((text) => {
     const th = document.createElement("th");
     th.textContent = text;
     headerRow.appendChild(th);
@@ -31,27 +30,33 @@ export function updateTable(container, data, selectedTeamIds) {
 
   const tbody = document.createElement("tbody");
 
-  for (const team of teams) {
+  for (const entrant of entrants) {
     const tr = document.createElement("tr");
 
     const rankTd = document.createElement("td");
     rankTd.className = "rank-cell";
-    rankTd.textContent = team.rank;
+    rankTd.textContent = entrant.rank;
     tr.appendChild(rankTd);
 
     const nameTd = document.createElement("td");
-    const flag = getFlag(team.id);
-    nameTd.textContent = flag ? `${flag} ${team.name}` : team.name;
+    const nameCell = document.createElement("span");
+    nameCell.className = "entrant-name-cell";
+    const icon = renderIcon(entrant);
+    if (icon) nameCell.appendChild(icon);
+    const nameText = document.createElement("span");
+    nameText.textContent = entrant.name;
+    nameCell.appendChild(nameText);
+    nameTd.appendChild(nameCell);
     tr.appendChild(nameTd);
 
     const probTd = document.createElement("td");
     probTd.className = "prob-cell";
-    probTd.textContent = (team.currentProbability * 100).toFixed(1) + "%";
+    probTd.textContent = (entrant.currentProbability * 100).toFixed(1) + "%";
     tr.appendChild(probTd);
 
     const changeTd = document.createElement("td");
     changeTd.className = "change-cell";
-    const change = compute7dChange(data.history[team.id], team.currentProbability);
+    const change = compute7dChange(data.history[entrant.id], entrant.currentProbability);
     if (change === null) {
       changeTd.textContent = "--";
       changeTd.classList.add("neutral");

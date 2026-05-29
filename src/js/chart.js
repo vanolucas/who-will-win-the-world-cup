@@ -1,5 +1,4 @@
 import { createChart, LineSeries, CrosshairMode } from "lightweight-charts";
-import { getFlag } from "./flags.js";
 
 const COLORS = [
   "#c8a04e", "#5ea690", "#c4795a", "#7a90bf", "#6aad76",
@@ -11,16 +10,23 @@ const COLORS = [
 let chart = null;
 let seriesMap = new Map();
 let legendEl = null;
-let flagOverlay = null;
+let iconOverlay = null;
+let renderIcon = () => null;
 
-export function initChart(container, legendContainer) {
+// Cached per-entrant nodes so we don't recreate (and reload <img>) icons on
+// every crosshair move or visible-range change.
+let legendValueNodes = new Map();
+let overlayIconNodes = new Map();
+
+export function initChart(container, legendContainer, iconRenderer) {
   legendEl = legendContainer;
+  renderIcon = iconRenderer || (() => null);
 
-  // Create flag overlay for line-end flags
+  // Create icon overlay for line-end icons
   container.style.position = "relative";
-  flagOverlay = document.createElement("div");
-  flagOverlay.className = "chart-flag-overlay";
-  container.appendChild(flagOverlay);
+  iconOverlay = document.createElement("div");
+  iconOverlay.className = "chart-icon-overlay";
+  container.appendChild(iconOverlay);
 
   chart = createChart(container, {
     layout: {
@@ -48,7 +54,7 @@ export function initChart(container, legendContainer) {
   });
 
   chart.subscribeCrosshairMove(handleCrosshairMove);
-  chart.timeScale().subscribeVisibleLogicalRangeChange(updateFlagPositions);
+  chart.timeScale().subscribeVisibleLogicalRangeChange(updateIconPositions);
 
   const ro = new ResizeObserver(() => {
     if (chart && container.clientWidth > 0 && container.clientHeight > 0) {
@@ -71,7 +77,7 @@ function getNextDay(dateStr) {
   return d.toISOString().split("T")[0];
 }
 
-export function updateChart(data, selectedTeamIds) {
+export function updateChart(data, selectedEntrantIds) {
   if (!chart) return;
 
   // Remove old series
@@ -80,17 +86,17 @@ export function updateChart(data, selectedTeamIds) {
   }
   seriesMap.clear();
 
-  const selectedSet = new Set(selectedTeamIds);
-  const teamsToShow = data.teams.filter((t) => selectedSet.has(t.id));
+  const selectedSet = new Set(selectedEntrantIds);
+  const entrantsToShow = data.entrants.filter((t) => selectedSet.has(t.id));
 
-  // Find the global latest date for extending eliminated team lines
+  // Find the global latest date for extending eliminated entrant lines
   const globalLatestDate = data.metadata.lastUpdate.split("T")[0];
 
-  teamsToShow.forEach((team, i) => {
-    const history = data.history[team.id];
+  entrantsToShow.forEach((entrant) => {
+    const history = data.history[entrant.id];
     if (!history || history.length === 0) return;
 
-    const globalIndex = data.teams.indexOf(team);
+    const globalIndex = data.entrants.indexOf(entrant);
     const color = getColor(globalIndex);
     const lineWidth = globalIndex < 5 ? 2.5 : 1.5;
 
@@ -107,8 +113,8 @@ export function updateChart(data, selectedTeamIds) {
       value: h.probability,
     }));
 
-    // For eliminated teams, add 0% data points to show the drop
-    if (team.currentProbability === 0 && history.length > 0) {
+    // For eliminated entrants, add 0% data points to show the drop
+    if (entrant.currentProbability === 0 && history.length > 0) {
       const lastDate = history[history.length - 1].date;
       const nextDay = getNextDay(lastDate);
       seriesData.push({ time: nextDay, value: 0 });
@@ -118,59 +124,97 @@ export function updateChart(data, selectedTeamIds) {
     }
 
     series.setData(seriesData);
-    seriesMap.set(team.id, { series, team, color, data: seriesData });
+    seriesMap.set(entrant.id, { series, entrant, color, data: seriesData });
   });
 
   chart.timeScale().fitContent();
-  updateLegend(null);
-  requestAnimationFrame(updateFlagPositions);
+  buildLegend();
+  buildOverlayIcons();
+  requestAnimationFrame(updateIconPositions);
 }
 
 function handleCrosshairMove(param) {
-  updateLegend(param);
+  updateLegendValues(param);
 }
 
-function updateLegend(param) {
+/** Build the (static) legend rows once per data update, using safe DOM nodes. */
+function buildLegend() {
   if (!legendEl) return;
+  legendEl.replaceChildren();
+  legendValueNodes = new Map();
 
-  const items = [];
-  for (const [teamId, { series, team, color }] of seriesMap) {
-    let valueStr = (team.currentProbability * 100).toFixed(1) + "%";
+  for (const [entrantId, { entrant, color }] of seriesMap) {
+    const item = document.createElement("span");
+    item.className = "legend-item";
+
+    const dot = document.createElement("span");
+    dot.className = "legend-dot";
+    dot.style.background = color;
+    item.appendChild(dot);
+
+    const icon = renderIcon(entrant);
+    if (icon) {
+      icon.classList.add("legend-icon");
+      item.appendChild(icon);
+    }
+
+    const name = document.createElement("span");
+    name.textContent = entrant.name;
+    item.appendChild(name);
+
+    const value = document.createElement("span");
+    value.className = "legend-value";
+    value.textContent = (entrant.currentProbability * 100).toFixed(1) + "%";
+    item.appendChild(value);
+
+    legendValueNodes.set(entrantId, value);
+    legendEl.appendChild(item);
+  }
+}
+
+/** Update only the legend value text on crosshair move (cheap, no node churn). */
+function updateLegendValues(param) {
+  for (const [entrantId, { series, entrant }] of seriesMap) {
+    const valueEl = legendValueNodes.get(entrantId);
+    if (!valueEl) continue;
+    let valueStr = (entrant.currentProbability * 100).toFixed(1) + "%";
     if (param && param.time) {
-      const data = param.seriesData.get(series);
-      if (data) {
-        valueStr = (data.value * 100).toFixed(1) + "%";
+      const point = param.seriesData.get(series);
+      if (point) {
+        valueStr = (point.value * 100).toFixed(1) + "%";
       }
     }
-    const flag = getFlag(teamId);
-    const displayName = flag ? `${flag} ${team.name}` : team.name;
-    items.push({ name: displayName, color, value: valueStr });
+    valueEl.textContent = valueStr;
   }
-
-  if (items.length === 0) {
-    legendEl.innerHTML = "";
-    return;
-  }
-
-  legendEl.innerHTML = items
-    .map(
-      (item) =>
-        `<span class="legend-item">` +
-        `<span class="legend-dot" style="background:${item.color}"></span>` +
-        `<span>${item.name}</span>` +
-        `<span class="legend-value">${item.value}</span>` +
-        `</span>`
-    )
-    .join("");
 }
 
-function updateFlagPositions() {
-  if (!flagOverlay || !chart) return;
-  flagOverlay.innerHTML = "";
+/** Build (and cache) the line-end icon nodes once per data update. */
+function buildOverlayIcons() {
+  if (!iconOverlay) return;
+  iconOverlay.replaceChildren();
+  overlayIconNodes = new Map();
+
+  for (const [entrantId, { entrant }] of seriesMap) {
+    const icon = renderIcon(entrant);
+    if (!icon) continue;
+    const label = document.createElement("span");
+    label.className = "chart-icon-label";
+    label.appendChild(icon);
+    label.style.display = "none";
+    iconOverlay.appendChild(label);
+    overlayIconNodes.set(entrantId, label);
+  }
+}
+
+function updateIconPositions() {
+  if (!iconOverlay || !chart) return;
 
   const visibleRange = chart.timeScale().getVisibleRange();
 
-  for (const [teamId, { series, data }] of seriesMap) {
+  for (const [entrantId, { series, data }] of seriesMap) {
+    const label = overlayIconNodes.get(entrantId);
+    if (!label) continue;
+
     let lastVisibleValue = null;
     if (visibleRange) {
       for (let i = data.length - 1; i >= 0; i--) {
@@ -183,19 +227,19 @@ function updateFlagPositions() {
     if (lastVisibleValue === null && data.length > 0) {
       lastVisibleValue = data[data.length - 1].value;
     }
-    if (lastVisibleValue === null) continue;
+    if (lastVisibleValue === null) {
+      label.style.display = "none";
+      continue;
+    }
 
     const y = series.priceToCoordinate(lastVisibleValue);
-    if (y === null || y === undefined) continue;
+    if (y === null || y === undefined) {
+      label.style.display = "none";
+      continue;
+    }
 
-    const flag = getFlag(teamId);
-    if (!flag) continue;
-
-    const label = document.createElement("span");
-    label.className = "chart-flag-label";
-    label.textContent = flag;
     label.style.top = y + "px";
-    flagOverlay.appendChild(label);
+    label.style.display = "";
   }
 }
 
