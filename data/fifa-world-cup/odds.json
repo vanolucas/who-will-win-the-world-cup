@@ -146,7 +146,7 @@
             "name": "Morocco"
         },
         {
-            "currentProbability": 0.0375,
+            "currentProbability": 0.0385,
             "id": "netherlands",
             "name": "Netherlands"
         },
@@ -14231,7 +14231,7 @@
     },
     "metadata": {
         "iconType": "flag",
-        "lastUpdate": "2026-05-29T20:05:27Z",
+        "lastUpdate": "2026-05-29T20:58:49Z",
         "totalEntrants": 50
     }
 }

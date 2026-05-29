@@ -4,6 +4,8 @@ A static dashboard displaying winning probabilities for the entrants of an event
 
 - **FIFA World Cup 2026** — `/fifa-world-cup`
 - **French Presidential Election 2027** — `/french-presidential-election`
+- **French Open 2026 — Men's Singles (ATP)** — `/atp-roland-garros`
+- **French Open 2026 — Women's Singles (WTA)** — `/wta-roland-garros`
 
 Visiting the site root (`/`) redirects to the configured **default event**.
 

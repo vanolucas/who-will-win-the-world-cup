@@ -35,6 +35,40 @@
       "aboutText": "This dashboard tracks winning probabilities for each candidate in the 2027 French presidential election, updated daily from prediction market data.",
       "zeroProbabilityLabel": "Inactive",
       "showZeroProbabilitySection": false
+    },
+    {
+      "id": "atp-roland-garros",
+      "polymarketSlug": "2026-mens-singles-roland-garros-winner",
+      "accentColor": "#cf6a3c",
+      "titlePrefix": "Who Will Win the",
+      "dropdownLabel": "French Open (ATP)",
+      "pageTitle": "Who Will Win the Men's French Open?",
+      "metaDescription": "Winning probabilities for each player in the 2026 men's singles French Open (Roland-Garros), updated daily from prediction market data.",
+      "entrantNoun": "Player",
+      "entrantNounPlural": "Players",
+      "iconType": "image",
+      "faviconEmoji": "🎾",
+      "footerDisclaimer": "Not affiliated with Roland-Garros, the FFT or the ATP.",
+      "aboutText": "This dashboard tracks winning probabilities for each player in the 2026 men's singles French Open (Roland-Garros), updated daily from prediction market data.",
+      "zeroProbabilityLabel": "Eliminated",
+      "showZeroProbabilitySection": true
+    },
+    {
+      "id": "wta-roland-garros",
+      "polymarketSlug": "2026-womens-singles-roland-garros-winner",
+      "accentColor": "#a64d9c",
+      "titlePrefix": "Who Will Win the",
+      "dropdownLabel": "French Open (WTA)",
+      "pageTitle": "Who Will Win the Women's French Open?",
+      "metaDescription": "Winning probabilities for each player in the 2026 women's singles French Open (Roland-Garros), updated daily from prediction market data.",
+      "entrantNoun": "Player",
+      "entrantNounPlural": "Players",
+      "iconType": "image",
+      "faviconEmoji": "🎾",
+      "footerDisclaimer": "Not affiliated with Roland-Garros, the FFT or the WTA.",
+      "aboutText": "This dashboard tracks winning probabilities for each player in the 2026 women's singles French Open (Roland-Garros), updated daily from prediction market data.",
+      "zeroProbabilityLabel": "Eliminated",
+      "showZeroProbabilitySection": true
     }
   ]
 }
