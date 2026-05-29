@@ -267,13 +267,17 @@ function reorderLegend() {
     item.style.transform = `translate(${dx}px, ${dy}px)`;
   }
 
-  // Play: on the next frame, clear the transform so CSS animates to the new spot.
+  // Play: once the Invert styles are committed, clear the transform so CSS
+  // animates each item to its new spot. A double rAF ensures the browser has
+  // painted the inverted positions before the transition is re-enabled.
   requestAnimationFrame(() => {
-    for (const item of legendItemNodes.values()) {
-      if (!item.style.transform) continue;
-      item.style.transition = "";
-      item.style.transform = "";
-    }
+    requestAnimationFrame(() => {
+      for (const item of legendItemNodes.values()) {
+        if (!item.style.transform) continue;
+        item.style.transition = "";
+        item.style.transform = "";
+      }
+    });
   });
 }
 
