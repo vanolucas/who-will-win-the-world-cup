@@ -176,7 +176,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.1025,
+            "currentProbability": 0.1035,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -221,7 +221,7 @@
             "name": "Sweden"
         },
         {
-            "currentProbability": 0.0125,
+            "currentProbability": 0.012,
             "id": "switzerland",
             "name": "Switzerland"
         },
@@ -10037,7 +10037,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0285
+                "probability": 0.0295
             }
         ],
         "panama": [
@@ -11110,10 +11110,6 @@
             {
                 "date": "2026-05-28",
                 "probability": 0.1035
-            },
-            {
-                "date": "2026-05-29",
-                "probability": 0.1025
             }
         ],
         "qatar": [
@@ -12607,7 +12603,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0125
+                "probability": 0.012
             }
         ],
         "tunisia": [
@@ -14231,7 +14227,7 @@
     },
     "metadata": {
         "iconType": "flag",
-        "lastUpdate": "2026-05-29T13:00:33Z",
+        "lastUpdate": "2026-05-29T14:35:39Z",
         "totalEntrants": 50
     }
 }
