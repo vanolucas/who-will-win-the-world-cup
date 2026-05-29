@@ -1,7 +1,7 @@
 {
     "entrants": [
         {
-            "currentProbability": 0.0085,
+            "currentProbability": 0.0075,
             "id": "bernard-cazeneuve",
             "image": "images/bernard-cazeneuve.jpg",
             "name": "Bernard Cazeneuve"
@@ -79,7 +79,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0735,
+            "currentProbability": 0.0725,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -187,7 +187,7 @@
             "name": "Sarah Knafo"
         },
         {
-            "currentProbability": 0.0135,
+            "currentProbability": 0.0125,
             "id": "sbastien-lecornu",
             "image": "images/sbastien-lecornu.jpg",
             "name": "S\u00e9bastien Lecornu"
@@ -514,10 +514,6 @@
             {
                 "date": "2026-05-19",
                 "probability": 0.0075
-            },
-            {
-                "date": "2026-05-29",
-                "probability": 0.0085
             }
         ],
         "bruno-retailleau": [
@@ -5284,10 +5280,6 @@
             {
                 "date": "2026-05-28",
                 "probability": 0.0725
-            },
-            {
-                "date": "2026-05-29",
-                "probability": 0.0735
             }
         ],
         "grald-darmanin": [
@@ -11179,7 +11171,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0135
+                "probability": 0.0125
             }
         ],
         "sgolne-royal": [
@@ -12005,7 +11997,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-29T14:36:10Z",
+        "lastUpdate": "2026-05-29T20:05:47Z",
         "totalEntrants": 36
     }
 }

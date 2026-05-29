@@ -51,7 +51,7 @@
             "name": "Colombia"
         },
         {
-            "currentProbability": 0.0005,
+            "currentProbability": 0.0015,
             "id": "congo-dr",
             "name": "Congo DR"
         },
@@ -176,7 +176,7 @@
             "name": "Peru"
         },
         {
-            "currentProbability": 0.1035,
+            "currentProbability": 0.1025,
             "id": "portugal",
             "name": "Portugal"
         },
@@ -221,7 +221,7 @@
             "name": "Sweden"
         },
         {
-            "currentProbability": 0.012,
+            "currentProbability": 0.0115,
             "id": "switzerland",
             "name": "Switzerland"
         },
@@ -3352,6 +3352,10 @@
             {
                 "date": "2026-05-23",
                 "probability": 0.0005
+            },
+            {
+                "date": "2026-05-29",
+                "probability": 0.0015
             }
         ],
         "croatia": [
@@ -9046,10 +9050,6 @@
             {
                 "date": "2026-05-28",
                 "probability": 0.0385
-            },
-            {
-                "date": "2026-05-29",
-                "probability": 0.0375
             }
         ],
         "new-zealand": [
@@ -10037,7 +10037,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0295
+                "probability": 0.0285
             }
         ],
         "panama": [
@@ -11110,6 +11110,10 @@
             {
                 "date": "2026-05-28",
                 "probability": 0.1035
+            },
+            {
+                "date": "2026-05-29",
+                "probability": 0.1025
             }
         ],
         "qatar": [
@@ -12603,7 +12607,7 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.012
+                "probability": 0.0115
             }
         ],
         "tunisia": [
@@ -14227,7 +14231,7 @@
     },
     "metadata": {
         "iconType": "flag",
-        "lastUpdate": "2026-05-29T14:35:39Z",
+        "lastUpdate": "2026-05-29T20:05:27Z",
         "totalEntrants": 50
     }
 }
