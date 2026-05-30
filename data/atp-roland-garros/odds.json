@@ -7,7 +7,7 @@
             "name": "Alejandro Davidovich Fokina"
         },
         {
-            "currentProbability": 0.0005,
+            "currentProbability": 0.0,
             "id": "alex-de-minaur",
             "image": "images/alex-de-minaur.png",
             "name": "Alex de Minaur"
@@ -19,13 +19,13 @@
             "name": "Alexander Bublik"
         },
         {
-            "currentProbability": 0.395,
+            "currentProbability": 0.385,
             "id": "alexander-zverev",
             "image": "images/alexander-zverev.png",
             "name": "Alexander Zverev"
         },
         {
-            "currentProbability": 0.045,
+            "currentProbability": 0.0315,
             "id": "andrey-rublev",
             "image": "images/andrey-rublev.png",
             "name": "Andrey Rublev"
@@ -43,7 +43,7 @@
             "name": "Carlos Alcaraz"
         },
         {
-            "currentProbability": 0.1505,
+            "currentProbability": 0.1305,
             "id": "casper-ruud",
             "image": "images/casper-ruud.png",
             "name": "Casper Ruud"
@@ -55,19 +55,19 @@
             "name": "Daniil Medvedev"
         },
         {
-            "currentProbability": 0.061,
+            "currentProbability": 0.055,
             "id": "felix-auger-aliassime",
             "image": "images/felix-auger-aliassime.png",
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.049,
+            "currentProbability": 0.038,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
         },
         {
-            "currentProbability": 0.06,
+            "currentProbability": 0.0605,
             "id": "francisco-cerundolo",
             "image": "images/francisco-cerundolo.png",
             "name": "Francisco Cerundolo"
@@ -85,7 +85,7 @@
             "name": "Jiri Lehecka"
         },
         {
-            "currentProbability": 0.0005,
+            "currentProbability": 0.0,
             "id": "karen-khachanov",
             "image": "images/karen-khachanov.png",
             "name": "Karen Khachanov"
@@ -97,31 +97,31 @@
             "name": "Lorenzo Musetti"
         },
         {
-            "currentProbability": 0.022,
+            "currentProbability": 0.006,
             "id": "martin-landaluce",
             "image": "images/martin-landaluce.png",
             "name": "Martin Landaluce"
         },
         {
-            "currentProbability": 0.0195,
+            "currentProbability": 0.0375,
             "id": "moise-kouame",
             "image": "images/moise-kouame.png",
             "name": "Moise Kouame"
         },
         {
-            "currentProbability": 0.0005,
+            "currentProbability": 0.0,
             "id": "novak-djokovic",
             "image": "images/novak-djokovic.png",
             "name": "Novak Djokovic"
         },
         {
-            "currentProbability": 0.125,
+            "currentProbability": 0.115,
             "id": "rafael-jodar",
             "image": "images/rafael-jodar.png",
             "name": "Rafael Jodar"
         },
         {
-            "currentProbability": 0.0325,
+            "currentProbability": 0.026,
             "id": "raphael-collignon",
             "image": "images/raphael-collignon.png",
             "name": "Raphael Collignon"
@@ -313,6 +313,10 @@
             },
             {
                 "date": "2026-05-29",
+                "probability": 0.0335
+            },
+            {
+                "date": "2026-05-30",
                 "probability": 0.0005
             }
         ],
@@ -545,7 +549,11 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.4
+                "probability": 0.295
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.385
             }
         ],
         "andrey-rublev": [
@@ -615,7 +623,11 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0415
+                "probability": 0.0235
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.0315
             }
         ],
         "ben-shelton": [
@@ -945,7 +957,11 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.14
+                "probability": 0.0975
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.1295
             }
         ],
         "daniil-medvedev": [
@@ -1201,7 +1217,11 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.0595
+                "probability": 0.0625
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.057
             }
         ],
         "flavio-cobolli": [
@@ -1263,7 +1283,11 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.056
+                "probability": 0.06
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.0385
             }
         ],
         "francisco-cerundolo": [
@@ -1369,7 +1393,11 @@
             },
             {
                 "date": "2026-05-29",
-                "probability": 0.06
+                "probability": 0.0675
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.0605
             }
         ],
         "jannik-sinner": [
@@ -1731,6 +1759,10 @@
             },
             {
                 "date": "2026-05-29",
+                "probability": 0.006
+            },
+            {
+                "date": "2026-05-30",
                 "probability": 0.0005
             }
         ],
@@ -1839,13 +1871,21 @@
         "martin-landaluce": [
             {
                 "date": "2026-05-29",
-                "probability": 0.0235
+                "probability": 0.0515
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.006
             }
         ],
         "moise-kouame": [
             {
                 "date": "2026-05-29",
-                "probability": 0.0175
+                "probability": 0.0335
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.0385
             }
         ],
         "novak-djokovic": [
@@ -1995,19 +2035,31 @@
             },
             {
                 "date": "2026-05-29",
+                "probability": 0.192
+            },
+            {
+                "date": "2026-05-30",
                 "probability": 0.0005
             }
         ],
         "rafael-jodar": [
             {
                 "date": "2026-05-29",
-                "probability": 0.125
+                "probability": 0.095
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.115
             }
         ],
         "raphael-collignon": [
             {
                 "date": "2026-05-29",
-                "probability": 0.0325
+                "probability": 0.021
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.026
             }
         ],
         "taylor-fritz": [
@@ -2207,13 +2259,17 @@
             },
             {
                 "date": "2026-05-29",
+                "probability": 0.008
+            },
+            {
+                "date": "2026-05-30",
                 "probability": 0.0005
             }
         ]
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-29T21:25:56Z",
+        "lastUpdate": "2026-05-30T05:00:36Z",
         "totalEntrants": 23
     }
 }
