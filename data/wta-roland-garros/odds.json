@@ -1,19 +1,19 @@
 {
     "entrants": [
         {
-            "currentProbability": 0.0285,
+            "currentProbability": 0.0,
             "id": "amanda-anisimova",
             "image": "images/amanda-anisimova.png",
             "name": "Amanda Anisimova"
         },
         {
-            "currentProbability": 0.28,
+            "currentProbability": 0.365,
             "id": "aryna-sabalenka",
             "image": "images/aryna-sabalenka.png",
             "name": "Aryna Sabalenka"
         },
         {
-            "currentProbability": 0.095,
+            "currentProbability": 0.12,
             "id": "belinda-bencic",
             "image": "images/belinda-bencic.png",
             "name": "Belinda Bencic"
@@ -25,13 +25,13 @@
             "name": "Clara Tauson"
         },
         {
-            "currentProbability": 0.135,
+            "currentProbability": 0.0,
             "id": "coco-gauff",
             "image": "images/coco-gauff.png",
             "name": "Coco Gauff"
         },
         {
-            "currentProbability": 0.105,
+            "currentProbability": 0.12,
             "id": "diana-shnaider",
             "image": "images/diana-shnaider.png",
             "name": "Diana Shnaider"
@@ -67,7 +67,7 @@
             "name": "Iga Swiatek"
         },
         {
-            "currentProbability": 0.017,
+            "currentProbability": 0.0,
             "id": "iva-jovic",
             "image": "images/iva-jovic.png",
             "name": "Iva Jovic"
@@ -97,25 +97,25 @@
             "name": "Linda Noskova"
         },
         {
-            "currentProbability": 0.0195,
+            "currentProbability": 0.121,
             "id": "madison-keys",
             "image": "images/madison-keys.png",
             "name": "Madison Keys"
         },
         {
-            "currentProbability": 0.095,
+            "currentProbability": 0.09,
             "id": "mirra-andreeva",
             "image": "images/mirra-andreeva.png",
             "name": "Mirra Andreeva"
         },
         {
-            "currentProbability": 0.0245,
+            "currentProbability": 0.04,
             "id": "naomi-osaka",
             "image": "images/naomi-osaka.png",
             "name": "Naomi Osaka"
         },
         {
-            "currentProbability": 0.0305,
+            "currentProbability": 0.0,
             "id": "victoria-mboko",
             "image": "images/victoria-mboko.png",
             "name": "Victoria Mboko"
@@ -201,7 +201,7 @@
             },
             {
                 "date": "2026-05-30",
-                "probability": 0.0285
+                "probability": 0.045
             }
         ],
         "aryna-sabalenka": [
@@ -332,6 +332,10 @@
             {
                 "date": "2026-05-30",
                 "probability": 0.28
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.37
             }
         ],
         "belinda-bencic": [
@@ -397,7 +401,11 @@
             },
             {
                 "date": "2026-05-30",
-                "probability": 0.095
+                "probability": 0.105
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.12
             }
         ],
         "clara-tauson": [
@@ -735,7 +743,11 @@
             },
             {
                 "date": "2026-05-30",
-                "probability": 0.105
+                "probability": 0.135
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.12
             }
         ],
         "ekaterina-alexandrova": [
@@ -1326,6 +1338,14 @@
             {
                 "date": "2026-05-29",
                 "probability": 0.26
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.27
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.26
             }
         ],
         "iva-jovic": [
@@ -1439,7 +1459,7 @@
             },
             {
                 "date": "2026-05-30",
-                "probability": 0.0165
+                "probability": 0.0225
             }
         ],
         "jasmine-paolini": [
@@ -2026,6 +2046,10 @@
             {
                 "date": "2026-05-30",
                 "probability": 0.018
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.12
             }
         ],
         "mirra-andreeva": [
@@ -2155,7 +2179,11 @@
             },
             {
                 "date": "2026-05-30",
-                "probability": 0.095
+                "probability": 0.105
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.085
             }
         ],
         "naomi-osaka": [
@@ -2270,6 +2298,14 @@
             {
                 "date": "2026-05-29",
                 "probability": 0.025
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.0295
+            },
+            {
+                "date": "2026-05-31",
+                "probability": 0.04
             }
         ],
         "victoria-mboko": [
@@ -2416,12 +2452,16 @@
             {
                 "date": "2026-05-29",
                 "probability": 0.031
+            },
+            {
+                "date": "2026-05-30",
+                "probability": 0.0305
             }
         ]
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-30T05:00:46Z",
+        "lastUpdate": "2026-05-31T05:44:58Z",
         "totalEntrants": 20
     }
 }
