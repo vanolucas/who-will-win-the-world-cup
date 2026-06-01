@@ -19,13 +19,13 @@
             "name": "Alexander Bublik"
         },
         {
-            "currentProbability": 0.375,
+            "currentProbability": 0.4,
             "id": "alexander-zverev",
             "image": "images/alexander-zverev.png",
             "name": "Alexander Zverev"
         },
         {
-            "currentProbability": 0.0355,
+            "currentProbability": 0.0,
             "id": "andrey-rublev",
             "image": "images/andrey-rublev.png",
             "name": "Andrey Rublev"
@@ -43,7 +43,7 @@
             "name": "Carlos Alcaraz"
         },
         {
-            "currentProbability": 0.1415,
+            "currentProbability": 0.0,
             "id": "casper-ruud",
             "image": "images/casper-ruud.png",
             "name": "Casper Ruud"
@@ -55,13 +55,13 @@
             "name": "Daniil Medvedev"
         },
         {
-            "currentProbability": 0.069,
+            "currentProbability": 0.0815,
             "id": "felix-auger-aliassime",
             "image": "images/felix-auger-aliassime.png",
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.106,
+            "currentProbability": 0.1175,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
@@ -97,7 +97,7 @@
             "name": "Lorenzo Musetti"
         },
         {
-            "currentProbability": 0.0005,
+            "currentProbability": 0.0,
             "id": "martin-landaluce",
             "image": "images/martin-landaluce.png",
             "name": "Martin Landaluce"
@@ -115,7 +115,7 @@
             "name": "Novak Djokovic"
         },
         {
-            "currentProbability": 0.115,
+            "currentProbability": 0.102,
             "id": "rafael-jodar",
             "image": "images/rafael-jodar.png",
             "name": "Rafael Jodar"
@@ -557,7 +557,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.375
+                "probability": 0.38
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.4
             }
         ],
         "andrey-rublev": [
@@ -635,7 +639,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.0355
+                "probability": 0.0425
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.0005
             }
         ],
         "ben-shelton": [
@@ -973,7 +981,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.1415
+                "probability": 0.141
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.0005
             }
         ],
         "daniil-medvedev": [
@@ -1237,7 +1249,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.069
+                "probability": 0.0695
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.0815
             }
         ],
         "flavio-cobolli": [
@@ -1307,7 +1323,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.106
+                "probability": 0.1145
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.1185
             }
         ],
         "francisco-cerundolo": [
@@ -2077,7 +2097,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.115
+                "probability": 0.12
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.102
             }
         ],
         "raphael-collignon": [
@@ -2297,7 +2321,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-31T05:44:52Z",
+        "lastUpdate": "2026-06-01T06:18:41Z",
         "totalEntrants": 23
     }
 }

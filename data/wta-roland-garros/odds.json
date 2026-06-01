@@ -7,13 +7,13 @@
             "name": "Amanda Anisimova"
         },
         {
-            "currentProbability": 0.365,
+            "currentProbability": 0.43,
             "id": "aryna-sabalenka",
             "image": "images/aryna-sabalenka.png",
             "name": "Aryna Sabalenka"
         },
         {
-            "currentProbability": 0.12,
+            "currentProbability": 0.0,
             "id": "belinda-bencic",
             "image": "images/belinda-bencic.png",
             "name": "Belinda Bencic"
@@ -31,7 +31,7 @@
             "name": "Coco Gauff"
         },
         {
-            "currentProbability": 0.12,
+            "currentProbability": 0.026,
             "id": "diana-shnaider",
             "image": "images/diana-shnaider.png",
             "name": "Diana Shnaider"
@@ -49,7 +49,7 @@
             "name": "Elena Rybakina"
         },
         {
-            "currentProbability": 0.095,
+            "currentProbability": 0.115,
             "id": "elina-svitolina",
             "image": "images/elina-svitolina.png",
             "name": "Elina Svitolina"
@@ -61,7 +61,7 @@
             "name": "Elise Mertens"
         },
         {
-            "currentProbability": 0.26,
+            "currentProbability": 0.0,
             "id": "iga-swiatek",
             "image": "images/iga-swiatek.png",
             "name": "Iga Swiatek"
@@ -97,19 +97,19 @@
             "name": "Linda Noskova"
         },
         {
-            "currentProbability": 0.121,
+            "currentProbability": 0.03,
             "id": "madison-keys",
             "image": "images/madison-keys.png",
             "name": "Madison Keys"
         },
         {
-            "currentProbability": 0.09,
+            "currentProbability": 0.15,
             "id": "mirra-andreeva",
             "image": "images/mirra-andreeva.png",
             "name": "Mirra Andreeva"
         },
         {
-            "currentProbability": 0.04,
+            "currentProbability": 0.056,
             "id": "naomi-osaka",
             "image": "images/naomi-osaka.png",
             "name": "Naomi Osaka"
@@ -335,7 +335,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.37
+                "probability": 0.355
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.43
             }
         ],
         "belinda-bencic": [
@@ -406,6 +410,10 @@
             {
                 "date": "2026-05-31",
                 "probability": 0.12
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.0005
             }
         ],
         "clara-tauson": [
@@ -748,6 +756,10 @@
             {
                 "date": "2026-05-31",
                 "probability": 0.12
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.026
             }
         ],
         "ekaterina-alexandrova": [
@@ -1106,6 +1118,10 @@
             {
                 "date": "2026-05-30",
                 "probability": 0.095
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.115
             }
         ],
         "elise-mertens": [
@@ -2049,7 +2065,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.12
+                "probability": 0.0265
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.03
             }
         ],
         "mirra-andreeva": [
@@ -2183,7 +2203,11 @@
             },
             {
                 "date": "2026-05-31",
-                "probability": 0.085
+                "probability": 0.095
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.155
             }
         ],
         "naomi-osaka": [
@@ -2306,6 +2330,10 @@
             {
                 "date": "2026-05-31",
                 "probability": 0.04
+            },
+            {
+                "date": "2026-06-01",
+                "probability": 0.056
             }
         ],
         "victoria-mboko": [
@@ -2461,7 +2489,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-05-31T05:44:58Z",
+        "lastUpdate": "2026-06-01T06:18:47Z",
         "totalEntrants": 20
     }
 }
