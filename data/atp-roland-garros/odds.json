@@ -19,7 +19,7 @@
             "name": "Alexander Bublik"
         },
         {
-            "currentProbability": 0.4,
+            "currentProbability": 0.42,
             "id": "alexander-zverev",
             "image": "images/alexander-zverev.png",
             "name": "Alexander Zverev"
@@ -55,13 +55,13 @@
             "name": "Daniil Medvedev"
         },
         {
-            "currentProbability": 0.0815,
+            "currentProbability": 0.1225,
             "id": "felix-auger-aliassime",
             "image": "images/felix-auger-aliassime.png",
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.1175,
+            "currentProbability": 0.099,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
@@ -115,7 +115,7 @@
             "name": "Novak Djokovic"
         },
         {
-            "currentProbability": 0.102,
+            "currentProbability": 0.0845,
             "id": "rafael-jodar",
             "image": "images/rafael-jodar.png",
             "name": "Rafael Jodar"
@@ -561,7 +561,11 @@
             },
             {
                 "date": "2026-06-01",
-                "probability": 0.4
+                "probability": 0.435
+            },
+            {
+                "date": "2026-06-02",
+                "probability": 0.42
             }
         ],
         "andrey-rublev": [
@@ -1253,7 +1257,11 @@
             },
             {
                 "date": "2026-06-01",
-                "probability": 0.0815
+                "probability": 0.0855
+            },
+            {
+                "date": "2026-06-02",
+                "probability": 0.1225
             }
         ],
         "flavio-cobolli": [
@@ -1327,7 +1335,11 @@
             },
             {
                 "date": "2026-06-01",
-                "probability": 0.1185
+                "probability": 0.1125
+            },
+            {
+                "date": "2026-06-02",
+                "probability": 0.099
             }
         ],
         "francisco-cerundolo": [
@@ -2101,7 +2113,11 @@
             },
             {
                 "date": "2026-06-01",
-                "probability": 0.102
+                "probability": 0.111
+            },
+            {
+                "date": "2026-06-02",
+                "probability": 0.0845
             }
         ],
         "raphael-collignon": [
@@ -2321,7 +2337,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-01T06:18:41Z",
+        "lastUpdate": "2026-06-02T06:02:00Z",
         "totalEntrants": 23
     }
 }
