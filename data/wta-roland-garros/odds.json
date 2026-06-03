@@ -7,7 +7,7 @@
             "name": "Amanda Anisimova"
         },
         {
-            "currentProbability": 0.53,
+            "currentProbability": 0.555,
             "id": "aryna-sabalenka",
             "image": "images/aryna-sabalenka.png",
             "name": "Aryna Sabalenka"
@@ -31,7 +31,7 @@
             "name": "Coco Gauff"
         },
         {
-            "currentProbability": 0.023,
+            "currentProbability": 0.035,
             "id": "diana-shnaider",
             "image": "images/diana-shnaider.png",
             "name": "Diana Shnaider"
@@ -49,7 +49,7 @@
             "name": "Elena Rybakina"
         },
         {
-            "currentProbability": 0.12,
+            "currentProbability": 0.0,
             "id": "elina-svitolina",
             "image": "images/elina-svitolina.png",
             "name": "Elina Svitolina"
@@ -103,7 +103,7 @@
             "name": "Madison Keys"
         },
         {
-            "currentProbability": 0.14,
+            "currentProbability": 0.195,
             "id": "mirra-andreeva",
             "image": "images/mirra-andreeva.png",
             "name": "Mirra Andreeva"
@@ -343,7 +343,11 @@
             },
             {
                 "date": "2026-06-02",
-                "probability": 0.53
+                "probability": 0.51
+            },
+            {
+                "date": "2026-06-03",
+                "probability": 0.555
             }
         ],
         "belinda-bencic": [
@@ -767,7 +771,11 @@
             },
             {
                 "date": "2026-06-02",
-                "probability": 0.0225
+                "probability": 0.024
+            },
+            {
+                "date": "2026-06-03",
+                "probability": 0.035
             }
         ],
         "ekaterina-alexandrova": [
@@ -1130,10 +1138,6 @@
             {
                 "date": "2026-06-01",
                 "probability": 0.115
-            },
-            {
-                "date": "2026-06-02",
-                "probability": 0.12
             }
         ],
         "elise-mertens": [
@@ -2224,6 +2228,10 @@
             {
                 "date": "2026-06-02",
                 "probability": 0.14
+            },
+            {
+                "date": "2026-06-03",
+                "probability": 0.195
             }
         ],
         "naomi-osaka": [
@@ -2505,7 +2513,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-02T06:02:07Z",
+        "lastUpdate": "2026-06-03T06:16:22Z",
         "totalEntrants": 20
     }
 }
