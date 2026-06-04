@@ -7,7 +7,7 @@
             "name": "Amanda Anisimova"
         },
         {
-            "currentProbability": 0.555,
+            "currentProbability": 0.0,
             "id": "aryna-sabalenka",
             "image": "images/aryna-sabalenka.png",
             "name": "Aryna Sabalenka"
@@ -31,7 +31,7 @@
             "name": "Coco Gauff"
         },
         {
-            "currentProbability": 0.035,
+            "currentProbability": 0.215,
             "id": "diana-shnaider",
             "image": "images/diana-shnaider.png",
             "name": "Diana Shnaider"
@@ -103,7 +103,7 @@
             "name": "Madison Keys"
         },
         {
-            "currentProbability": 0.195,
+            "currentProbability": 0.315,
             "id": "mirra-andreeva",
             "image": "images/mirra-andreeva.png",
             "name": "Mirra Andreeva"
@@ -347,7 +347,7 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.555
+                "probability": 0.565
             }
         ],
         "belinda-bencic": [
@@ -775,7 +775,11 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.035
+                "probability": 0.0225
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.2125
             }
         ],
         "ekaterina-alexandrova": [
@@ -2231,7 +2235,11 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.195
+                "probability": 0.2
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.315
             }
         ],
         "naomi-osaka": [
@@ -2513,7 +2521,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-03T06:16:22Z",
+        "lastUpdate": "2026-06-04T06:06:41Z",
         "totalEntrants": 20
     }
 }

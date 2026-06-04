@@ -55,13 +55,13 @@
             "name": "Daniil Medvedev"
         },
         {
-            "currentProbability": 0.105,
+            "currentProbability": 0.0,
             "id": "felix-auger-aliassime",
             "image": "images/felix-auger-aliassime.png",
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.109,
+            "currentProbability": 0.1995,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
@@ -575,6 +575,10 @@
             },
             {
                 "date": "2026-06-03",
+                "probability": 0.63
+            },
+            {
+                "date": "2026-06-04",
                 "probability": 0.625
             }
         ],
@@ -1275,7 +1279,7 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.105
+                "probability": 0.098
             }
         ],
         "flavio-cobolli": [
@@ -1357,7 +1361,11 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.1095
+                "probability": 0.1035
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.2
             }
         ],
         "francisco-cerundolo": [
@@ -2361,7 +2369,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-03T06:16:14Z",
+        "lastUpdate": "2026-06-04T06:06:34Z",
         "totalEntrants": 24
     }
 }

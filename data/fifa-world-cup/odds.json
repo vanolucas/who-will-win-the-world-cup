@@ -6,7 +6,7 @@
             "name": "Algeria"
         },
         {
-            "currentProbability": 0.0905,
+            "currentProbability": 0.0895,
             "id": "argentina",
             "name": "Argentina"
         },
@@ -31,7 +31,7 @@
             "name": "Bosnia-Herzegovina"
         },
         {
-            "currentProbability": 0.0835,
+            "currentProbability": 0.0825,
             "id": "brazil",
             "name": "Brazil"
         },
@@ -81,7 +81,7 @@
             "name": "Egypt"
         },
         {
-            "currentProbability": 0.1115,
+            "currentProbability": 0.1145,
             "id": "england",
             "name": "England"
         },
@@ -91,7 +91,7 @@
             "name": "France"
         },
         {
-            "currentProbability": 0.0565,
+            "currentProbability": 0.0555,
             "id": "germany",
             "name": "Germany"
         },
@@ -121,12 +121,12 @@
             "name": "Italy"
         },
         {
-            "currentProbability": 0.0025,
+            "currentProbability": 0.0035,
             "id": "ivory-coast",
             "name": "Ivory Coast"
         },
         {
-            "currentProbability": 0.0175,
+            "currentProbability": 0.0185,
             "id": "japan",
             "name": "Japan"
         },
@@ -211,7 +211,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.1625,
+            "currentProbability": 0.1595,
             "id": "spain",
             "name": "Spain"
         },
@@ -221,7 +221,7 @@
             "name": "Sweden"
         },
         {
-            "currentProbability": 0.0105,
+            "currentProbability": 0.0095,
             "id": "switzerland",
             "name": "Switzerland"
         },
@@ -231,7 +231,7 @@
             "name": "Tunisia"
         },
         {
-            "currentProbability": 0.0105,
+            "currentProbability": 0.013,
             "id": "turkiye",
             "name": "Turkiye"
         },
@@ -873,7 +873,11 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.0905
+                "probability": 0.0875
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.0895
             }
         ],
         "australia": [
@@ -2216,6 +2220,10 @@
             {
                 "date": "2026-06-03",
                 "probability": 0.0835
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.0825
             }
         ],
         "canada": [
@@ -4508,6 +4516,10 @@
             {
                 "date": "2026-06-01",
                 "probability": 0.1115
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.1145
             }
         ],
         "france": [
@@ -5448,10 +5460,6 @@
             {
                 "date": "2026-06-02",
                 "probability": 0.0555
-            },
-            {
-                "date": "2026-06-03",
-                "probability": 0.0565
             }
         ],
         "ghana": [
@@ -6516,6 +6524,10 @@
             {
                 "date": "2026-05-25",
                 "probability": 0.0025
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.0035
             }
         ],
         "japan": [
@@ -7182,6 +7194,10 @@
             {
                 "date": "2026-06-01",
                 "probability": 0.0175
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.0185
             }
         ],
         "jordan": [
@@ -10145,6 +10161,10 @@
             },
             {
                 "date": "2026-06-03",
+                "probability": 0.0275
+            },
+            {
+                "date": "2026-06-04",
                 "probability": 0.0255
             }
         ],
@@ -12507,7 +12527,11 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.1615
+                "probability": 0.1635
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.1595
             }
         ],
         "sweden": [
@@ -12756,6 +12780,10 @@
             {
                 "date": "2026-06-03",
                 "probability": 0.0105
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.0095
             }
         ],
         "tunisia": [
@@ -12943,7 +12971,11 @@
             },
             {
                 "date": "2026-06-03",
-                "probability": 0.0095
+                "probability": 0.0105
+            },
+            {
+                "date": "2026-06-04",
+                "probability": 0.0115
             }
         ],
         "uruguay": [
@@ -14395,7 +14427,7 @@
     },
     "metadata": {
         "iconType": "flag",
-        "lastUpdate": "2026-06-03T06:15:48Z",
+        "lastUpdate": "2026-06-04T06:06:16Z",
         "totalEntrants": 50
     }
 }
