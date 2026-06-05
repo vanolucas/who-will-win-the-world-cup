@@ -31,7 +31,7 @@
             "name": "Coco Gauff"
         },
         {
-            "currentProbability": 0.215,
+            "currentProbability": 0.0,
             "id": "diana-shnaider",
             "image": "images/diana-shnaider.png",
             "name": "Diana Shnaider"
@@ -103,7 +103,7 @@
             "name": "Madison Keys"
         },
         {
-            "currentProbability": 0.315,
+            "currentProbability": 0.775,
             "id": "mirra-andreeva",
             "image": "images/mirra-andreeva.png",
             "name": "Mirra Andreeva"
@@ -779,7 +779,7 @@
             },
             {
                 "date": "2026-06-04",
-                "probability": 0.2125
+                "probability": 0.212
             }
         ],
         "ekaterina-alexandrova": [
@@ -2239,7 +2239,11 @@
             },
             {
                 "date": "2026-06-04",
-                "probability": 0.315
+                "probability": 0.325
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.775
             }
         ],
         "naomi-osaka": [
@@ -2521,7 +2525,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-04T06:06:41Z",
+        "lastUpdate": "2026-06-05T05:47:32Z",
         "totalEntrants": 20
     }
 }

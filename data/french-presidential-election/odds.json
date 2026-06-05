@@ -19,7 +19,7 @@
             "name": "Carole Delga"
         },
         {
-            "currentProbability": 0.0065,
+            "currentProbability": 0.0055,
             "id": "clmence-guett",
             "image": "images/clmence-guett.png",
             "name": "Cl\u00e9mence Guett\u00e9"
@@ -31,7 +31,7 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.0225,
+            "currentProbability": 0.03,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
@@ -67,7 +67,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0365,
+            "currentProbability": 0.0345,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -79,7 +79,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0665,
+            "currentProbability": 0.0645,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -1352,6 +1352,10 @@
             {
                 "date": "2026-06-01",
                 "probability": 0.0065
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.0055
             }
         ],
         "clmentine-autain": [
@@ -2123,7 +2127,11 @@
             },
             {
                 "date": "2026-06-04",
-                "probability": 0.0225
+                "probability": 0.0215
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.03
             }
         ],
         "dominique-de-villepin": [
@@ -4416,6 +4424,10 @@
             {
                 "date": "2026-06-04",
                 "probability": 0.0365
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.0345
             }
         ],
         "franois-ruffin": [
@@ -5404,6 +5416,10 @@
             {
                 "date": "2026-06-04",
                 "probability": 0.0665
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.0645
             }
         ],
         "grald-darmanin": [
@@ -10005,6 +10021,10 @@
             },
             {
                 "date": "2026-06-04",
+                "probability": 0.0285
+            },
+            {
+                "date": "2026-06-05",
                 "probability": 0.0275
             }
         ],
@@ -12210,14 +12230,14 @@
                 "probability": 0.0075
             },
             {
-                "date": "2026-06-04",
+                "date": "2026-06-05",
                 "probability": 0.0065
             }
         ]
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-04T06:06:30Z",
+        "lastUpdate": "2026-06-05T05:47:16Z",
         "totalEntrants": 36
     }
 }

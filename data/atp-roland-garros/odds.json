@@ -19,7 +19,7 @@
             "name": "Alexander Bublik"
         },
         {
-            "currentProbability": 0.625,
+            "currentProbability": 0.605,
             "id": "alexander-zverev",
             "image": "images/alexander-zverev.png",
             "name": "Alexander Zverev"
@@ -61,7 +61,7 @@
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.1995,
+            "currentProbability": 0.204,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
@@ -71,6 +71,12 @@
             "id": "francisco-cerundolo",
             "image": "images/francisco-cerundolo.png",
             "name": "Francisco Cerundolo"
+        },
+        {
+            "currentProbability": 0.1515,
+            "id": "jakub-mensik",
+            "image": "images/jakub-mensik.png",
+            "name": "Jakub Mensik"
         },
         {
             "currentProbability": 0.0,
@@ -107,6 +113,12 @@
             "id": "martin-landaluce",
             "image": "images/martin-landaluce.png",
             "name": "Martin Landaluce"
+        },
+        {
+            "currentProbability": 0.0645,
+            "id": "matteo-arnaldi",
+            "image": "images/matteo-arnaldi.png",
+            "name": "Matteo Arnaldi"
         },
         {
             "currentProbability": 0.0,
@@ -580,6 +592,10 @@
             {
                 "date": "2026-06-04",
                 "probability": 0.625
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.595
             }
         ],
         "andrey-rublev": [
@@ -1365,7 +1381,11 @@
             },
             {
                 "date": "2026-06-04",
-                "probability": 0.2
+                "probability": 0.2005
+            },
+            {
+                "date": "2026-06-05",
+                "probability": 0.204
             }
         ],
         "francisco-cerundolo": [
@@ -1476,6 +1496,12 @@
             {
                 "date": "2026-05-30",
                 "probability": 0.061
+            }
+        ],
+        "jakub-mensik": [
+            {
+                "date": "2026-06-05",
+                "probability": 0.1515
             }
         ],
         "jannik-sinner": [
@@ -1966,6 +1992,12 @@
                 "probability": 0.0005
             }
         ],
+        "matteo-arnaldi": [
+            {
+                "date": "2026-06-05",
+                "probability": 0.0635
+            }
+        ],
         "moise-kouame": [
             {
                 "date": "2026-05-29",
@@ -2369,7 +2401,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-04T06:06:34Z",
-        "totalEntrants": 24
+        "lastUpdate": "2026-06-05T05:47:26Z",
+        "totalEntrants": 26
     }
 }
