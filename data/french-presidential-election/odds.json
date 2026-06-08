@@ -79,13 +79,13 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0645,
+            "currentProbability": 0.0635,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
         },
         {
-            "currentProbability": 0.0065,
+            "currentProbability": 0.0125,
             "id": "grald-darmanin",
             "image": "images/grald-darmanin.jpg",
             "name": "G\u00e9rald Darmanin"
@@ -103,7 +103,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.255,
+            "currentProbability": 0.265,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -1106,7 +1106,7 @@
                 "probability": 0.0315
             },
             {
-                "date": "2026-06-07",
+                "date": "2026-06-08",
                 "probability": 0.0305
             }
         ],
@@ -5436,6 +5436,10 @@
             {
                 "date": "2026-06-05",
                 "probability": 0.0645
+            },
+            {
+                "date": "2026-06-08",
+                "probability": 0.0635
             }
         ],
         "grald-darmanin": [
@@ -5850,6 +5854,10 @@
             {
                 "date": "2026-06-07",
                 "probability": 0.0065
+            },
+            {
+                "date": "2026-06-08",
+                "probability": 0.0125
             }
         ],
         "jean-castex": [
@@ -7072,6 +7080,10 @@
             {
                 "date": "2026-06-06",
                 "probability": 0.255
+            },
+            {
+                "date": "2026-06-08",
+                "probability": 0.265
             }
         ],
         "juan-branco": [
@@ -11446,7 +11458,7 @@
                 "probability": 0.0105
             },
             {
-                "date": "2026-06-07",
+                "date": "2026-06-08",
                 "probability": 0.0095
             }
         ],
@@ -12281,7 +12293,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-07T05:50:56Z",
+        "lastUpdate": "2026-06-08T06:05:58Z",
         "totalEntrants": 36
     }
 }

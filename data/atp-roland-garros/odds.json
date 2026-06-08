@@ -19,7 +19,7 @@
             "name": "Alexander Bublik"
         },
         {
-            "currentProbability": 0.78,
+            "currentProbability": 1.0,
             "id": "alexander-zverev",
             "image": "images/alexander-zverev.png",
             "name": "Alexander Zverev"
@@ -61,7 +61,7 @@
             "name": "Felix Auger-Aliassime"
         },
         {
-            "currentProbability": 0.217,
+            "currentProbability": 0.0,
             "id": "flavio-cobolli",
             "image": "images/flavio-cobolli.png",
             "name": "Flavio Cobolli"
@@ -1401,7 +1401,7 @@
             },
             {
                 "date": "2026-06-07",
-                "probability": 0.217
+                "probability": 0.2195
             }
         ],
         "francisco-cerundolo": [
@@ -2417,7 +2417,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-07T05:51:06Z",
+        "lastUpdate": "2026-06-08T06:06:07Z",
         "totalEntrants": 26
     }
 }
