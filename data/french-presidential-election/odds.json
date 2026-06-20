@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.0185,
+            "currentProbability": 0.019,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -31,13 +31,13 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.0215,
+            "currentProbability": 0.0205,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.0385,
+            "currentProbability": 0.039,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -67,7 +67,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0205,
+            "currentProbability": 0.021,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -187,7 +187,7 @@
             "name": "Sarah Knafo"
         },
         {
-            "currentProbability": 0.0065,
+            "currentProbability": 0.0075,
             "id": "sbastien-lecornu",
             "image": "images/sbastien-lecornu.jpg",
             "name": "S\u00e9bastien Lecornu"
@@ -1146,8 +1146,8 @@
                 "probability": 0.0175
             },
             {
-                "date": "2026-06-19",
-                "probability": 0.0185
+                "date": "2026-06-20",
+                "probability": 0.019
             }
         ],
         "carole-delga": [
@@ -2208,6 +2208,10 @@
             {
                 "date": "2026-06-15",
                 "probability": 0.0215
+            },
+            {
+                "date": "2026-06-20",
+                "probability": 0.0205
             }
         ],
         "dominique-de-villepin": [
@@ -2886,6 +2890,14 @@
             {
                 "date": "2026-06-18",
                 "probability": 0.0385
+            },
+            {
+                "date": "2026-06-19",
+                "probability": 0.038
+            },
+            {
+                "date": "2026-06-20",
+                "probability": 0.039
             }
         ],
         "douard-philippe": [
@@ -4576,6 +4588,10 @@
             {
                 "date": "2026-06-19",
                 "probability": 0.0205
+            },
+            {
+                "date": "2026-06-20",
+                "probability": 0.021
             }
         ],
         "franois-ruffin": [
@@ -11784,6 +11800,10 @@
             {
                 "date": "2026-06-17",
                 "probability": 0.0065
+            },
+            {
+                "date": "2026-06-20",
+                "probability": 0.0075
             }
         ],
         "sgolne-royal": [
@@ -12617,7 +12637,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-19T06:30:17Z",
+        "lastUpdate": "2026-06-20T05:42:44Z",
         "totalEntrants": 36
     }
 }
