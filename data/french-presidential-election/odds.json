@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.019,
+            "currentProbability": 0.021,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -37,7 +37,7 @@
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.039,
+            "currentProbability": 0.037,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -67,7 +67,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.021,
+            "currentProbability": 0.0215,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -97,7 +97,7 @@
             "name": "Jean Castex"
         },
         {
-            "currentProbability": 0.095,
+            "currentProbability": 0.105,
             "id": "jean-luc-mlenchon",
             "image": "images/jean-luc-mlenchon.jpg",
             "name": "Jean-Luc M\u00e9lenchon"
@@ -1148,6 +1148,10 @@
             {
                 "date": "2026-06-20",
                 "probability": 0.019
+            },
+            {
+                "date": "2026-06-21",
+                "probability": 0.021
             }
         ],
         "carole-delga": [
@@ -2898,6 +2902,10 @@
             {
                 "date": "2026-06-20",
                 "probability": 0.039
+            },
+            {
+                "date": "2026-06-21",
+                "probability": 0.037
             }
         ],
         "douard-philippe": [
@@ -4592,6 +4600,10 @@
             {
                 "date": "2026-06-20",
                 "probability": 0.021
+            },
+            {
+                "date": "2026-06-21",
+                "probability": 0.0215
             }
         ],
         "franois-ruffin": [
@@ -6810,6 +6822,10 @@
             {
                 "date": "2026-06-19",
                 "probability": 0.095
+            },
+            {
+                "date": "2026-06-21",
+                "probability": 0.105
             }
         ],
         "jordan-bardella": [
@@ -12637,7 +12653,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-20T05:42:44Z",
+        "lastUpdate": "2026-06-21T06:16:54Z",
         "totalEntrants": 36
     }
 }
