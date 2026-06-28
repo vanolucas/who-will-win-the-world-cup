@@ -31,7 +31,7 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.0165,
+            "currentProbability": 0.017,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
@@ -67,7 +67,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0265,
+            "currentProbability": 0.0255,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -85,7 +85,7 @@
             "name": "Gabriel Attal"
         },
         {
-            "currentProbability": 0.0075,
+            "currentProbability": 0.0065,
             "id": "grald-darmanin",
             "image": "images/grald-darmanin.jpg",
             "name": "G\u00e9rald Darmanin"
@@ -2252,6 +2252,10 @@
             {
                 "date": "2026-06-27",
                 "probability": 0.0165
+            },
+            {
+                "date": "2026-06-28",
+                "probability": 0.017
             }
         ],
         "dominique-de-villepin": [
@@ -4695,7 +4699,11 @@
             },
             {
                 "date": "2026-06-27",
-                "probability": 0.0265
+                "probability": 0.027
+            },
+            {
+                "date": "2026-06-28",
+                "probability": 0.0255
             }
         ],
         "franois-ruffin": [
@@ -5751,6 +5759,10 @@
             },
             {
                 "date": "2026-06-27",
+                "probability": 0.0375
+            },
+            {
+                "date": "2026-06-28",
                 "probability": 0.0355
             }
         ],
@@ -6182,6 +6194,10 @@
             {
                 "date": "2026-06-13",
                 "probability": 0.0075
+            },
+            {
+                "date": "2026-06-28",
+                "probability": 0.0065
             }
         ],
         "jean-castex": [
@@ -12821,7 +12837,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-27T05:03:08Z",
+        "lastUpdate": "2026-06-28T05:43:52Z",
         "totalEntrants": 36
     }
 }
