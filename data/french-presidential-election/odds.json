@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.0285,
+            "currentProbability": 0.029,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -31,7 +31,7 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.017,
+            "currentProbability": 0.0165,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
@@ -79,7 +79,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0355,
+            "currentProbability": 0.0345,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -1168,6 +1168,10 @@
             {
                 "date": "2026-06-27",
                 "probability": 0.0285
+            },
+            {
+                "date": "2026-06-29",
+                "probability": 0.029
             }
         ],
         "carole-delga": [
@@ -2256,6 +2260,10 @@
             {
                 "date": "2026-06-28",
                 "probability": 0.017
+            },
+            {
+                "date": "2026-06-29",
+                "probability": 0.0165
             }
         ],
         "dominique-de-villepin": [
@@ -5764,6 +5772,10 @@
             {
                 "date": "2026-06-28",
                 "probability": 0.0355
+            },
+            {
+                "date": "2026-06-29",
+                "probability": 0.0345
             }
         ],
         "grald-darmanin": [
@@ -12837,7 +12849,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-28T05:43:52Z",
+        "lastUpdate": "2026-06-29T06:04:24Z",
         "totalEntrants": 36
     }
 }
