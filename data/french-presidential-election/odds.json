@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.029,
+            "currentProbability": 0.0295,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -31,13 +31,13 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.0165,
+            "currentProbability": 0.0155,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.0345,
+            "currentProbability": 0.0325,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -103,7 +103,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.255,
+            "currentProbability": 0.265,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -181,7 +181,7 @@
             "name": "\u00c9ric Zemmour"
         },
         {
-            "currentProbability": 0.0165,
+            "currentProbability": 0.0155,
             "id": "sarah-knafo",
             "image": "images/sarah-knafo.jpg",
             "name": "Sarah Knafo"
@@ -1170,8 +1170,8 @@
                 "probability": 0.0285
             },
             {
-                "date": "2026-06-29",
-                "probability": 0.029
+                "date": "2026-06-30",
+                "probability": 0.0295
             }
         ],
         "carole-delga": [
@@ -2264,6 +2264,10 @@
             {
                 "date": "2026-06-29",
                 "probability": 0.0165
+            },
+            {
+                "date": "2026-06-30",
+                "probability": 0.0155
             }
         ],
         "dominique-de-villepin": [
@@ -2974,6 +2978,10 @@
             {
                 "date": "2026-06-27",
                 "probability": 0.0345
+            },
+            {
+                "date": "2026-06-30",
+                "probability": 0.0325
             }
         ],
         "douard-philippe": [
@@ -7484,6 +7492,10 @@
             {
                 "date": "2026-06-27",
                 "probability": 0.255
+            },
+            {
+                "date": "2026-06-30",
+                "probability": 0.265
             }
         ],
         "juan-branco": [
@@ -11618,6 +11630,10 @@
             {
                 "date": "2026-06-27",
                 "probability": 0.0165
+            },
+            {
+                "date": "2026-06-30",
+                "probability": 0.0155
             }
         ],
         "sbastien-lecornu": [
@@ -12849,7 +12865,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-06-29T06:04:24Z",
+        "lastUpdate": "2026-06-30T05:16:33Z",
         "totalEntrants": 36
     }
 }
