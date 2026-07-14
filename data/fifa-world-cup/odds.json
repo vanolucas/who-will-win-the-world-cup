@@ -6,7 +6,7 @@
             "name": "Algeria"
         },
         {
-            "currentProbability": 0.1795,
+            "currentProbability": 0.1735,
             "id": "argentina",
             "name": "Argentina"
         },
@@ -86,7 +86,7 @@
             "name": "England"
         },
         {
-            "currentProbability": 0.3885,
+            "currentProbability": 0.3895,
             "id": "france",
             "name": "France"
         },
@@ -211,7 +211,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.2075,
+            "currentProbability": 0.2115,
             "id": "spain",
             "name": "Spain"
         },
@@ -1017,7 +1017,11 @@
             },
             {
                 "date": "2026-07-13",
-                "probability": 0.1795
+                "probability": 0.1825
+            },
+            {
+                "date": "2026-07-14",
+                "probability": 0.1735
             }
         ],
         "australia": [
@@ -5307,6 +5311,10 @@
             },
             {
                 "date": "2026-07-13",
+                "probability": 0.2145
+            },
+            {
+                "date": "2026-07-14",
                 "probability": 0.2155
             }
         ],
@@ -5858,6 +5866,10 @@
             {
                 "date": "2026-07-13",
                 "probability": 0.3885
+            },
+            {
+                "date": "2026-07-14",
+                "probability": 0.3895
             }
         ],
         "germany": [
@@ -14379,7 +14391,11 @@
             },
             {
                 "date": "2026-07-13",
-                "probability": 0.2075
+                "probability": 0.2055
+            },
+            {
+                "date": "2026-07-14",
+                "probability": 0.2115
             }
         ],
         "sweden": [
@@ -16571,7 +16587,7 @@
     },
     "metadata": {
         "iconType": "flag",
-        "lastUpdate": "2026-07-13T04:40:11Z",
+        "lastUpdate": "2026-07-14T04:13:40Z",
         "totalEntrants": 50
     }
 }
