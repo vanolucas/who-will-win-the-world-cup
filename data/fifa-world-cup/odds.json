@@ -6,7 +6,7 @@
             "name": "Algeria"
         },
         {
-            "currentProbability": 0.4165,
+            "currentProbability": 0.4105,
             "id": "argentina",
             "name": "Argentina"
         },
@@ -211,7 +211,7 @@
             "name": "South Korea"
         },
         {
-            "currentProbability": 0.5795,
+            "currentProbability": 0.5835,
             "id": "spain",
             "name": "Spain"
         },
@@ -1029,7 +1029,11 @@
             },
             {
                 "date": "2026-07-16",
-                "probability": 0.4165
+                "probability": 0.4215
+            },
+            {
+                "date": "2026-07-17",
+                "probability": 0.4105
             }
         ],
         "australia": [
@@ -14424,6 +14428,10 @@
             {
                 "date": "2026-07-16",
                 "probability": 0.5795
+            },
+            {
+                "date": "2026-07-17",
+                "probability": 0.5835
             }
         ],
         "sweden": [
@@ -16615,7 +16623,7 @@
     },
     "metadata": {
         "iconType": "flag",
-        "lastUpdate": "2026-07-16T04:21:27Z",
+        "lastUpdate": "2026-07-17T04:19:42Z",
         "totalEntrants": 50
     }
 }
