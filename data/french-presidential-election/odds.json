@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.027,
+            "currentProbability": 0.0265,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -85,7 +85,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0295,
+            "currentProbability": 0.0305,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -109,7 +109,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.031,
+            "currentProbability": 0.032,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -121,7 +121,7 @@
             "name": "Juan Branco"
         },
         {
-            "currentProbability": 0.0025,
+            "currentProbability": 0.0015,
             "id": "karim-bouamrane",
             "image": "images/karim-bouamrane.jpg",
             "name": "Karim Bouamrane"
@@ -151,7 +151,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.3135,
+            "currentProbability": 0.3225,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -193,7 +193,7 @@
             "name": "Olivier Faure"
         },
         {
-            "currentProbability": 0.0175,
+            "currentProbability": 0.018,
             "id": "raphal-glucksmann",
             "image": "images/raphal-glucksmann.jpg",
             "name": "Rapha\u00ebl Glucksmann"
@@ -211,7 +211,7 @@
             "name": "Sarah Knafo"
         },
         {
-            "currentProbability": 0.015,
+            "currentProbability": 0.0155,
             "id": "sbastien-lecornu",
             "image": "images/sbastien-lecornu.jpg",
             "name": "S\u00e9bastien Lecornu"
@@ -1298,6 +1298,10 @@
             {
                 "date": "2026-07-26",
                 "probability": 0.027
+            },
+            {
+                "date": "2026-07-27",
+                "probability": 0.0265
             }
         ],
         "carole-delga": [
@@ -6316,6 +6320,10 @@
             {
                 "date": "2026-07-26",
                 "probability": 0.0295
+            },
+            {
+                "date": "2026-07-27",
+                "probability": 0.0305
             }
         ],
         "grald-darmanin": [
@@ -8163,7 +8171,11 @@
             },
             {
                 "date": "2026-07-26",
-                "probability": 0.031
+                "probability": 0.0305
+            },
+            {
+                "date": "2026-07-27",
+                "probability": 0.032
             }
         ],
         "juan-branco": [
@@ -8556,6 +8568,10 @@
             {
                 "date": "2026-07-18",
                 "probability": 0.0025
+            },
+            {
+                "date": "2026-07-27",
+                "probability": 0.0015
             }
         ],
         "laurent-wauquiez": [
@@ -11500,6 +11516,10 @@
             {
                 "date": "2026-07-25",
                 "probability": 0.0175
+            },
+            {
+                "date": "2026-07-27",
+                "probability": 0.018
             }
         ],
         "ric-zemmour": [
@@ -13014,6 +13034,10 @@
             {
                 "date": "2026-07-24",
                 "probability": 0.015
+            },
+            {
+                "date": "2026-07-27",
+                "probability": 0.0155
             }
         ],
         "sgolne-royal": [
@@ -13917,7 +13941,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-07-26T04:37:08Z",
+        "lastUpdate": "2026-07-27T04:50:10Z",
         "totalEntrants": 41
     }
 }
