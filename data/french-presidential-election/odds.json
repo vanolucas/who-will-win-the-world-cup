@@ -109,7 +109,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.0325,
+            "currentProbability": 0.032,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -151,7 +151,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.2925,
+            "currentProbability": 0.297,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -5227,7 +5227,11 @@
             },
             {
                 "date": "2026-07-31",
-                "probability": 0.0375
+                "probability": 0.035
+            },
+            {
+                "date": "2026-08-01",
+                "probability": 0.036
             }
         ],
         "franois-ruffin": [
@@ -6383,6 +6387,10 @@
             },
             {
                 "date": "2026-07-31",
+                "probability": 0.038
+            },
+            {
+                "date": "2026-08-01",
                 "probability": 0.0375
             }
         ],
@@ -8252,6 +8260,10 @@
             {
                 "date": "2026-07-31",
                 "probability": 0.0325
+            },
+            {
+                "date": "2026-08-01",
+                "probability": 0.032
             }
         ],
         "juan-branco": [
@@ -9753,7 +9765,11 @@
             },
             {
                 "date": "2026-07-31",
-                "probability": 0.2925
+                "probability": 0.2975
+            },
+            {
+                "date": "2026-08-01",
+                "probability": 0.297
             }
         ],
         "marine-tondelier": [
@@ -14057,7 +14073,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-07-31T04:34:40Z",
+        "lastUpdate": "2026-08-01T04:31:35Z",
         "totalEntrants": 41
     }
 }
