@@ -31,13 +31,13 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.0225,
+            "currentProbability": 0.0245,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.0195,
+            "currentProbability": 0.0275,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -73,7 +73,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0375,
+            "currentProbability": 0.035,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -85,7 +85,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0395,
+            "currentProbability": 0.0385,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -109,7 +109,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.0335,
+            "currentProbability": 0.034,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -193,7 +193,7 @@
             "name": "Olivier Faure"
         },
         {
-            "currentProbability": 0.019,
+            "currentProbability": 0.0185,
             "id": "raphal-glucksmann",
             "image": "images/raphal-glucksmann.jpg",
             "name": "Rapha\u00ebl Glucksmann"
@@ -2538,6 +2538,10 @@
             {
                 "date": "2026-08-04",
                 "probability": 0.0225
+            },
+            {
+                "date": "2026-08-06",
+                "probability": 0.0245
             }
         ],
         "dominique-de-villepin": [
@@ -3332,6 +3336,10 @@
             {
                 "date": "2026-07-30",
                 "probability": 0.0195
+            },
+            {
+                "date": "2026-08-06",
+                "probability": 0.0275
             }
         ],
         "douard-philippe": [
@@ -5256,6 +5264,10 @@
             {
                 "date": "2026-08-05",
                 "probability": 0.0375
+            },
+            {
+                "date": "2026-08-06",
+                "probability": 0.034
             }
         ],
         "franois-ruffin": [
@@ -6428,6 +6440,10 @@
             {
                 "date": "2026-08-04",
                 "probability": 0.0395
+            },
+            {
+                "date": "2026-08-06",
+                "probability": 0.0385
             }
         ],
         "grald-darmanin": [
@@ -8316,6 +8332,10 @@
             {
                 "date": "2026-08-05",
                 "probability": 0.0335
+            },
+            {
+                "date": "2026-08-06",
+                "probability": 0.034
             }
         ],
         "juan-branco": [
@@ -11708,6 +11728,10 @@
             {
                 "date": "2026-08-05",
                 "probability": 0.019
+            },
+            {
+                "date": "2026-08-06",
+                "probability": 0.0185
             }
         ],
         "ric-zemmour": [
@@ -14161,7 +14185,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-08-05T04:24:58Z",
+        "lastUpdate": "2026-08-06T04:26:41Z",
         "totalEntrants": 41
     }
 }
