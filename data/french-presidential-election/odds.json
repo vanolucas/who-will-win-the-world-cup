@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.0215,
+            "currentProbability": 0.0175,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -31,7 +31,7 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.031,
+            "currentProbability": 0.0305,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
@@ -73,7 +73,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0325,
+            "currentProbability": 0.0365,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -151,7 +151,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.3155,
+            "currentProbability": 0.3135,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -1334,6 +1334,10 @@
             {
                 "date": "2026-08-12",
                 "probability": 0.0215
+            },
+            {
+                "date": "2026-08-14",
+                "probability": 0.0175
             }
         ],
         "carole-delga": [
@@ -2570,6 +2574,10 @@
             {
                 "date": "2026-08-13",
                 "probability": 0.031
+            },
+            {
+                "date": "2026-08-14",
+                "probability": 0.0305
             }
         ],
         "dominique-de-villepin": [
@@ -5336,6 +5344,10 @@
             {
                 "date": "2026-08-13",
                 "probability": 0.0325
+            },
+            {
+                "date": "2026-08-14",
+                "probability": 0.0365
             }
         ],
         "franois-ruffin": [
@@ -9981,7 +9993,11 @@
             },
             {
                 "date": "2026-08-13",
-                "probability": 0.3155
+                "probability": 0.3175
+            },
+            {
+                "date": "2026-08-14",
+                "probability": 0.3135
             }
         ],
         "marine-tondelier": [
@@ -14353,7 +14369,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-08-13T03:32:13Z",
+        "lastUpdate": "2026-08-14T03:29:33Z",
         "totalEntrants": 41
     }
 }
