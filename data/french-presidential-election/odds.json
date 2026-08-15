@@ -37,7 +37,7 @@
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.0195,
+            "currentProbability": 0.018,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -109,7 +109,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.0315,
+            "currentProbability": 0.0305,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -151,7 +151,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.3135,
+            "currentProbability": 0.3175,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -3396,6 +3396,10 @@
             {
                 "date": "2026-08-12",
                 "probability": 0.0195
+            },
+            {
+                "date": "2026-08-15",
+                "probability": 0.018
             }
         ],
         "douard-philippe": [
@@ -8452,6 +8456,10 @@
             {
                 "date": "2026-08-10",
                 "probability": 0.0315
+            },
+            {
+                "date": "2026-08-15",
+                "probability": 0.0305
             }
         ],
         "juan-branco": [
@@ -9998,6 +10006,10 @@
             {
                 "date": "2026-08-14",
                 "probability": 0.3135
+            },
+            {
+                "date": "2026-08-15",
+                "probability": 0.3175
             }
         ],
         "marine-tondelier": [
@@ -14369,7 +14381,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-08-14T03:29:33Z",
+        "lastUpdate": "2026-08-15T02:18:38Z",
         "totalEntrants": 41
     }
 }
