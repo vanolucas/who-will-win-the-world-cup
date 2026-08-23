@@ -31,13 +31,13 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.027,
+            "currentProbability": 0.0285,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.018,
+            "currentProbability": 0.0165,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -85,7 +85,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.032,
+            "currentProbability": 0.035,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -109,7 +109,7 @@
             "name": "Jean-Luc M\u00e9lenchon"
         },
         {
-            "currentProbability": 0.0215,
+            "currentProbability": 0.0275,
             "id": "jordan-bardella",
             "image": "images/jordan-bardella.jpg",
             "name": "Jordan Bardella"
@@ -151,7 +151,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.3185,
+            "currentProbability": 0.3195,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -205,13 +205,13 @@
             "name": "\u00c9ric Zemmour"
         },
         {
-            "currentProbability": 0.0155,
+            "currentProbability": 0.0175,
             "id": "sarah-knafo",
             "image": "images/sarah-knafo.jpg",
             "name": "Sarah Knafo"
         },
         {
-            "currentProbability": 0.02,
+            "currentProbability": 0.0185,
             "id": "sbastien-lecornu",
             "image": "images/sbastien-lecornu.jpg",
             "name": "S\u00e9bastien Lecornu"
@@ -2618,6 +2618,10 @@
             {
                 "date": "2026-08-22",
                 "probability": 0.027
+            },
+            {
+                "date": "2026-08-23",
+                "probability": 0.0285
             }
         ],
         "dominique-de-villepin": [
@@ -3463,7 +3467,7 @@
             },
             {
                 "date": "2026-08-22",
-                "probability": 0.018
+                "probability": 0.0165
             }
         ],
         "douard-philippe": [
@@ -6632,6 +6636,10 @@
             {
                 "date": "2026-08-22",
                 "probability": 0.032
+            },
+            {
+                "date": "2026-08-23",
+                "probability": 0.035
             }
         ],
         "grald-darmanin": [
@@ -8572,6 +8580,10 @@
             {
                 "date": "2026-08-22",
                 "probability": 0.0215
+            },
+            {
+                "date": "2026-08-23",
+                "probability": 0.0275
             }
         ],
         "juan-branco": [
@@ -10158,6 +10170,10 @@
             {
                 "date": "2026-08-22",
                 "probability": 0.3185
+            },
+            {
+                "date": "2026-08-23",
+                "probability": 0.3195
             }
         ],
         "marine-tondelier": [
@@ -13216,6 +13232,10 @@
             {
                 "date": "2026-08-21",
                 "probability": 0.0155
+            },
+            {
+                "date": "2026-08-23",
+                "probability": 0.0175
             }
         ],
         "sbastien-lecornu": [
@@ -13669,7 +13689,11 @@
             },
             {
                 "date": "2026-08-22",
-                "probability": 0.0205
+                "probability": 0.02
+            },
+            {
+                "date": "2026-08-23",
+                "probability": 0.0185
             }
         ],
         "sgolne-royal": [
@@ -14577,7 +14601,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-08-22T02:20:37Z",
+        "lastUpdate": "2026-08-23T02:37:02Z",
         "totalEntrants": 41
     }
 }
