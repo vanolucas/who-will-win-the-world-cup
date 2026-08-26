@@ -73,7 +73,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0315,
+            "currentProbability": 0.0335,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -151,7 +151,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.3225,
+            "currentProbability": 0.3325,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -193,7 +193,7 @@
             "name": "Olivier Faure"
         },
         {
-            "currentProbability": 0.0195,
+            "currentProbability": 0.0185,
             "id": "raphal-glucksmann",
             "image": "images/raphal-glucksmann.jpg",
             "name": "Rapha\u00ebl Glucksmann"
@@ -2636,7 +2636,7 @@
                 "probability": 0.0285
             },
             {
-                "date": "2026-08-25",
+                "date": "2026-08-26",
                 "probability": 0.0265
             }
         ],
@@ -3494,7 +3494,7 @@
                 "probability": 0.0175
             },
             {
-                "date": "2026-08-25",
+                "date": "2026-08-26",
                 "probability": 0.0165
             }
         ],
@@ -5464,6 +5464,10 @@
             {
                 "date": "2026-08-25",
                 "probability": 0.0315
+            },
+            {
+                "date": "2026-08-26",
+                "probability": 0.0335
             }
         ],
         "franois-ruffin": [
@@ -6683,6 +6687,10 @@
             },
             {
                 "date": "2026-08-25",
+                "probability": 0.0405
+            },
+            {
+                "date": "2026-08-26",
                 "probability": 0.0385
             }
         ],
@@ -10249,7 +10257,11 @@
             },
             {
                 "date": "2026-08-25",
-                "probability": 0.3225
+                "probability": 0.3235
+            },
+            {
+                "date": "2026-08-26",
+                "probability": 0.3325
             }
         ],
         "marine-tondelier": [
@@ -12180,6 +12192,10 @@
             {
                 "date": "2026-08-25",
                 "probability": 0.0195
+            },
+            {
+                "date": "2026-08-26",
+                "probability": 0.0185
             }
         ],
         "ric-zemmour": [
@@ -14701,7 +14717,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-08-25T02:22:32Z",
+        "lastUpdate": "2026-08-26T02:38:49Z",
         "totalEntrants": 41
     }
 }
