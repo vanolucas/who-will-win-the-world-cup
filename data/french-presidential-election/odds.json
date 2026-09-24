@@ -7,7 +7,7 @@
             "name": "Bernard Cazeneuve"
         },
         {
-            "currentProbability": 0.0145,
+            "currentProbability": 0.0155,
             "id": "bruno-retailleau",
             "image": "images/bruno-retailleau.jpg",
             "name": "Bruno Retailleau"
@@ -17,6 +17,12 @@
             "id": "carole-delga",
             "image": "images/carole-delga.jpg",
             "name": "Carole Delga"
+        },
+        {
+            "currentProbability": 0.003,
+            "id": "christine-lagarde",
+            "image": "images/christine-lagarde.png",
+            "name": "Christine Lagarde"
         },
         {
             "currentProbability": 0.0005,
@@ -31,13 +37,13 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.0715,
+            "currentProbability": 0.072,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.0115,
+            "currentProbability": 0.0105,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
@@ -85,7 +91,7 @@
             "name": "Fran\u00e7ois Ruffin"
         },
         {
-            "currentProbability": 0.0225,
+            "currentProbability": 0.02,
             "id": "gabriel-attal",
             "image": "images/gabriel-attal.jpg",
             "name": "Gabriel Attal"
@@ -187,13 +193,13 @@
             "name": "Nicolas Dupont-Aignan"
         },
         {
-            "currentProbability": 0.0035,
+            "currentProbability": 0.0025,
             "id": "olivier-faure",
             "image": "images/olivier-faure.jpg",
             "name": "Olivier Faure"
         },
         {
-            "currentProbability": 0.0175,
+            "currentProbability": 0.0165,
             "id": "raphal-glucksmann",
             "image": "images/raphal-glucksmann.jpg",
             "name": "Rapha\u00ebl Glucksmann"
@@ -1434,6 +1440,10 @@
             {
                 "date": "2026-09-19",
                 "probability": 0.0145
+            },
+            {
+                "date": "2026-09-24",
+                "probability": 0.0155
             }
         ],
         "carole-delga": [
@@ -1588,6 +1598,12 @@
             {
                 "date": "2026-09-06",
                 "probability": 0.0005
+            }
+        ],
+        "christine-lagarde": [
+            {
+                "date": "2026-09-24",
+                "probability": 0.003
             }
         ],
         "clmence-guett": [
@@ -2830,6 +2846,10 @@
             {
                 "date": "2026-09-23",
                 "probability": 0.0715
+            },
+            {
+                "date": "2026-09-24",
+                "probability": 0.072
             }
         ],
         "dominique-de-villepin": [
@@ -3760,6 +3780,10 @@
             {
                 "date": "2026-09-23",
                 "probability": 0.0115
+            },
+            {
+                "date": "2026-09-24",
+                "probability": 0.0105
             }
         ],
         "douard-philippe": [
@@ -5903,6 +5927,10 @@
             },
             {
                 "date": "2026-09-23",
+                "probability": 0.06
+            },
+            {
+                "date": "2026-09-24",
                 "probability": 0.0585
             }
         ],
@@ -7196,6 +7224,10 @@
             {
                 "date": "2026-09-15",
                 "probability": 0.0225
+            },
+            {
+                "date": "2026-09-24",
+                "probability": 0.02
             }
         ],
         "grald-darmanin": [
@@ -12270,6 +12302,10 @@
             {
                 "date": "2026-09-23",
                 "probability": 0.0035
+            },
+            {
+                "date": "2026-09-24",
+                "probability": 0.0025
             }
         ],
         "raphal-glucksmann": [
@@ -13096,6 +13132,10 @@
             {
                 "date": "2026-09-23",
                 "probability": 0.0175
+            },
+            {
+                "date": "2026-09-24",
+                "probability": 0.0165
             }
         ],
         "ric-zemmour": [
@@ -15929,7 +15969,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-09-23T05:55:04Z",
-        "totalEntrants": 41
+        "lastUpdate": "2026-09-24T06:08:27Z",
+        "totalEntrants": 42
     }
 }
