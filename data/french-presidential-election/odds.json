@@ -25,7 +25,7 @@
             "name": "Carole Delga"
         },
         {
-            "currentProbability": 0.074,
+            "currentProbability": 0.0755,
             "id": "christine-lagarde",
             "image": "images/christine-lagarde.png",
             "name": "Christine Lagarde"
@@ -43,19 +43,19 @@
             "name": "Cl\u00e9mentine Autain"
         },
         {
-            "currentProbability": 0.167,
+            "currentProbability": 0.1805,
             "id": "david-lisnard",
             "image": "images/david-lisnard.jpg",
             "name": "David Lisnard"
         },
         {
-            "currentProbability": 0.0165,
+            "currentProbability": 0.009,
             "id": "dominique-de-villepin",
             "image": "images/dominique-de-villepin.jpg",
             "name": "Dominique de Villepin"
         },
         {
-            "currentProbability": 0.055,
+            "currentProbability": 0.045,
             "id": "douard-philippe",
             "image": "images/douard-philippe.jpg",
             "name": "\u00c9douard Philippe"
@@ -85,7 +85,7 @@
             "name": "Fran\u00e7ois Bayrou"
         },
         {
-            "currentProbability": 0.0165,
+            "currentProbability": 0.017,
             "id": "franois-hollande",
             "image": "images/franois-hollande.jpg",
             "name": "Fran\u00e7ois Hollande"
@@ -163,7 +163,7 @@
             "name": "Manuel Bompard"
         },
         {
-            "currentProbability": 0.4605,
+            "currentProbability": 0.4745,
             "id": "marine-le-pen",
             "image": "images/marine-le-pen.jpg",
             "name": "Marine Le Pen"
@@ -211,7 +211,7 @@
             "name": "Olivier Faure"
         },
         {
-            "currentProbability": 0.0205,
+            "currentProbability": 0.018,
             "id": "raphal-glucksmann",
             "image": "images/raphal-glucksmann.jpg",
             "name": "Rapha\u00ebl Glucksmann"
@@ -223,13 +223,13 @@
             "name": "\u00c9ric Zemmour"
         },
         {
-            "currentProbability": 0.0005,
+            "currentProbability": 0.001,
             "id": "sarah-knafo",
             "image": "images/sarah-knafo.jpg",
             "name": "Sarah Knafo"
         },
         {
-            "currentProbability": 0.0015,
+            "currentProbability": 0.0005,
             "id": "sbastien-lecornu",
             "image": "images/sbastien-lecornu.jpg",
             "name": "S\u00e9bastien Lecornu"
@@ -247,7 +247,7 @@
             "name": "Sylvain Durif"
         },
         {
-            "currentProbability": 0.029,
+            "currentProbability": 0.02,
             "id": "teddy-riner",
             "image": "images/teddy-riner.jpg",
             "name": "Teddy Riner"
@@ -259,7 +259,7 @@
             "name": "Val\u00e9rie P\u00e9cresse"
         },
         {
-            "currentProbability": 0.0015,
+            "currentProbability": 0.0005,
             "id": "xavier-bertrand",
             "image": "images/xavier-bertrand.jpg",
             "name": "Xavier Bertrand"
@@ -1937,7 +1937,11 @@
             },
             {
                 "date": "2026-11-13",
-                "probability": 0.074
+                "probability": 0.0745
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.0755
             }
         ],
         "clmence-guett": [
@@ -3343,7 +3347,11 @@
             },
             {
                 "date": "2026-11-13",
-                "probability": 0.167
+                "probability": 0.1665
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.1805
             }
         ],
         "dominique-de-villepin": [
@@ -4393,7 +4401,11 @@
             },
             {
                 "date": "2026-11-13",
-                "probability": 0.0165
+                "probability": 0.0175
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.009
             }
         ],
         "douard-philippe": [
@@ -5128,6 +5140,10 @@
             {
                 "date": "2026-11-13",
                 "probability": 0.055
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.045
             }
         ],
         "fabien-roussel": [
@@ -6906,6 +6922,10 @@
             {
                 "date": "2026-11-13",
                 "probability": 0.0165
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.017
             }
         ],
         "franois-ruffin": [
@@ -12488,6 +12508,10 @@
             {
                 "date": "2026-11-13",
                 "probability": 0.4605
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.4745
             }
         ],
         "marine-tondelier": [
@@ -14816,6 +14840,10 @@
             {
                 "date": "2026-11-13",
                 "probability": 0.0205
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.018
             }
         ],
         "ric-zemmour": [
@@ -15521,6 +15549,10 @@
             },
             {
                 "date": "2026-11-13",
+                "probability": 0.0065
+            },
+            {
+                "date": "2026-11-14",
                 "probability": 0.0045
             }
         ],
@@ -16336,6 +16368,10 @@
             {
                 "date": "2026-11-13",
                 "probability": 0.0005
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.001
             }
         ],
         "sbastien-lecornu": [
@@ -16926,6 +16962,10 @@
             {
                 "date": "2026-10-28",
                 "probability": 0.0015
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.0005
             }
         ],
         "sgolne-royal": [
@@ -17311,7 +17351,11 @@
             },
             {
                 "date": "2026-11-13",
-                "probability": 0.029
+                "probability": 0.019
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.02
             }
         ],
         "valrie-pcresse": [
@@ -17796,6 +17840,10 @@
             {
                 "date": "2026-11-11",
                 "probability": 0.0015
+            },
+            {
+                "date": "2026-11-14",
+                "probability": 0.0005
             }
         ],
         "yal-braun-pivet": [
@@ -18029,7 +18077,7 @@
     },
     "metadata": {
         "iconType": "image",
-        "lastUpdate": "2026-11-13T07:52:30Z",
+        "lastUpdate": "2026-11-14T07:33:43Z",
         "totalEntrants": 46
     }
 }
